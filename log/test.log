@@ -1,0 +1,28 @@
+  [1m[36m (6.7ms)[0m  [1mDROP DATABASE IF EXISTS "portaldb"[0m
+PG::InsufficientPrivilege: ERROR:  must be owner of database portaldb
+: DROP DATABASE IF EXISTS "portaldb"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------------
+PlainpageControllerTest: test_should_get_index
+----------------------------------------------
+Processing by PlainpageController#index as HTML
+  Rendered plainpage/index.html.erb within layouts/application (14.2ms)
+  Rendered partials/_sidenav.html.erb (2.5ms)
+  Rendered partials/_topnav.html.erb (5.4ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 23115ms (Views: 23114.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mDROP DATABASE IF EXISTS "portaldb"[0m
+PG::InsufficientPrivilege: ERROR:  must be owner of database portaldb
+: DROP DATABASE IF EXISTS "portaldb"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+----------------------------------------------
+PlainpageControllerTest: test_should_get_index
+----------------------------------------------
+Processing by PlainpageController#index as HTML
+  Rendered plainpage/index.html.erb within layouts/application (1.1ms)
+  Rendered partials/_sidenav.html.erb (1.7ms)
+  Rendered partials/_topnav.html.erb (5.4ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 303ms (Views: 302.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
