@@ -1499,3 +1499,2877 @@ ActionController::RoutingError (No route matches [GET] "/index.html"):
   Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
   Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
   Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-09-19 14:02:46 -0300
+Processing by PlainpageController#index as HTML
+  Rendered plainpage/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (1.8ms)
+  Rendered partials/_topnav.html.erb (5.6ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 96ms (Views: 95.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2016-09-19 14:03:04 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.1ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2016-09-19 14:03:04 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.9ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 16:19:00 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (20.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (4.5ms)
+  Rendered partials/_sidenav.html.erb (2.4ms)
+  Rendered partials/_topnav.html.erb (5.8ms)
+  Rendered partials/_footer.html.erb (0.2ms)
+Completed 200 OK in 9163ms (Views: 9121.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.9ms)
+  Rendered partials/_sidenav.html.erb (1.1ms)
+  Rendered partials/_topnav.html.erb (4.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 86ms (Views: 85.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/application.self-4b8e38670c4f41ddc6bace1fb078928f1c84104e141da3b17f7b44d958f5186d.css?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.self-705d7592a526517fe86a873dd3aa15f58ce66a7953036fe087b44cd70521f0cc.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.pie.self-33ca88cc4a7371598cb8fa2d30eeaddcecb19184d16161873c7c1e632447c3b5.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.orderBars.self-1310e7cf40dfc527b1828bdfa8e62ba12341da3b0c7bc4883ec3976103c7e790.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.time.min.self-42e80da9d580f1cd692913e466a0a35720994cd42aa2bf940d419142bf70ae67.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/date.self-dd103d36715d4e9beae419cc0328daa08d388182e31fce53e6c95e04c826f014.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.spline.self-78f8d0e8dfaa7a73b069749d22fb3f92c7de0cf39198cdd3531184a89c8f44a3.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.stack.self-77107f0e9fec22d48d33184fec10aa3335cfb4469305a20d0885662e9c8716f7.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/curvedLines.self-29a3f7497ffd95027475ad2f947b8a6c57156690e858a8780923864a563532c0.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.resize.self-2164419d35ef0c28690426670059965ff17c804b466f57a8cbcc25c479b256c9.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/gentelella/production/js/progressbar/bootstrap-progressbar.min.self-a9996721a19c173901023b21df854903c6a8e2b406cd93d1464a10327d8b52a5.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/gentelella/production/js/icheck/icheck.min.self-71402d4bdfd85b52b46ee005d31661013598d0d930d2f195227371538f814ab1.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/gentelella/production/js/moment/moment.min.self-47f3f0f0f331b237c5584a60bfc321301c0d9a5651dd70c635af1e17be68d5bb.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/gentelella/production/js/datepicker/daterangepicker.self-ed4efcc595b0d4da2fb398736b7afde3f16d1364d06cf46dad9c4e591d1ea394.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/gentelella/production/js/chartjs/chart.min.self-ba2063aab36611ff08faf64bffa6a26ec0e486b6d42a732e7ddd29e6190b4f04.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/gentelella/production/js/pace/pace.min.self-9bf6d667514a59744d5db2c9392aaf5595dec9c131a425ababa1cb8cddb814f2.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/gentelella/production/js/nprogress.self-ee0af190efcd10748e6f1bde91255ea0bf490342f26389814d76a217f5255ff4.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/flash.self-c7b94ce6f778ffa2d56272d0d981967ab27d8ac57a75802e72fcfab9b95d1000.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/application.self-515207d365987d57167fd2fe8faa8c949dbe96964f0f8653fee65028cf23c8e4.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/gentelella/production/js/custom.self-4f0ced23cee8da0b88915f10b145d6df88298f210a750017ccb1176aa7fbdd0f.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/assets/footermanifest.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-19 16:19:38 -0300
+
+
+Started GET "/index.html" for 127.0.0.1 at 2016-09-19 16:19:49 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (24.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (47.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (271.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (384.9ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2016-09-19 16:19:49 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (31.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (40.9ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 16:21:29 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (6.7ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 103ms (Views: 101.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:29 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:29 -0300
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:29 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:29 -0300
+
+
+Started GET "/assets/application.self-4b8e38670c4f41ddc6bace1fb078928f1c84104e141da3b17f7b44d958f5186d.css?body=1" for 127.0.0.1 at 2016-09-19 16:21:29 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:29 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:29 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:29 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.self-705d7592a526517fe86a873dd3aa15f58ce66a7953036fe087b44cd70521f0cc.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.pie.self-33ca88cc4a7371598cb8fa2d30eeaddcecb19184d16161873c7c1e632447c3b5.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.orderBars.self-1310e7cf40dfc527b1828bdfa8e62ba12341da3b0c7bc4883ec3976103c7e790.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.time.min.self-42e80da9d580f1cd692913e466a0a35720994cd42aa2bf940d419142bf70ae67.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/date.self-dd103d36715d4e9beae419cc0328daa08d388182e31fce53e6c95e04c826f014.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.spline.self-78f8d0e8dfaa7a73b069749d22fb3f92c7de0cf39198cdd3531184a89c8f44a3.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.stack.self-77107f0e9fec22d48d33184fec10aa3335cfb4469305a20d0885662e9c8716f7.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/curvedLines.self-29a3f7497ffd95027475ad2f947b8a6c57156690e858a8780923864a563532c0.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.resize.self-2164419d35ef0c28690426670059965ff17c804b466f57a8cbcc25c479b256c9.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/gentelella/production/js/progressbar/bootstrap-progressbar.min.self-a9996721a19c173901023b21df854903c6a8e2b406cd93d1464a10327d8b52a5.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/gentelella/production/js/icheck/icheck.min.self-71402d4bdfd85b52b46ee005d31661013598d0d930d2f195227371538f814ab1.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/gentelella/production/js/moment/moment.min.self-47f3f0f0f331b237c5584a60bfc321301c0d9a5651dd70c635af1e17be68d5bb.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/gentelella/production/js/datepicker/daterangepicker.self-ed4efcc595b0d4da2fb398736b7afde3f16d1364d06cf46dad9c4e591d1ea394.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/gentelella/production/js/chartjs/chart.min.self-ba2063aab36611ff08faf64bffa6a26ec0e486b6d42a732e7ddd29e6190b4f04.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/gentelella/production/js/pace/pace.min.self-9bf6d667514a59744d5db2c9392aaf5595dec9c131a425ababa1cb8cddb814f2.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/gentelella/production/js/nprogress.self-ee0af190efcd10748e6f1bde91255ea0bf490342f26389814d76a217f5255ff4.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/flash.self-c7b94ce6f778ffa2d56272d0d981967ab27d8ac57a75802e72fcfab9b95d1000.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/application.self-515207d365987d57167fd2fe8faa8c949dbe96964f0f8653fee65028cf23c8e4.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/gentelella/production/js/custom.self-4f0ced23cee8da0b88915f10b145d6df88298f210a750017ccb1176aa7fbdd0f.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/assets/footermanifest.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-19 16:21:30 -0300
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 16:47:01 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (1.8ms)
+  Rendered partials/_topnav.html.erb (6.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 93ms (Views: 92.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 16:47:31 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.8ms)
+  Rendered partials/_sidenav.html.erb (1.9ms)
+  Rendered partials/_topnav.html.erb (7.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 110ms (Views: 109.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 16:49:06 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (1.4ms)
+  Rendered partials/_topnav.html.erb (11.7ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 104ms (Views: 102.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4b8e38670c4f41ddc6bace1fb078928f1c84104e141da3b17f7b44d958f5186d.css?body=1" for 127.0.0.1 at 2016-09-19 16:49:06 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:06 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:06 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:06 -0300
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:06 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:06 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:06 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:06 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:06 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:06 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:06 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:06 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:06 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:06 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:06 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.self-705d7592a526517fe86a873dd3aa15f58ce66a7953036fe087b44cd70521f0cc.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.pie.self-33ca88cc4a7371598cb8fa2d30eeaddcecb19184d16161873c7c1e632447c3b5.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.orderBars.self-1310e7cf40dfc527b1828bdfa8e62ba12341da3b0c7bc4883ec3976103c7e790.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.time.min.self-42e80da9d580f1cd692913e466a0a35720994cd42aa2bf940d419142bf70ae67.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/date.self-dd103d36715d4e9beae419cc0328daa08d388182e31fce53e6c95e04c826f014.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.spline.self-78f8d0e8dfaa7a73b069749d22fb3f92c7de0cf39198cdd3531184a89c8f44a3.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.stack.self-77107f0e9fec22d48d33184fec10aa3335cfb4469305a20d0885662e9c8716f7.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/curvedLines.self-29a3f7497ffd95027475ad2f947b8a6c57156690e858a8780923864a563532c0.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.resize.self-2164419d35ef0c28690426670059965ff17c804b466f57a8cbcc25c479b256c9.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/assets/gentelella/production/js/progressbar/bootstrap-progressbar.min.self-a9996721a19c173901023b21df854903c6a8e2b406cd93d1464a10327d8b52a5.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/assets/gentelella/production/js/icheck/icheck.min.self-71402d4bdfd85b52b46ee005d31661013598d0d930d2f195227371538f814ab1.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/assets/gentelella/production/js/moment/moment.min.self-47f3f0f0f331b237c5584a60bfc321301c0d9a5651dd70c635af1e17be68d5bb.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/assets/gentelella/production/js/datepicker/daterangepicker.self-ed4efcc595b0d4da2fb398736b7afde3f16d1364d06cf46dad9c4e591d1ea394.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/assets/gentelella/production/js/chartjs/chart.min.self-ba2063aab36611ff08faf64bffa6a26ec0e486b6d42a732e7ddd29e6190b4f04.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/assets/gentelella/production/js/pace/pace.min.self-9bf6d667514a59744d5db2c9392aaf5595dec9c131a425ababa1cb8cddb814f2.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/assets/gentelella/production/js/nprogress.self-ee0af190efcd10748e6f1bde91255ea0bf490342f26389814d76a217f5255ff4.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/assets/flash.self-c7b94ce6f778ffa2d56272d0d981967ab27d8ac57a75802e72fcfab9b95d1000.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/assets/application.self-515207d365987d57167fd2fe8faa8c949dbe96964f0f8653fee65028cf23c8e4.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/assets/gentelella/production/js/custom.self-4f0ced23cee8da0b88915f10b145d6df88298f210a750017ccb1176aa7fbdd0f.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/assets/footermanifest.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-19 16:49:07 -0300
+
+
+Started GET "/admi" for 127.0.0.1 at 2016-09-19 16:49:53 -0300
+
+ActionController::RoutingError (No route matches [GET] "/admi"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.2ms)
+
+
+Started GET "/admin_user/" for 127.0.0.1 at 2016-09-19 16:49:55 -0300
+
+ActionController::RoutingError (No route matches [GET] "/admin_user"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.5ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 16:49:58 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.7ms)
+  Rendered partials/_sidenav.html.erb (1.2ms)
+  Rendered partials/_topnav.html.erb (4.8ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 92ms (Views: 91.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-19 16:58:43 -0300
+
+ActionController::RoutingError (No route matches [GET] "/admin/login"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.1ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-19 16:59:07 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0xb30556b4>:0xb30551b4>):
+     6:   <div id="wrapper">
+     7:     <div id="login" class="animate form">
+     8:       <section class="login_content">
+     9:         <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    10:       <h1>Login Form</h1>
+    11:           <div>
+    12:             <%= f.email_field :email, autofocus: true, :class => "form-control", :placeholder =>"Username",  :required => ""  %>
+  app/views/admin/login.html.erb:9:in `_app_views_admin_login_html_erb__336375564__645749668'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.2ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-19 17:04:16 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/application (1.8ms)
+  Rendered partials/_sidenav.html.erb (3.1ms)
+  Rendered partials/_topnav.html.erb (7.4ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 126ms (Views: 125.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 17:04:57 -0300
+Processing by AdminController#index as HTML
+Redirected to http://localhost:3000/access/login
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/access/login" for 127.0.0.1 at 2016-09-19 17:04:57 -0300
+
+ActionController::RoutingError (No route matches [GET] "/access/login"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-19 17:05:05 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb (1.8ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/attempt_login" for 127.0.0.1 at 2016-09-19 17:05:18 -0300
+Processing by AdminController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J3MIItUNmwgQ3FbrbtNiVz4/+vbyIvTihY3uN6slAy1MshbFUxUA1poZn6y9wscInD1wk6sX9KNzN3Nf5iR5uQ==", "username"=>"nacho", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mAdmin Load (47.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."usuario" = $1  ORDER BY "admins"."id" ASC LIMIT 1  [["usuario", "nacho"]]
+Completed 500 Internal Server Error in 430ms (ActiveRecord: 292.6ms)
+
+BCrypt::Errors::InvalidHash (invalid hash):
+  app/controllers/admin_controller.rb:18:in `attempt_login'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.7ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "admins" SET "password_digest" = $1, "updated_at" = $2 WHERE "admins"."id" = $3[0m  [["password_digest", "$2a$10$2Xni246EY8VWihTZFUDtSO0.6NwEq7ZdMGk2pcpUeQgDV2phmnQU6"], ["updated_at", "2016-09-19 20:07:59.022595"], ["id", 1]]
+  [1m[35m (25.3ms)[0m  COMMIT
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-19 17:08:07 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb (0.8ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/attempt_login" for 127.0.0.1 at 2016-09-19 17:08:12 -0300
+Processing by AdminController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/zchB20imPn2Zfa/BT2k/sMTkS/xNhJMw7K48LJX5QmU9j/g6zoDJ3ygP/jWLAGhYREbSqgDEg01CCWY/1afnQ==", "username"=>"nacho", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mAdmin Load (0.5ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."usuario" = $1  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["usuario", "nacho"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 98ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 17:08:12 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-19 17:11:41 -0300
+Processing by AdminController#login as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `layout' for #<AdminController:0xafabb8dc>):
+  app/controllers/admin_controller.rb:11:in `login'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.7ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-19 17:16:06 -0300
+Processing by AdminController#login as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `layout' for #<AdminController:0xb2aa0d7c>):
+  app/controllers/admin_controller.rb:11:in `login'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-19 17:16:34 -0300
+Processing by AdminController#login as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template layouts/admin with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/eseeme/Documents/sw/Proyecto/app/views"
+):
+  actionview (4.2.4) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.4) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.4) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:86:in `resolve_layout'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:93:in `resolve_layout'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:76:in `block in find_layout'
+  actionview (4.2.4) lib/action_view/lookup_context.rb:242:in `with_layout_format'
+  actionview (4.2.4) lib/action_view/renderer/abstract_renderer.rb:18:in `with_layout_format'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:76:in `find_layout'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:60:in `render_with_layout'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.4) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.4) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.4) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.4) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.4) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.4) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.4) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.4) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.4) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (29.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.4ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-19 17:18:45 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (1.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/aplication.css" for 127.0.0.1 at 2016-09-19 17:18:45 -0300
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/aplication.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.3ms)
+
+
+Started POST "/admin/attempt_login" for 127.0.0.1 at 2016-09-19 17:18:53 -0300
+Processing by AdminController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7uSlbhFV6T7dT62r6LgOYoL5S+nqXO7pHEwQtMyWPiSFJbuJl01y4FeKZOw7qas9IPvBjLNp7qjq9o3cgZdEsA==", "username"=>"nacho", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."usuario" = $1  ORDER BY "admins"."id" ASC LIMIT 1  [["usuario", "nacho"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 108ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 17:18:53 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidenav.html.erb (1.5ms)
+  Rendered partials/_topnav.html.erb (6.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 98ms (Views: 97.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/attempt_login" for 127.0.0.1 at 2016-09-19 17:19:02 -0300
+Processing by AdminController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7uSlbhFV6T7dT62r6LgOYoL5S+nqXO7pHEwQtMyWPiSFJbuJl01y4FeKZOw7qas9IPvBjLNp7qjq9o3cgZdEsA==", "username"=>"nacho", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mAdmin Load (0.5ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."usuario" = $1  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["usuario", "nacho"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 102ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 17:19:03 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidenav.html.erb (1.2ms)
+  Rendered partials/_topnav.html.erb (4.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 78ms (Views: 77.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-19 17:19:37 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (0.6ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/aplication.css" for 127.0.0.1 at 2016-09-19 17:19:37 -0300
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/aplication.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.1ms)
+
+
+Started POST "/admin/attempt_login" for 127.0.0.1 at 2016-09-19 17:19:43 -0300
+Processing by AdminController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x2PhLzP/ZqPdsf+euWfBHmRLefNU/YfubFvP5PJ1xdusov/Itef9fVd0NtlqdmRBxknzlg3Ih6+a4VKMv3S/Tw==", "username"=>"nacho", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."usuario" = $1  ORDER BY "admins"."id" ASC LIMIT 1  [["usuario", "nacho"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 94ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 17:19:43 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidenav.html.erb (1.3ms)
+  Rendered partials/_topnav.html.erb (5.2ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 82ms (Views: 81.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-19 17:20:59 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (0.8ms)
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-19 17:21:48 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (16.6ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0xb436a5d8>:0xb407d488>):
+     5:   <div id="wrapper">
+     6:     <div id="login" class="animate form">
+     7:       <section class="login_content">
+     8:         <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+     9:       <h1>Login Form</h1>
+    10:           <div>
+    11:             <%= f.email_field :email, autofocus: true, :class => "form-control", :placeholder =>"Username",  :required => ""  %>
+  app/views/admin/login.html.erb:8:in `_app_views_admin_login_html_erb__336375564__637278788'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.1ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-19 17:25:49 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (1.1ms)
+Completed 200 OK in 79ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/attempt_login" for 127.0.0.1 at 2016-09-19 17:25:59 -0300
+Processing by AdminController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FqObBXi+FbBoEyN+pp72VK3oNzrrE4HMjxklV2L9pk59YoXi/qaObuLW6jl1j1MLD+q9X7ImgY15o7g/L/zc2g==", "username"=>"nacho", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."usuario" = $1  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["usuario", "nacho"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 105ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 17:25:59 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (6.1ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 106ms (Views: 105.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-19 17:27:58 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (13.3ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0xb436a5d8>:0xb26c93fc>):
+     5:   <div id="wrapper">
+     6:     <div id="login" class="animate form">
+     7:       <section class="login_content">
+     8:         <%= form_for(resource, as: resource_name, url: attempt_login) do |f| %>
+     9:         <h1>Login Form</h1>
+    10:           <div>
+    11:             <%= f.email_field :email, autofocus: true, :class => "form-control", :placeholder =>"Username",  :required => ""  %>
+  app/views/admin/login.html.erb:8:in `_app_views_admin_login_html_erb__336375564__650754728'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.1ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-19 17:29:16 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (3.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/eseeme/Documents/sw/Proyecto/app/views/admin/login.html.erb:92: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/admin/login.html.erb:92: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.2ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-19 17:32:02 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (1.4ms)
+Completed 200 OK in 82ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/attempt_login" for 127.0.0.1 at 2016-09-19 17:32:20 -0300
+Processing by AdminController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gv7qmQw/5U/yBiEkVOIxm3hyMwztuEVpkJZI1zWPCXfpP/R+iid+kXjD6GOH85TE2nC5abSNRShmLNW/eI5z4w==", "username"=>"nacho", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."usuario" = $1  ORDER BY "admins"."id" ASC LIMIT 1  [["usuario", "nacho"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 90ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 17:32:21 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (1.8ms)
+  Rendered partials/_topnav.html.erb (6.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 97ms (Views: 96.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/attempt_login" for 127.0.0.1 at 2016-09-19 17:33:33 -0300
+Processing by AdminController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gv7qmQw/5U/yBiEkVOIxm3hyMwztuEVpkJZI1zWPCXfpP/R+iid+kXjD6GOH85TE2nC5abSNRShmLNW/eI5z4w==", "username"=>"nacho", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."usuario" = $1  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["usuario", "nacho"]]
+Redirected to http://localhost:3000/admin/login
+Completed 302 Found in 109ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-19 17:33:33 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (0.9ms)
+Completed 200 OK in 92ms (Views: 91.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/attempt_login" for 127.0.0.1 at 2016-09-19 17:33:39 -0300
+Processing by AdminController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rRAcjFCLqnigUUcM4Lp+RvBOp616+0j64IEZlZ4M7cnG0QJr1pMxpiqUjkszq9sZUkwtyCPOSLsWO4T90w2XXQ==", "username"=>"nacho", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."usuario" = $1  ORDER BY "admins"."id" ASC LIMIT 1  [["usuario", "nacho"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 94ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 17:33:39 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidenav.html.erb (1.2ms)
+  Rendered partials/_topnav.html.erb (4.7ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 91ms (Views: 90.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login.html" for 127.0.0.1 at 2016-09-19 17:35:10 -0300
+
+ActionController::RoutingError (No route matches [GET] "/login.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (33.3ms)
+
+
+Started GET "/login.html" for 127.0.0.1 at 2016-09-19 17:35:10 -0300
+
+ActionController::RoutingError (No route matches [GET] "/login.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 17:42:21 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidenav.html.erb (1.2ms)
+  Rendered partials/_topnav.html.erb (5.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 78ms (Views: 77.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/logout" for 127.0.0.1 at 2016-09-19 17:42:29 -0300
+Processing by AdminController#logout as HTML
+Redirected to http://localhost:3000/admin/login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-19 17:42:29 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (1.5ms)
+Completed 200 OK in 69ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/attempt_login" for 127.0.0.1 at 2016-09-19 17:42:37 -0300
+Processing by AdminController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"87Vrb+xk2IETK6VdJnuz8Kn9jQCnJNpwHT/BC7Nih9yYdHWIanxDX5nubBr1ahavC/8HZf4R2jHrhVxj/mP9SA==", "username"=>"nacho", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."usuario" = $1  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["usuario", "nacho"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 142ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 17:42:37 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (10.1ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 139ms (Views: 138.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 17:45:05 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (7.5ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 147ms (Views: 146.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/logout" for 127.0.0.1 at 2016-09-19 17:45:11 -0300
+Processing by AdminController#logout as HTML
+Redirected to http://localhost:3000/admin/login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-19 17:45:11 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (0.5ms)
+Completed 200 OK in 75ms (Views: 74.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/attempt_login" for 127.0.0.1 at 2016-09-19 17:45:18 -0300
+Processing by AdminController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fYnka1ZQ4VqWDI2hkjrLwf7xjif2RbERtg/evNK4hx0WSPqM0Eh6hBzJROZBK26eXPMEQq9wsVBAtUPUn7n9iQ==", "username"=>"nacho", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."usuario" = $1  ORDER BY "admins"."id" ASC LIMIT 1  [["usuario", "nacho"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 95ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 17:45:18 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidenav.html.erb (1.3ms)
+  Rendered partials/_topnav.html.erb (7.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 96ms (Views: 95.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 17:45:44 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (1.5ms)
+  Rendered partials/_topnav.html.erb (6.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 97ms (Views: 95.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/logout" for 127.0.0.1 at 2016-09-19 17:45:49 -0300
+Processing by AdminController#logout as HTML
+Redirected to http://localhost:3000/admin/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-19 17:45:49 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (0.6ms)
+Completed 200 OK in 79ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/attempt_login" for 127.0.0.1 at 2016-09-19 17:45:53 -0300
+Processing by AdminController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SYiLv9bWHERr7B5OVYKCTQATPZBLG5TWVurBn+zaCN4iSZVYUM6HmuEp1wmGkycSohG39RIulJegUFz3odtySg==", "username"=>"nacho", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."usuario" = $1  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["usuario", "nacho"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 95ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 17:45:53 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (2.6ms)
+  Rendered partials/_topnav.html.erb (6.7ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 108ms (Views: 107.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 17:57:18 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidenav.html.erb (2.6ms)
+  Rendered partials/_topnav.html.erb (6.2ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 95ms (Views: 94.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 17:59:06 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (2.2ms)
+  Rendered partials/_topnav.html.erb (7.2ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 105ms (Views: 104.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 17:59:42 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidenav.html.erb (1.6ms)
+  Rendered partials/_topnav.html.erb (5.3ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 84ms (Views: 83.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4b8e38670c4f41ddc6bace1fb078928f1c84104e141da3b17f7b44d958f5186d.css?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.self-705d7592a526517fe86a873dd3aa15f58ce66a7953036fe087b44cd70521f0cc.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.pie.self-33ca88cc4a7371598cb8fa2d30eeaddcecb19184d16161873c7c1e632447c3b5.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.orderBars.self-1310e7cf40dfc527b1828bdfa8e62ba12341da3b0c7bc4883ec3976103c7e790.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.time.min.self-42e80da9d580f1cd692913e466a0a35720994cd42aa2bf940d419142bf70ae67.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/date.self-dd103d36715d4e9beae419cc0328daa08d388182e31fce53e6c95e04c826f014.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.spline.self-78f8d0e8dfaa7a73b069749d22fb3f92c7de0cf39198cdd3531184a89c8f44a3.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.stack.self-77107f0e9fec22d48d33184fec10aa3335cfb4469305a20d0885662e9c8716f7.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/curvedLines.self-29a3f7497ffd95027475ad2f947b8a6c57156690e858a8780923864a563532c0.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.resize.self-2164419d35ef0c28690426670059965ff17c804b466f57a8cbcc25c479b256c9.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/gentelella/production/js/progressbar/bootstrap-progressbar.min.self-a9996721a19c173901023b21df854903c6a8e2b406cd93d1464a10327d8b52a5.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/gentelella/production/js/icheck/icheck.min.self-71402d4bdfd85b52b46ee005d31661013598d0d930d2f195227371538f814ab1.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/gentelella/production/js/moment/moment.min.self-47f3f0f0f331b237c5584a60bfc321301c0d9a5651dd70c635af1e17be68d5bb.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/gentelella/production/js/datepicker/daterangepicker.self-ed4efcc595b0d4da2fb398736b7afde3f16d1364d06cf46dad9c4e591d1ea394.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/gentelella/production/js/chartjs/chart.min.self-ba2063aab36611ff08faf64bffa6a26ec0e486b6d42a732e7ddd29e6190b4f04.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/gentelella/production/js/pace/pace.min.self-9bf6d667514a59744d5db2c9392aaf5595dec9c131a425ababa1cb8cddb814f2.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/gentelella/production/js/nprogress.self-ee0af190efcd10748e6f1bde91255ea0bf490342f26389814d76a217f5255ff4.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/flash.self-c7b94ce6f778ffa2d56272d0d981967ab27d8ac57a75802e72fcfab9b95d1000.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/application.self-515207d365987d57167fd2fe8faa8c949dbe96964f0f8653fee65028cf23c8e4.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/gentelella/production/js/custom.self-4f0ced23cee8da0b88915f10b145d6df88298f210a750017ccb1176aa7fbdd0f.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/assets/footermanifest.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-19 17:59:43 -0300
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (1.9ms)
+  Rendered partials/_topnav.html.erb (6.8ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 101ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4b8e38670c4f41ddc6bace1fb078928f1c84104e141da3b17f7b44d958f5186d.css?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.self-705d7592a526517fe86a873dd3aa15f58ce66a7953036fe087b44cd70521f0cc.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.pie.self-33ca88cc4a7371598cb8fa2d30eeaddcecb19184d16161873c7c1e632447c3b5.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.orderBars.self-1310e7cf40dfc527b1828bdfa8e62ba12341da3b0c7bc4883ec3976103c7e790.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.time.min.self-42e80da9d580f1cd692913e466a0a35720994cd42aa2bf940d419142bf70ae67.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/date.self-dd103d36715d4e9beae419cc0328daa08d388182e31fce53e6c95e04c826f014.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.spline.self-78f8d0e8dfaa7a73b069749d22fb3f92c7de0cf39198cdd3531184a89c8f44a3.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.stack.self-77107f0e9fec22d48d33184fec10aa3335cfb4469305a20d0885662e9c8716f7.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/curvedLines.self-29a3f7497ffd95027475ad2f947b8a6c57156690e858a8780923864a563532c0.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.resize.self-2164419d35ef0c28690426670059965ff17c804b466f57a8cbcc25c479b256c9.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/gentelella/production/js/progressbar/bootstrap-progressbar.min.self-a9996721a19c173901023b21df854903c6a8e2b406cd93d1464a10327d8b52a5.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/gentelella/production/js/icheck/icheck.min.self-71402d4bdfd85b52b46ee005d31661013598d0d930d2f195227371538f814ab1.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/gentelella/production/js/moment/moment.min.self-47f3f0f0f331b237c5584a60bfc321301c0d9a5651dd70c635af1e17be68d5bb.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/gentelella/production/js/datepicker/daterangepicker.self-ed4efcc595b0d4da2fb398736b7afde3f16d1364d06cf46dad9c4e591d1ea394.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/gentelella/production/js/chartjs/chart.min.self-ba2063aab36611ff08faf64bffa6a26ec0e486b6d42a732e7ddd29e6190b4f04.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/gentelella/production/js/pace/pace.min.self-9bf6d667514a59744d5db2c9392aaf5595dec9c131a425ababa1cb8cddb814f2.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/gentelella/production/js/nprogress.self-ee0af190efcd10748e6f1bde91255ea0bf490342f26389814d76a217f5255ff4.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/flash.self-c7b94ce6f778ffa2d56272d0d981967ab27d8ac57a75802e72fcfab9b95d1000.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/application.self-515207d365987d57167fd2fe8faa8c949dbe96964f0f8653fee65028cf23c8e4.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/gentelella/production/js/custom.self-4f0ced23cee8da0b88915f10b145d6df88298f210a750017ccb1176aa7fbdd0f.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/assets/footermanifest.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 18:00:08 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidenav.html.erb (1.3ms)
+  Rendered partials/_topnav.html.erb (5.8ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 90ms (Views: 89.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 18:00:20 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (5.7ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 100ms (Views: 98.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 18:00:39 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (0.5ms)
+  Rendered partials/_topnav.html.erb (5.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 92ms (Views: 91.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 18:01:10 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidenav.html.erb (0.1ms)
+  Rendered partials/_topnav.html.erb (6.5ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 94ms (Views: 93.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 18:01:16 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (1.9ms)
+  Rendered partials/_topnav.html.erb (7.5ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 98ms (Views: 97.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4b8e38670c4f41ddc6bace1fb078928f1c84104e141da3b17f7b44d958f5186d.css?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.self-705d7592a526517fe86a873dd3aa15f58ce66a7953036fe087b44cd70521f0cc.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.pie.self-33ca88cc4a7371598cb8fa2d30eeaddcecb19184d16161873c7c1e632447c3b5.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.orderBars.self-1310e7cf40dfc527b1828bdfa8e62ba12341da3b0c7bc4883ec3976103c7e790.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.time.min.self-42e80da9d580f1cd692913e466a0a35720994cd42aa2bf940d419142bf70ae67.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/date.self-dd103d36715d4e9beae419cc0328daa08d388182e31fce53e6c95e04c826f014.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.spline.self-78f8d0e8dfaa7a73b069749d22fb3f92c7de0cf39198cdd3531184a89c8f44a3.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.stack.self-77107f0e9fec22d48d33184fec10aa3335cfb4469305a20d0885662e9c8716f7.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/curvedLines.self-29a3f7497ffd95027475ad2f947b8a6c57156690e858a8780923864a563532c0.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.resize.self-2164419d35ef0c28690426670059965ff17c804b466f57a8cbcc25c479b256c9.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/gentelella/production/js/progressbar/bootstrap-progressbar.min.self-a9996721a19c173901023b21df854903c6a8e2b406cd93d1464a10327d8b52a5.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/gentelella/production/js/icheck/icheck.min.self-71402d4bdfd85b52b46ee005d31661013598d0d930d2f195227371538f814ab1.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/gentelella/production/js/moment/moment.min.self-47f3f0f0f331b237c5584a60bfc321301c0d9a5651dd70c635af1e17be68d5bb.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/gentelella/production/js/datepicker/daterangepicker.self-ed4efcc595b0d4da2fb398736b7afde3f16d1364d06cf46dad9c4e591d1ea394.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/gentelella/production/js/chartjs/chart.min.self-ba2063aab36611ff08faf64bffa6a26ec0e486b6d42a732e7ddd29e6190b4f04.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/gentelella/production/js/pace/pace.min.self-9bf6d667514a59744d5db2c9392aaf5595dec9c131a425ababa1cb8cddb814f2.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/gentelella/production/js/nprogress.self-ee0af190efcd10748e6f1bde91255ea0bf490342f26389814d76a217f5255ff4.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/flash.self-c7b94ce6f778ffa2d56272d0d981967ab27d8ac57a75802e72fcfab9b95d1000.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/application.self-515207d365987d57167fd2fe8faa8c949dbe96964f0f8653fee65028cf23c8e4.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/gentelella/production/js/custom.self-4f0ced23cee8da0b88915f10b145d6df88298f210a750017ccb1176aa7fbdd0f.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/assets/footermanifest.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-19 18:01:17 -0300
+
+
+Started GET "/form.html" for 127.0.0.1 at 2016-09-19 18:01:29 -0300
+
+ActionController::RoutingError (No route matches [GET] "/form.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.0ms)
+
+
+Started GET "/form.html" for 127.0.0.1 at 2016-09-19 18:01:29 -0300
+
+ActionController::RoutingError (No route matches [GET] "/form.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 18:02:20 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (1.6ms)
+  Rendered partials/_topnav.html.erb (4.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 104ms (Views: 103.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4b8e38670c4f41ddc6bace1fb078928f1c84104e141da3b17f7b44d958f5186d.css?body=1" for 127.0.0.1 at 2016-09-19 18:02:20 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:20 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:20 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:20 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:20 -0300
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:20 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:20 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:20 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:20 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:20 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.pie.self-33ca88cc4a7371598cb8fa2d30eeaddcecb19184d16161873c7c1e632447c3b5.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:20 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:20 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:20 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:20 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:20 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:20 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:20 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.self-705d7592a526517fe86a873dd3aa15f58ce66a7953036fe087b44cd70521f0cc.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:21 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:21 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.orderBars.self-1310e7cf40dfc527b1828bdfa8e62ba12341da3b0c7bc4883ec3976103c7e790.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:21 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.time.min.self-42e80da9d580f1cd692913e466a0a35720994cd42aa2bf940d419142bf70ae67.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:21 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/date.self-dd103d36715d4e9beae419cc0328daa08d388182e31fce53e6c95e04c826f014.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:21 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.spline.self-78f8d0e8dfaa7a73b069749d22fb3f92c7de0cf39198cdd3531184a89c8f44a3.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:21 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.stack.self-77107f0e9fec22d48d33184fec10aa3335cfb4469305a20d0885662e9c8716f7.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:21 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/curvedLines.self-29a3f7497ffd95027475ad2f947b8a6c57156690e858a8780923864a563532c0.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:21 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.resize.self-2164419d35ef0c28690426670059965ff17c804b466f57a8cbcc25c479b256c9.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:21 -0300
+
+
+Started GET "/assets/gentelella/production/js/progressbar/bootstrap-progressbar.min.self-a9996721a19c173901023b21df854903c6a8e2b406cd93d1464a10327d8b52a5.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:21 -0300
+
+
+Started GET "/assets/gentelella/production/js/icheck/icheck.min.self-71402d4bdfd85b52b46ee005d31661013598d0d930d2f195227371538f814ab1.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:21 -0300
+
+
+Started GET "/assets/gentelella/production/js/moment/moment.min.self-47f3f0f0f331b237c5584a60bfc321301c0d9a5651dd70c635af1e17be68d5bb.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:21 -0300
+
+
+Started GET "/assets/gentelella/production/js/datepicker/daterangepicker.self-ed4efcc595b0d4da2fb398736b7afde3f16d1364d06cf46dad9c4e591d1ea394.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:21 -0300
+
+
+Started GET "/assets/gentelella/production/js/chartjs/chart.min.self-ba2063aab36611ff08faf64bffa6a26ec0e486b6d42a732e7ddd29e6190b4f04.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:21 -0300
+
+
+Started GET "/assets/gentelella/production/js/pace/pace.min.self-9bf6d667514a59744d5db2c9392aaf5595dec9c131a425ababa1cb8cddb814f2.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:21 -0300
+
+
+Started GET "/assets/gentelella/production/js/nprogress.self-ee0af190efcd10748e6f1bde91255ea0bf490342f26389814d76a217f5255ff4.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:21 -0300
+
+
+Started GET "/assets/flash.self-c7b94ce6f778ffa2d56272d0d981967ab27d8ac57a75802e72fcfab9b95d1000.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:21 -0300
+
+
+Started GET "/assets/application.self-515207d365987d57167fd2fe8faa8c949dbe96964f0f8653fee65028cf23c8e4.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:21 -0300
+
+
+Started GET "/assets/gentelella/production/js/custom.self-4f0ced23cee8da0b88915f10b145d6df88298f210a750017ccb1176aa7fbdd0f.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:21 -0300
+
+
+Started GET "/assets/footermanifest.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-19 18:02:21 -0300
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 18:02:47 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (2.0ms)
+  Rendered partials/_topnav.html.erb (6.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 93ms (Views: 92.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (1.9ms)
+  Rendered partials/_topnav.html.erb (6.2ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 98ms (Views: 96.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4b8e38670c4f41ddc6bace1fb078928f1c84104e141da3b17f7b44d958f5186d.css?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.self-705d7592a526517fe86a873dd3aa15f58ce66a7953036fe087b44cd70521f0cc.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.pie.self-33ca88cc4a7371598cb8fa2d30eeaddcecb19184d16161873c7c1e632447c3b5.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.orderBars.self-1310e7cf40dfc527b1828bdfa8e62ba12341da3b0c7bc4883ec3976103c7e790.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.time.min.self-42e80da9d580f1cd692913e466a0a35720994cd42aa2bf940d419142bf70ae67.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/date.self-dd103d36715d4e9beae419cc0328daa08d388182e31fce53e6c95e04c826f014.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.spline.self-78f8d0e8dfaa7a73b069749d22fb3f92c7de0cf39198cdd3531184a89c8f44a3.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.stack.self-77107f0e9fec22d48d33184fec10aa3335cfb4469305a20d0885662e9c8716f7.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/curvedLines.self-29a3f7497ffd95027475ad2f947b8a6c57156690e858a8780923864a563532c0.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.resize.self-2164419d35ef0c28690426670059965ff17c804b466f57a8cbcc25c479b256c9.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/gentelella/production/js/progressbar/bootstrap-progressbar.min.self-a9996721a19c173901023b21df854903c6a8e2b406cd93d1464a10327d8b52a5.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/gentelella/production/js/icheck/icheck.min.self-71402d4bdfd85b52b46ee005d31661013598d0d930d2f195227371538f814ab1.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/gentelella/production/js/moment/moment.min.self-47f3f0f0f331b237c5584a60bfc321301c0d9a5651dd70c635af1e17be68d5bb.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/gentelella/production/js/datepicker/daterangepicker.self-ed4efcc595b0d4da2fb398736b7afde3f16d1364d06cf46dad9c4e591d1ea394.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/gentelella/production/js/chartjs/chart.min.self-ba2063aab36611ff08faf64bffa6a26ec0e486b6d42a732e7ddd29e6190b4f04.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/gentelella/production/js/pace/pace.min.self-9bf6d667514a59744d5db2c9392aaf5595dec9c131a425ababa1cb8cddb814f2.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/gentelella/production/js/nprogress.self-ee0af190efcd10748e6f1bde91255ea0bf490342f26389814d76a217f5255ff4.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/flash.self-c7b94ce6f778ffa2d56272d0d981967ab27d8ac57a75802e72fcfab9b95d1000.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/application.self-515207d365987d57167fd2fe8faa8c949dbe96964f0f8653fee65028cf23c8e4.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/gentelella/production/js/custom.self-4f0ced23cee8da0b88915f10b145d6df88298f210a750017ccb1176aa7fbdd0f.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/assets/footermanifest.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-19 18:03:32 -0300
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (2.0ms)
+  Rendered partials/_topnav.html.erb (5.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 89ms (Views: 88.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4b8e38670c4f41ddc6bace1fb078928f1c84104e141da3b17f7b44d958f5186d.css?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.self-705d7592a526517fe86a873dd3aa15f58ce66a7953036fe087b44cd70521f0cc.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.pie.self-33ca88cc4a7371598cb8fa2d30eeaddcecb19184d16161873c7c1e632447c3b5.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.orderBars.self-1310e7cf40dfc527b1828bdfa8e62ba12341da3b0c7bc4883ec3976103c7e790.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.time.min.self-42e80da9d580f1cd692913e466a0a35720994cd42aa2bf940d419142bf70ae67.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/date.self-dd103d36715d4e9beae419cc0328daa08d388182e31fce53e6c95e04c826f014.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.spline.self-78f8d0e8dfaa7a73b069749d22fb3f92c7de0cf39198cdd3531184a89c8f44a3.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.stack.self-77107f0e9fec22d48d33184fec10aa3335cfb4469305a20d0885662e9c8716f7.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/curvedLines.self-29a3f7497ffd95027475ad2f947b8a6c57156690e858a8780923864a563532c0.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.resize.self-2164419d35ef0c28690426670059965ff17c804b466f57a8cbcc25c479b256c9.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/gentelella/production/js/progressbar/bootstrap-progressbar.min.self-a9996721a19c173901023b21df854903c6a8e2b406cd93d1464a10327d8b52a5.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/gentelella/production/js/icheck/icheck.min.self-71402d4bdfd85b52b46ee005d31661013598d0d930d2f195227371538f814ab1.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/gentelella/production/js/moment/moment.min.self-47f3f0f0f331b237c5584a60bfc321301c0d9a5651dd70c635af1e17be68d5bb.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/gentelella/production/js/datepicker/daterangepicker.self-ed4efcc595b0d4da2fb398736b7afde3f16d1364d06cf46dad9c4e591d1ea394.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/gentelella/production/js/chartjs/chart.min.self-ba2063aab36611ff08faf64bffa6a26ec0e486b6d42a732e7ddd29e6190b4f04.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/gentelella/production/js/pace/pace.min.self-9bf6d667514a59744d5db2c9392aaf5595dec9c131a425ababa1cb8cddb814f2.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/gentelella/production/js/nprogress.self-ee0af190efcd10748e6f1bde91255ea0bf490342f26389814d76a217f5255ff4.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/flash.self-c7b94ce6f778ffa2d56272d0d981967ab27d8ac57a75802e72fcfab9b95d1000.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/application.self-515207d365987d57167fd2fe8faa8c949dbe96964f0f8653fee65028cf23c8e4.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/gentelella/production/js/custom.self-4f0ced23cee8da0b88915f10b145d6df88298f210a750017ccb1176aa7fbdd0f.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/assets/footermanifest.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:19 -0300
+
+
+Started GET "/index.html" for 127.0.0.1 at 2016-09-19 18:05:21 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (33.7ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2016-09-19 18:05:21 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.8ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (1.8ms)
+  Rendered partials/_topnav.html.erb (5.5ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 87ms (Views: 86.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4b8e38670c4f41ddc6bace1fb078928f1c84104e141da3b17f7b44d958f5186d.css?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.self-705d7592a526517fe86a873dd3aa15f58ce66a7953036fe087b44cd70521f0cc.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.pie.self-33ca88cc4a7371598cb8fa2d30eeaddcecb19184d16161873c7c1e632447c3b5.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.orderBars.self-1310e7cf40dfc527b1828bdfa8e62ba12341da3b0c7bc4883ec3976103c7e790.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.time.min.self-42e80da9d580f1cd692913e466a0a35720994cd42aa2bf940d419142bf70ae67.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/date.self-dd103d36715d4e9beae419cc0328daa08d388182e31fce53e6c95e04c826f014.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.spline.self-78f8d0e8dfaa7a73b069749d22fb3f92c7de0cf39198cdd3531184a89c8f44a3.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.stack.self-77107f0e9fec22d48d33184fec10aa3335cfb4469305a20d0885662e9c8716f7.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/curvedLines.self-29a3f7497ffd95027475ad2f947b8a6c57156690e858a8780923864a563532c0.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.resize.self-2164419d35ef0c28690426670059965ff17c804b466f57a8cbcc25c479b256c9.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/gentelella/production/js/progressbar/bootstrap-progressbar.min.self-a9996721a19c173901023b21df854903c6a8e2b406cd93d1464a10327d8b52a5.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/gentelella/production/js/icheck/icheck.min.self-71402d4bdfd85b52b46ee005d31661013598d0d930d2f195227371538f814ab1.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/gentelella/production/js/moment/moment.min.self-47f3f0f0f331b237c5584a60bfc321301c0d9a5651dd70c635af1e17be68d5bb.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/gentelella/production/js/datepicker/daterangepicker.self-ed4efcc595b0d4da2fb398736b7afde3f16d1364d06cf46dad9c4e591d1ea394.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/gentelella/production/js/chartjs/chart.min.self-ba2063aab36611ff08faf64bffa6a26ec0e486b6d42a732e7ddd29e6190b4f04.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/gentelella/production/js/pace/pace.min.self-9bf6d667514a59744d5db2c9392aaf5595dec9c131a425ababa1cb8cddb814f2.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/gentelella/production/js/nprogress.self-ee0af190efcd10748e6f1bde91255ea0bf490342f26389814d76a217f5255ff4.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/flash.self-c7b94ce6f778ffa2d56272d0d981967ab27d8ac57a75802e72fcfab9b95d1000.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/application.self-515207d365987d57167fd2fe8faa8c949dbe96964f0f8653fee65028cf23c8e4.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/gentelella/production/js/custom.self-4f0ced23cee8da0b88915f10b145d6df88298f210a750017ccb1176aa7fbdd0f.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/assets/footermanifest.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-19 18:05:58 -0300
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 18:10:28 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.8ms)
+  Rendered partials/_sidenav.html.erb (2.4ms)
+  Rendered partials/_topnav.html.erb (5.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 133ms (Views: 132.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4b8e38670c4f41ddc6bace1fb078928f1c84104e141da3b17f7b44d958f5186d.css?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.self-705d7592a526517fe86a873dd3aa15f58ce66a7953036fe087b44cd70521f0cc.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.pie.self-33ca88cc4a7371598cb8fa2d30eeaddcecb19184d16161873c7c1e632447c3b5.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.orderBars.self-1310e7cf40dfc527b1828bdfa8e62ba12341da3b0c7bc4883ec3976103c7e790.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.time.min.self-42e80da9d580f1cd692913e466a0a35720994cd42aa2bf940d419142bf70ae67.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/date.self-dd103d36715d4e9beae419cc0328daa08d388182e31fce53e6c95e04c826f014.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.spline.self-78f8d0e8dfaa7a73b069749d22fb3f92c7de0cf39198cdd3531184a89c8f44a3.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.stack.self-77107f0e9fec22d48d33184fec10aa3335cfb4469305a20d0885662e9c8716f7.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/curvedLines.self-29a3f7497ffd95027475ad2f947b8a6c57156690e858a8780923864a563532c0.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.resize.self-2164419d35ef0c28690426670059965ff17c804b466f57a8cbcc25c479b256c9.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/gentelella/production/js/progressbar/bootstrap-progressbar.min.self-a9996721a19c173901023b21df854903c6a8e2b406cd93d1464a10327d8b52a5.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/gentelella/production/js/icheck/icheck.min.self-71402d4bdfd85b52b46ee005d31661013598d0d930d2f195227371538f814ab1.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/gentelella/production/js/moment/moment.min.self-47f3f0f0f331b237c5584a60bfc321301c0d9a5651dd70c635af1e17be68d5bb.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/gentelella/production/js/datepicker/daterangepicker.self-ed4efcc595b0d4da2fb398736b7afde3f16d1364d06cf46dad9c4e591d1ea394.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/gentelella/production/js/chartjs/chart.min.self-ba2063aab36611ff08faf64bffa6a26ec0e486b6d42a732e7ddd29e6190b4f04.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/gentelella/production/js/pace/pace.min.self-9bf6d667514a59744d5db2c9392aaf5595dec9c131a425ababa1cb8cddb814f2.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/gentelella/production/js/nprogress.self-ee0af190efcd10748e6f1bde91255ea0bf490342f26389814d76a217f5255ff4.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/flash.self-c7b94ce6f778ffa2d56272d0d981967ab27d8ac57a75802e72fcfab9b95d1000.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/application.self-515207d365987d57167fd2fe8faa8c949dbe96964f0f8653fee65028cf23c8e4.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/gentelella/production/js/custom.self-4f0ced23cee8da0b88915f10b145d6df88298f210a750017ccb1176aa7fbdd0f.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/assets/footermanifest.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-19 18:10:29 -0300
+
+
+Started GET "/index.html" for 127.0.0.1 at 2016-09-19 18:10:39 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.6ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2016-09-19 18:10:39 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.5ms)
