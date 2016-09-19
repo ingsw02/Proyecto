@@ -42,9 +42,7 @@
             </li>
             <li><a><i class="fa fa-edit"></i> Usuarios <span class="fa fa-chevron-down"></span></a>
               <ul class="nav child_menu" style="display: none">
-                <li><a href="form.html">Clientes</a>
-                </li>
-                <li><a href="form.html">Crear cliente</a>
+                <li><%= link_to("Clientes",:controller => 'admin_usuarios',:action => 'index')%>
                 </li>
               </ul>
             </li>
