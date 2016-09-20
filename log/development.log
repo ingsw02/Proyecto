@@ -8895,3 +8895,2340 @@ ActionController::RoutingError (No route matches [GET] "/general_elements.html")
   Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.6ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-19 22:20:43 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (0.9ms)
+Completed 200 OK in 6727ms (Views: 6726.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/attempt_login" for 127.0.0.1 at 2016-09-19 22:20:56 -0300
+Processing by AdminController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zjn0brEs7RaiexqkZ+BrFF2+nb6rLQN1l4czU4FHrF31H8hfvM8hCvTX1Y25RNKaj0rH8L5YRQWK2MxM/nZU8A==", "username"=>"nacho", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."usuario" = $1  ORDER BY "admins"."id" ASC LIMIT 1  [["usuario", "nacho"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 114ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-19 22:20:56 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (1.9ms)
+  Rendered partials/_topnav.html.erb (6.4ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 101ms (Views: 100.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/general_elements.html" for 127.0.0.1 at 2016-09-19 22:21:02 -0300
+
+ActionController::RoutingError (No route matches [GET] "/general_elements.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.6ms)
+
+
+Started GET "/general_elements.html" for 127.0.0.1 at 2016-09-19 22:21:02 -0300
+
+ActionController::RoutingError (No route matches [GET] "/general_elements.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (41.9ms)
+
+
+Started GET "/general_elements.html" for 127.0.0.1 at 2016-09-19 22:21:30 -0300
+
+ActionController::RoutingError (No route matches [GET] "/general_elements.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.6ms)
+
+
+Started GET "/general_elements.html" for 127.0.0.1 at 2016-09-19 22:21:30 -0300
+
+ActionController::RoutingError (No route matches [GET] "/general_elements.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (39.7ms)
+
+
+Started GET "/general_elements.html" for 127.0.0.1 at 2016-09-19 22:21:39 -0300
+
+ActionController::RoutingError (No route matches [GET] "/general_elements.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.8ms)
+
+
+Started GET "/general_elements.html" for 127.0.0.1 at 2016-09-19 22:21:39 -0300
+
+ActionController::RoutingError (No route matches [GET] "/general_elements.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.2ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2016-09-19 22:22:20 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidenav.html.erb (2.4ms)
+  Rendered partials/_topnav.html.erb (5.5ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 85ms (Views: 84.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 22:22:23 -0300
+
+SyntaxError (/home/eseeme/Documents/sw/Proyecto/app/controllers/servicios_controller.rb:26: syntax error, unexpected keyword_else, expecting keyword_end
+/home/eseeme/Documents/sw/Proyecto/app/controllers/servicios_controller.rb:71: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/servicios_controller.rb:26: syntax error, unexpected keyword_else, expecting keyword_end
+  app/controllers/servicios_controller.rb:71: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.0ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 22:22:23 -0300
+
+SyntaxError (/home/eseeme/Documents/sw/Proyecto/app/controllers/servicios_controller.rb:26: syntax error, unexpected keyword_else, expecting keyword_end
+/home/eseeme/Documents/sw/Proyecto/app/controllers/servicios_controller.rb:71: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/servicios_controller.rb:26: syntax error, unexpected keyword_else, expecting keyword_end
+  app/controllers/servicios_controller.rb:71: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (45.3ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 22:23:09 -0300
+Processing by ServiciosController#index as HTML
+  [1m[36m (20.2ms)[0m  [1mSELECT COUNT(*) FROM "servicios"[0m
+  Rendered servicios/index.html.erb within layouts/application (26.0ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 20.9ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    22:           <th>Precio</th>
+    23:           <th>Descripcion</th>
+    24:         </tr>
+    25:         <% @categorias.each do |categoria| %>
+    26:         <tr>
+    27:           <td><%= servicio.id %></td>
+    28:           <td><%= servicio.nombre %></td>
+  app/views/servicios/index.html.erb:25:in `_app_views_servicios_index_html_erb__585617372__671387338'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.5ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 22:23:43 -0300
+Processing by ServiciosController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "servicios"
+  [1m[36mServicio Load (1.1ms)[0m  [1mSELECT "servicios".* FROM "servicios"  ORDER BY servicio.id ASC[0m
+PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "servicio"
+LINE 1: SELECT "servicios".* FROM "servicios"  ORDER BY servicio.id ...
+                                                        ^
+: SELECT "servicios".* FROM "servicios"  ORDER BY servicio.id ASC
+  Rendered servicios/index.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.4ms)
+
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "servicio"
+LINE 1: SELECT "servicios".* FROM "servicios"  ORDER BY servicio.id ...
+                                                        ^
+: SELECT "servicios".* FROM "servicios"  ORDER BY servicio.id ASC):
+    22:           <th>Precio</th>
+    23:           <th>Descripcion</th>
+    24:         </tr>
+    25:         <% @servicios.each do |servicio| %>
+    26:         <tr>
+    27:           <td><%= servicio.id %></td>
+    28:           <td><%= servicio.nombre %></td>
+  app/views/servicios/index.html.erb:25:in `_app_views_servicios_index_html_erb__585617372__659172938'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.2ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 22:23:46 -0300
+Processing by ServiciosController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "servicios"
+  [1m[36mServicio Load (1.3ms)[0m  [1mSELECT "servicios".* FROM "servicios"  ORDER BY servicio.id ASC[0m
+PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "servicio"
+LINE 1: SELECT "servicios".* FROM "servicios"  ORDER BY servicio.id ...
+                                                        ^
+: SELECT "servicios".* FROM "servicios"  ORDER BY servicio.id ASC
+  Rendered servicios/index.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.6ms)
+
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "servicio"
+LINE 1: SELECT "servicios".* FROM "servicios"  ORDER BY servicio.id ...
+                                                        ^
+: SELECT "servicios".* FROM "servicios"  ORDER BY servicio.id ASC):
+    22:           <th>Precio</th>
+    23:           <th>Descripcion</th>
+    24:         </tr>
+    25:         <% @servicios.each do |servicio| %>
+    26:         <tr>
+    27:           <td><%= servicio.id %></td>
+    28:           <td><%= servicio.nombre %></td>
+  app/views/servicios/index.html.erb:25:in `_app_views_servicios_index_html_erb__585617372__659172938'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.7ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 22:25:21 -0300
+Processing by ServiciosController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "servicios"
+  [1m[36mServicio Load (0.3ms)[0m  [1mSELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC[0m
+  Rendered servicios/index.html.erb within layouts/application (9.1ms)
+  Rendered partials/_sidenav.html.erb (2.5ms)
+  Rendered partials/_topnav.html.erb (6.0ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 158ms (Views: 151.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/servicios/mostrar/1" for 127.0.0.1 at 2016-09-19 22:25:34 -0300
+Processing by ServiciosController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mServicio Load (0.3ms)[0m  SELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered servicios/mostrar.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `nombre' for nil:NilClass):
+     6:   <table summary="Detalle del plan">
+     7:     <tr>
+     8:       <th>Nombre</th>
+     9:       <td><%= @categoria.nombre %></td>
+    10:     </tr>
+    11:     <tr>
+    12:       <th>Apellidos</th>
+  app/views/servicios/mostrar.html.erb:9:in `_app_views_servicios_mostrar_html_erb___679312530__667129988'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.4ms)
+
+
+Started GET "/servicios/mostrar/1" for 127.0.0.1 at 2016-09-19 22:25:35 -0300
+Processing by ServiciosController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mServicio Load (0.3ms)[0m  [1mSELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered servicios/mostrar.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `nombre' for nil:NilClass):
+     6:   <table summary="Detalle del plan">
+     7:     <tr>
+     8:       <th>Nombre</th>
+     9:       <td><%= @categoria.nombre %></td>
+    10:     </tr>
+    11:     <tr>
+    12:       <th>Apellidos</th>
+  app/views/servicios/mostrar.html.erb:9:in `_app_views_servicios_mostrar_html_erb___679312530__662553988'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.9ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 22:25:42 -0300
+Processing by ServiciosController#categorias as HTML
+  Rendered servicios/categorias.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `size' for nil:NilClass):
+    4: <!-- page content -->
+    5:     <%= link_to("<< Volver a Servicios", {:action=>'index'}, :class => 'back-link')%>
+    6:     <div class="flex-container">
+    7:       <div><%= pluralize(@categorias.size, 'categoria')%> encontrados.</div>
+    8:       <table class="listing">
+    9:         <tr class="header">
+   10:           <th>Nro de Plan</th>
+  app/views/servicios/categorias.html.erb:7:in `_app_views_servicios_categorias_html_erb__708581990__655090508'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.3ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 22:25:42 -0300
+Processing by ServiciosController#categorias as HTML
+  Rendered servicios/categorias.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `size' for nil:NilClass):
+    4: <!-- page content -->
+    5:     <%= link_to("<< Volver a Servicios", {:action=>'index'}, :class => 'back-link')%>
+    6:     <div class="flex-container">
+    7:       <div><%= pluralize(@categorias.size, 'categoria')%> encontrados.</div>
+    8:       <table class="listing">
+    9:         <tr class="header">
+   10:           <th>Nro de Plan</th>
+  app/views/servicios/categorias.html.erb:7:in `_app_views_servicios_categorias_html_erb__708581990__633689108'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (40.5ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 22:26:32 -0300
+Processing by ServiciosController#categorias as HTML
+  Rendered servicios/categorias.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `size' for nil:NilClass):
+    4: <!-- page content -->
+    5:     <%= link_to("<< Volver a Servicios", {:action=>'index'}, :class => 'back-link')%>
+    6:     <div class="flex-container">
+    7:       <div><%= pluralize(@categorias.size, 'categoria')%> encontrados.</div>
+    8:       <table class="listing">
+    9:         <tr class="header">
+   10:           <th>Nro de Plan</th>
+  app/views/servicios/categorias.html.erb:7:in `_app_views_servicios_categorias_html_erb__708581990__655090508'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.4ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 22:26:32 -0300
+Processing by ServiciosController#categorias as HTML
+  Rendered servicios/categorias.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `size' for nil:NilClass):
+    4: <!-- page content -->
+    5:     <%= link_to("<< Volver a Servicios", {:action=>'index'}, :class => 'back-link')%>
+    6:     <div class="flex-container">
+    7:       <div><%= pluralize(@categorias.size, 'categoria')%> encontrados.</div>
+    8:       <table class="listing">
+    9:         <tr class="header">
+   10:           <th>Nro de Plan</th>
+  app/views/servicios/categorias.html.erb:7:in `_app_views_servicios_categorias_html_erb__708581990__633689108'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.7ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 22:27:33 -0300
+Processing by ServiciosController#categorias as HTML
+  Rendered servicios/categorias.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `size' for nil:NilClass):
+    4: <!-- page content -->
+    5:     <%= link_to("<< Volver a Servicios", {:action=>'index'}, :class => 'back-link')%>
+    6:     <div class="flex-container">
+    7:       <div><%= pluralize(@categorias.size, 'categorias')%> encontrados.</div>
+    8:       <table class="listing">
+    9:         <tr class="header">
+   10:           <th>Nro de Plan</th>
+  app/views/servicios/categorias.html.erb:7:in `_app_views_servicios_categorias_html_erb__708581990__657366358'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.8ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 22:27:37 -0300
+Processing by ServiciosController#categorias as HTML
+  Rendered servicios/categorias.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `size' for nil:NilClass):
+    4: <!-- page content -->
+    5:     <%= link_to("<< Volver a Servicios", {:action=>'index'}, :class => 'back-link')%>
+    6:     <div class="flex-container">
+    7:       <div><%= pluralize(@categorias.size, 'categorias')%> encontrados.</div>
+    8:       <table class="listing">
+    9:         <tr class="header">
+   10:           <th>Nro de Plan</th>
+  app/views/servicios/categorias.html.erb:7:in `_app_views_servicios_categorias_html_erb__708581990__640039978'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.8ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 22:27:37 -0300
+Processing by ServiciosController#categorias as HTML
+  Rendered servicios/categorias.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `size' for nil:NilClass):
+    4: <!-- page content -->
+    5:     <%= link_to("<< Volver a Servicios", {:action=>'index'}, :class => 'back-link')%>
+    6:     <div class="flex-container">
+    7:       <div><%= pluralize(@categorias.size, 'categorias')%> encontrados.</div>
+    8:       <table class="listing">
+    9:         <tr class="header">
+   10:           <th>Nro de Plan</th>
+  app/views/servicios/categorias.html.erb:7:in `_app_views_servicios_categorias_html_erb__708581990__657366358'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.3ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 22:28:15 -0300
+Processing by ServiciosController#categorias as HTML
+  Rendered servicios/categorias.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `size' for nil:NilClass):
+    4: <!-- page content -->
+    5:     <%= link_to("<< Volver a Servicios", {:action=>'index'}, :class => 'back-link')%>
+    6:     <div class="flex-container">
+    7:       <div><%= pluralize(@categorias.size, 'categorias')%> encontrados.</div>
+    8:       <table class="listing">
+    9:         <tr class="header">
+   10:           <th>Nro de Plan</th>
+  app/views/servicios/categorias.html.erb:7:in `_app_views_servicios_categorias_html_erb__708581990__657366358'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.3ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 22:28:35 -0300
+Processing by ServiciosController#categorias as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "categoria"
+  [1m[36mCategoria Load (0.2ms)[0m  [1mSELECT "categoria".* FROM "categoria"  ORDER BY categoria.id ASC[0m
+  Rendered servicios/categorias.html.erb within layouts/application (9.1ms)
+  Rendered partials/_sidenav.html.erb (1.9ms)
+  Rendered partials/_topnav.html.erb (6.3ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 106ms (Views: 101.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 22:28:39 -0300
+Processing by ServiciosController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "servicios"
+  [1m[36mServicio Load (0.2ms)[0m  [1mSELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC[0m
+  Rendered servicios/index.html.erb within layouts/application (8.2ms)
+  Rendered partials/_sidenav.html.erb (2.8ms)
+  Rendered partials/_topnav.html.erb (6.8ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 119ms (Views: 112.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 22:28:42 -0300
+Processing by ServiciosController#categorias as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "categoria"
+  [1m[36mCategoria Load (0.3ms)[0m  [1mSELECT "categoria".* FROM "categoria"  ORDER BY categoria.id ASC[0m
+  Rendered servicios/categorias.html.erb within layouts/application (3.3ms)
+  Rendered partials/_sidenav.html.erb (2.0ms)
+  Rendered partials/_topnav.html.erb (7.0ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 115ms (Views: 113.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/servicios/crear/1" for 127.0.0.1 at 2016-09-19 22:28:56 -0300
+Processing by ServiciosController#crear as HTML
+  Parameters: {"id"=>"1"}
+  Rendered servicios/crear.html.erb within layouts/application (1.9ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (6.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 103ms (Views: 101.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 22:29:09 -0300
+Processing by ServiciosController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "servicios"
+  [1m[36mServicio Load (0.2ms)[0m  [1mSELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC[0m
+  Rendered servicios/index.html.erb within layouts/application (2.5ms)
+  Rendered partials/_sidenav.html.erb (2.6ms)
+  Rendered partials/_topnav.html.erb (6.7ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 106ms (Views: 105.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 22:29:14 -0300
+Processing by ServiciosController#categorias as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "categoria"
+  [1m[36mCategoria Load (0.2ms)[0m  [1mSELECT "categoria".* FROM "categoria"  ORDER BY categoria.id ASC[0m
+  Rendered servicios/categorias.html.erb within layouts/application (3.9ms)
+  Rendered partials/_sidenav.html.erb (2.0ms)
+  Rendered partials/_topnav.html.erb (6.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 115ms (Views: 113.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/servicios/crear/1" for 127.0.0.1 at 2016-09-19 22:29:17 -0300
+Processing by ServiciosController#crear as HTML
+  Parameters: {"id"=>"1"}
+  Rendered servicios/crear.html.erb within layouts/application (1.9ms)
+  Rendered partials/_sidenav.html.erb (3.7ms)
+  Rendered partials/_topnav.html.erb (7.4ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 140ms (Views: 138.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 22:29:21 -0300
+Processing by ServiciosController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "servicios"
+  [1m[36mServicio Load (0.3ms)[0m  [1mSELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC[0m
+  Rendered servicios/index.html.erb within layouts/application (4.6ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (8.2ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 112ms (Views: 110.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 22:29:23 -0300
+Processing by ServiciosController#categorias as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "categoria"
+  [1m[36mCategoria Load (0.3ms)[0m  [1mSELECT "categoria".* FROM "categoria"  ORDER BY categoria.id ASC[0m
+  Rendered servicios/categorias.html.erb within layouts/application (5.0ms)
+  Rendered partials/_sidenav.html.erb (2.0ms)
+  Rendered partials/_topnav.html.erb (7.4ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 126ms (Views: 124.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/servicios/crear/2" for 127.0.0.1 at 2016-09-19 22:30:25 -0300
+Processing by ServiciosController#crear as HTML
+  Parameters: {"id"=>"2"}
+  Rendered servicios/crear.html.erb within layouts/application (1.0ms)
+  Rendered partials/_sidenav.html.erb (4.0ms)
+  Rendered partials/_topnav.html.erb (8.4ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 128ms (Views: 127.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 22:31:46 -0300
+Processing by ServiciosController#categorias as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "categoria"
+  [1m[36mCategoria Load (0.2ms)[0m  [1mSELECT "categoria".* FROM "categoria"  ORDER BY categoria.id ASC[0m
+  Rendered servicios/categorias.html.erb within layouts/application (2.8ms)
+  Rendered partials/_sidenav.html.erb (2.3ms)
+  Rendered partials/_topnav.html.erb (9.5ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 118ms (Views: 117.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/servicios/crear/2" for 127.0.0.1 at 2016-09-19 22:31:52 -0300
+Processing by ServiciosController#crear as HTML
+  Parameters: {"id"=>"2"}
+  Rendered servicios/crear.html.erb within layouts/application (2.5ms)
+  Rendered partials/_sidenav.html.erb (2.0ms)
+  Rendered partials/_topnav.html.erb (7.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 177ms (Views: 176.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/servicios/crear_servicio" for 127.0.0.1 at 2016-09-19 22:32:02 -0300
+Processing by ServiciosController#crear_servicio as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3WtNV76IgR8j2EG3gKio/MHQ+Rhn+NKliWP5jf4p3rdOTXFms2tNA3V0jp5eDBFyEySjVnKNlNWUPAaSgRgmGg==", "servicio"=>{"nombre"=>"asasas", "precio"=>"111111", "descripcion"=>"sasasas"}, "commit"=>"Crear Plan"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `plan_params' for #<ServiciosController:0xafbbd9b0>):
+  app/controllers/servicios_controller.rb:14:in `crear_servicio'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (43.9ms)
+
+
+Started GET "/servicios/crear_servicio" for 127.0.0.1 at 2016-09-19 22:33:08 -0300
+Processing by ServiciosController#crear_servicio as HTML
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `plan_params' for #<ServiciosController:0xb121b2d4>):
+  app/controllers/servicios_controller.rb:14:in `crear_servicio'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (39.4ms)
+
+
+Started GET "/servicios/" for 127.0.0.1 at 2016-09-19 22:33:11 -0300
+Processing by ServiciosController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "servicios"
+  [1m[36mServicio Load (0.3ms)[0m  [1mSELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC[0m
+  Rendered servicios/index.html.erb within layouts/application (12.2ms)
+  Rendered partials/_sidenav.html.erb (1.9ms)
+  Rendered partials/_topnav.html.erb (6.5ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 112ms (Views: 107.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 22:33:14 -0300
+Processing by ServiciosController#categorias as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "categoria"
+  [1m[36mCategoria Load (0.3ms)[0m  [1mSELECT "categoria".* FROM "categoria"  ORDER BY categoria.id ASC[0m
+  Rendered servicios/categorias.html.erb within layouts/application (8.1ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (6.4ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 107ms (Views: 102.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/servicios/crear/2" for 127.0.0.1 at 2016-09-19 22:33:15 -0300
+Processing by ServiciosController#crear as HTML
+  Parameters: {"id"=>"2"}
+  Rendered servicios/crear.html.erb within layouts/application (1.6ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (6.6ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 112ms (Views: 111.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/servicios/crear_servicio" for 127.0.0.1 at 2016-09-19 22:33:21 -0300
+Processing by ServiciosController#crear_servicio as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J6SulNzVhmnUv4cEhDzFgNmsWGNpkZxhMWDNY7zKwKi0gpKl0TZKdYITSC1amHwOC1gCLXzk2hEsPzJ8w/s4BQ==", "servicio"=>{"nombre"=>"asasas", "precio"=>"121212", "descripcion"=>"wsasasa"}, "commit"=>"Crear Plan"}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `plan_params' for #<ServiciosController:0xafe25db0>):
+  app/controllers/servicios_controller.rb:14:in `crear_servicio'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.8ms)
+
+
+Started GET "/servicios/" for 127.0.0.1 at 2016-09-19 22:35:52 -0300
+Processing by ServiciosController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "servicios"
+  [1m[36mServicio Load (0.2ms)[0m  [1mSELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC[0m
+  Rendered servicios/index.html.erb within layouts/application (9.3ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (6.8ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 112ms (Views: 103.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 22:35:54 -0300
+Processing by ServiciosController#categorias as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "categoria"
+  [1m[36mCategoria Load (0.2ms)[0m  [1mSELECT "categoria".* FROM "categoria"  ORDER BY categoria.id ASC[0m
+  Rendered servicios/categorias.html.erb within layouts/application (7.9ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (6.6ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 108ms (Views: 103.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/servicios/crear/2" for 127.0.0.1 at 2016-09-19 22:35:56 -0300
+Processing by ServiciosController#crear as HTML
+  Parameters: {"id"=>"2"}
+  Rendered servicios/crear.html.erb within layouts/application (1.8ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (7.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 107ms (Views: 106.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/servicios/crear_servicio" for 127.0.0.1 at 2016-09-19 22:36:06 -0300
+Processing by ServiciosController#crear_servicio as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zAuQQJqeFSo+3D4wq0Pii62iPOh6ED2THe8irXaTHwxfLaxxl33ZNmhw8Rl151sFf1Zmpm9le+MAsN2yCaLnoQ==", "servicio"=>{"nombre"=>"holo", "precio"=>"100000", "descripcion"=>"holo"}, "commit"=>"Crear Plan"}
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCategoria Load (0.2ms)[0m  [1mSELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 16ms (ActiveRecord: 1.9ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Categoria with 'id'=):
+  app/controllers/servicios_controller.rb:16:in `crear_servicio'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (40.7ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 22:36:55 -0300
+Processing by ServiciosController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "servicios"
+  [1m[36mServicio Load (0.3ms)[0m  [1mSELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC[0m
+  Rendered servicios/index.html.erb within layouts/application (9.1ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (6.2ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 112ms (Views: 104.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 22:36:57 -0300
+Processing by ServiciosController#categorias as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "categoria"
+  [1m[36mCategoria Load (0.2ms)[0m  [1mSELECT "categoria".* FROM "categoria"  ORDER BY categoria.id ASC[0m
+  Rendered servicios/categorias.html.erb within layouts/application (8.4ms)
+  Rendered partials/_sidenav.html.erb (2.2ms)
+  Rendered partials/_topnav.html.erb (6.6ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 112ms (Views: 108.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/servicios/crear/2" for 127.0.0.1 at 2016-09-19 22:36:58 -0300
+Processing by ServiciosController#crear as HTML
+  Parameters: {"id"=>"2"}
+  Rendered servicios/crear.html.erb within layouts/application (1.2ms)
+  Rendered partials/_sidenav.html.erb (3.7ms)
+  Rendered partials/_topnav.html.erb (8.3ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 135ms (Views: 133.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/servicios/crear_servicio" for 127.0.0.1 at 2016-09-19 22:37:03 -0300
+Processing by ServiciosController#crear_servicio as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q7zEUj7fSIT54XOBx4GsB9Xa+YwFiRKUeaQ2quigFrI4mvhjMzyEmK9NvKgZJRWJBy6jwhD8VORk+8m1l5HuHw==", "servicio"=>{"nombre"=>"Default", "precio"=>"1111", "descripcion"=>"assas"}, "commit"=>"Crear Plan"}
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCategoria Load (0.2ms)[0m  [1mSELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 17ms (ActiveRecord: 1.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Categoria with 'id'=id):
+  app/controllers/servicios_controller.rb:16:in `crear_servicio'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (24.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (45.9ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 22:42:30 -0300
+Processing by ServiciosController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "servicios"
+  [1m[36mServicio Load (0.3ms)[0m  [1mSELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC[0m
+  Rendered servicios/index.html.erb within layouts/application (10.5ms)
+  Rendered partials/_sidenav.html.erb (2.2ms)
+  Rendered partials/_topnav.html.erb (6.6ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 116ms (Views: 107.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 22:42:32 -0300
+Processing by ServiciosController#categorias as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "categoria"
+  [1m[36mCategoria Load (0.3ms)[0m  [1mSELECT "categoria".* FROM "categoria"  ORDER BY categoria.id ASC[0m
+  Rendered servicios/categorias.html.erb within layouts/application (13.3ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (8.4ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 135ms (Views: 130.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/servicios/crear/1" for 127.0.0.1 at 2016-09-19 22:42:33 -0300
+Processing by ServiciosController#crear as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCategoria Load (0.2ms)[0m  SELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered servicios/crear.html.erb within layouts/application (1.6ms)
+  Rendered partials/_sidenav.html.erb (2.6ms)
+  Rendered partials/_topnav.html.erb (8.5ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 131ms (Views: 129.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/servicios/crear_servicio" for 127.0.0.1 at 2016-09-19 22:42:38 -0300
+Processing by ServiciosController#crear_servicio as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yXKNYSDWnraizYXYmXp0djBEcYF3wztwXYmDLN0f+ARaVLFQLTVSqvRhSvFH3s344rArz2K2fQBA1nwzoi4AqQ==", "servicio"=>{"nombre"=>"1312313", "precio"=>"13131", "descripcion"=>"12312313"}, "commit"=>"Crear Plan"}
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategoria Load (0.2ms)[0m  SELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 23ms (ActiveRecord: 2.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Categoria with 'id'=):
+  app/controllers/servicios_controller.rb:17:in `crear_servicio'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (42.6ms)
+
+
+Started GET "/servicios/" for 127.0.0.1 at 2016-09-19 22:47:42 -0300
+Processing by ServiciosController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "servicios"[0m
+  [1m[35mServicio Load (0.3ms)[0m  SELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC
+  Rendered servicios/index.html.erb within layouts/application (3.2ms)
+  Rendered partials/_sidenav.html.erb (2.6ms)
+  Rendered partials/_topnav.html.erb (7.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 122ms (Views: 120.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 22:47:44 -0300
+Processing by ServiciosController#categorias as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "categoria"[0m
+  [1m[35mCategoria Load (0.2ms)[0m  SELECT "categoria".* FROM "categoria"  ORDER BY categoria.id ASC
+  Rendered servicios/categorias.html.erb within layouts/application (2.7ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (6.9ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 105ms (Views: 104.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/servicios/crear/1" for 127.0.0.1 at 2016-09-19 22:47:45 -0300
+Processing by ServiciosController#crear as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategoria Load (0.1ms)[0m  [1mSELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered servicios/crear.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/home/eseeme/Documents/sw/Proyecto/app/views/servicios/crear.html.erb:48: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/servicios/crear.html.erb:48: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.2ms)
+
+
+Started GET "/servicios/crear/1" for 127.0.0.1 at 2016-09-19 22:47:45 -0300
+Processing by ServiciosController#crear as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCategoria Load (0.3ms)[0m  SELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered servicios/crear.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/home/eseeme/Documents/sw/Proyecto/app/views/servicios/crear.html.erb:48: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/servicios/crear.html.erb:48: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (23.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (48.3ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 22:48:02 -0300
+Processing by ServiciosController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "servicios"[0m
+  [1m[35mServicio Load (0.3ms)[0m  SELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC
+  Rendered servicios/index.html.erb within layouts/application (7.7ms)
+  Rendered partials/_sidenav.html.erb (2.0ms)
+  Rendered partials/_topnav.html.erb (6.2ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 122ms (Views: 120.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 22:48:03 -0300
+Processing by ServiciosController#categorias as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "categoria"[0m
+  [1m[35mCategoria Load (0.2ms)[0m  SELECT "categoria".* FROM "categoria"  ORDER BY categoria.id ASC
+  Rendered servicios/categorias.html.erb within layouts/application (2.9ms)
+  Rendered partials/_sidenav.html.erb (2.8ms)
+  Rendered partials/_topnav.html.erb (10.5ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 112ms (Views: 111.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/servicios/crear/2" for 127.0.0.1 at 2016-09-19 22:48:04 -0300
+Processing by ServiciosController#crear as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategoria Load (0.2ms)[0m  [1mSELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered servicios/crear.html.erb within layouts/application (2.2ms)
+  Rendered partials/_sidenav.html.erb (2.5ms)
+  Rendered partials/_topnav.html.erb (9.1ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 115ms (Views: 114.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/servicios/crear_servicio/2" for 127.0.0.1 at 2016-09-19 22:48:20 -0300
+Processing by ServiciosController#crear_servicio as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4vHkiGhAilPYtJ1e57bSG1HSl0Mrf1oKadEIBoQF6Bdx19i5ZaNGT44YUnc5EmuVgybNDT4KHHp0jvcZ+zQQug==", "servicio"=>{"nombre"=>"hola", "precio"=>"111111", "descripcion"=>"holo"}, "commit"=>"Crear Plan", "id"=>"2"}
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCategoria Load (0.2ms)[0m  [1mSELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (45.3ms)[0m  [1mINSERT INTO "servicios" ("nombre", "precio", "descripcion", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["nombre", "hola"], ["precio", 111111], ["descripcion", "holo"], ["created_at", "2016-09-20 01:48:20.357109"], ["updated_at", "2016-09-20 01:48:20.357109"]]
+  [1m[35m (1033.9ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (34.7ms)[0m  INSERT INTO "admins_servicios" ("admin_id", "servicio_id") VALUES ($1, $2)  [["admin_id", 1], ["servicio_id", 2]]
+  [1m[36m (21.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "servicios" SET "categoria_id" = $1, "updated_at" = $2 WHERE "servicios"."id" = $3[0m  [["categoria_id", 2], ["updated_at", "2016-09-20 01:48:21.665573"], ["id", 2]]
+  [1m[35m (2.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/servicios
+Completed 302 Found in 1318ms (ActiveRecord: 1139.9ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 22:48:21 -0300
+Processing by ServiciosController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "servicios"[0m
+  [1m[35mServicio Load (0.2ms)[0m  SELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC
+  Rendered servicios/index.html.erb within layouts/application (4.6ms)
+  Rendered partials/_sidenav.html.erb (3.2ms)
+  Rendered partials/_topnav.html.erb (10.2ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 137ms (Views: 135.1ms | ActiveRecord: 0.6ms)
+  [1m[36mServicio Load (0.4ms)[0m  [1mSELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mAdmin Load (0.5ms)[0m  SELECT "admins".* FROM "admins" INNER JOIN "admins_servicios" ON "admins"."id" = "admins_servicios"."admin_id" WHERE "admins_servicios"."servicio_id" = $1  [["servicio_id", 2]]
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 22:50:28 -0300
+Processing by ServiciosController#categorias as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "categoria"[0m
+  [1m[35mCategoria Load (0.2ms)[0m  SELECT "categoria".* FROM "categoria"  ORDER BY categoria.id ASC
+  Rendered servicios/categorias.html.erb within layouts/application (2.3ms)
+  Rendered partials/_sidenav.html.erb (2.0ms)
+  Rendered partials/_topnav.html.erb (6.3ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 109ms (Views: 107.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/servicios/crear/3" for 127.0.0.1 at 2016-09-19 22:50:30 -0300
+Processing by ServiciosController#crear as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategoria Load (0.2ms)[0m  [1mSELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered servicios/crear.html.erb within layouts/application (1.3ms)
+  Rendered partials/_sidenav.html.erb (2.2ms)
+  Rendered partials/_topnav.html.erb (7.6ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 133ms (Views: 131.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/servicios/crear_servicio/3" for 127.0.0.1 at 2016-09-19 22:50:54 -0300
+Processing by ServiciosController#crear_servicio as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/AUNZU6qSVgiCL+W5gP+G3JF0p6B+LS8a/nxwRyq03tvIzFUQ0mFRHSkcL84p0eVoLGI0JSN8sx2pg7eY5sr1g==", "servicio"=>{"nombre"=>"ilimita3", "precio"=>"90000999", "descripcion"=>"asasas"}, "commit"=>"Crear Plan", "id"=>"3"}
+  [1m[35mAdmin Load (0.4ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCategoria Load (0.2ms)[0m  [1mSELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "servicios" ("nombre", "precio", "descripcion", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["nombre", "ilimita3"], ["precio", 90000999], ["descripcion", "asasas"], ["created_at", "2016-09-20 01:50:54.230346"], ["updated_at", "2016-09-20 01:50:54.230346"]]
+  [1m[35m (60.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "admins_servicios" ("admin_id", "servicio_id") VALUES ($1, $2)  [["admin_id", 1], ["servicio_id", 3]]
+  [1m[36m (40.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "servicios" SET "categoria_id" = $1, "updated_at" = $2 WHERE "servicios"."id" = $3[0m  [["categoria_id", 3], ["updated_at", "2016-09-20 01:50:54.338871"], ["id", 3]]
+  [1m[35m (27.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/servicios
+Completed 302 Found in 142ms (ActiveRecord: 131.2ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 22:50:54 -0300
+Processing by ServiciosController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "servicios"[0m
+  [1m[35mServicio Load (0.3ms)[0m  SELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC
+  Rendered servicios/index.html.erb within layouts/application (4.4ms)
+  Rendered partials/_sidenav.html.erb (2.3ms)
+  Rendered partials/_topnav.html.erb (6.4ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 105ms (Views: 104.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 22:53:15 -0300
+Processing by ServiciosController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "servicios"[0m
+  [1m[35mServicio Load (0.3ms)[0m  SELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC
+  Rendered servicios/index.html.erb within layouts/application (4.1ms)
+  Rendered partials/_sidenav.html.erb (2.0ms)
+  Rendered partials/_topnav.html.erb (6.3ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 100ms (Views: 98.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/servicios/mostrar/2" for 127.0.0.1 at 2016-09-19 22:53:17 -0300
+Processing by ServiciosController#mostrar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mServicio Load (0.2ms)[0m  [1mSELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered servicios/mostrar.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `plan' for #<Servicio:0xb1f28850>):
+    10:     </tr>
+    11:     <tr>
+    12:       <th>Apellidos</th>
+    13:       <td><%= @servicio.plan %></td>
+    14:     </tr>
+    15:     <tr>
+    16:       <th>Rut</th>
+  app/views/servicios/mostrar.html.erb:13:in `_app_views_servicios_mostrar_html_erb___679312530__654754538'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.3ms)
+
+
+Started GET "/servicios/mostrar/2" for 127.0.0.1 at 2016-09-19 22:53:17 -0300
+Processing by ServiciosController#mostrar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mServicio Load (0.3ms)[0m  SELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered servicios/mostrar.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `plan' for #<Servicio:0xb192fad4>):
+    10:     </tr>
+    11:     <tr>
+    12:       <th>Apellidos</th>
+    13:       <td><%= @servicio.plan %></td>
+    14:     </tr>
+    15:     <tr>
+    16:       <th>Rut</th>
+  app/views/servicios/mostrar.html.erb:13:in `_app_views_servicios_mostrar_html_erb___679312530__657885918'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (40.2ms)
+
+
+Started GET "/servicios/" for 127.0.0.1 at 2016-09-19 22:54:02 -0300
+Processing by ServiciosController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "servicios"[0m
+  [1m[35mServicio Load (0.5ms)[0m  SELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC
+  Rendered servicios/index.html.erb within layouts/application (7.2ms)
+  Rendered partials/_sidenav.html.erb (2.2ms)
+  Rendered partials/_topnav.html.erb (6.3ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 105ms (Views: 103.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/servicios/mostrar/2" for 127.0.0.1 at 2016-09-19 22:54:04 -0300
+Processing by ServiciosController#mostrar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mServicio Load (0.2ms)[0m  [1mSELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered servicios/mostrar.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `descuento' for #<Servicio:0xb1961958>):
+    14:     </tr>
+    15:     <tr>
+    16:       <th>Plan</th>
+    17:       <td><%= @servicio.descuento %></td>
+    18:     </tr>
+    19:     <tr>
+    20:       <th>Creacion</th>
+  app/views/servicios/mostrar.html.erb:17:in `_app_views_servicios_mostrar_html_erb___679312530__657826148'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (43.4ms)
+
+
+Started GET "/servicios/mostrar/2" for 127.0.0.1 at 2016-09-19 22:54:04 -0300
+Processing by ServiciosController#mostrar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mServicio Load (0.2ms)[0m  SELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered servicios/mostrar.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `descuento' for #<Servicio:0xb1ece580>):
+    14:     </tr>
+    15:     <tr>
+    16:       <th>Plan</th>
+    17:       <td><%= @servicio.descuento %></td>
+    18:     </tr>
+    19:     <tr>
+    20:       <th>Creacion</th>
+  app/views/servicios/mostrar.html.erb:17:in `_app_views_servicios_mostrar_html_erb___679312530__654939278'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (22.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (41.9ms)
+
+
+Started GET "/servicios/" for 127.0.0.1 at 2016-09-19 22:54:21 -0300
+Processing by ServiciosController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "servicios"[0m
+  [1m[35mServicio Load (0.2ms)[0m  SELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC
+  Rendered servicios/index.html.erb within layouts/application (4.7ms)
+  Rendered partials/_sidenav.html.erb (2.0ms)
+  Rendered partials/_topnav.html.erb (6.3ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 101ms (Views: 99.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/servicios/mostrar/2" for 127.0.0.1 at 2016-09-19 22:54:22 -0300
+Processing by ServiciosController#mostrar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mServicio Load (0.2ms)[0m  [1mSELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered servicios/mostrar.html.erb within layouts/application (8.9ms)
+  Rendered partials/_sidenav.html.erb (2.0ms)
+  Rendered partials/_topnav.html.erb (6.2ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 108ms (Views: 106.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/servicios/mostrar/2" for 127.0.0.1 at 2016-09-19 22:54:49 -0300
+Processing by ServiciosController#mostrar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mServicio Load (0.2ms)[0m  SELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered servicios/mostrar.html.erb within layouts/application (1.9ms)
+  Rendered partials/_sidenav.html.erb (2.5ms)
+  Rendered partials/_topnav.html.erb (7.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 100ms (Views: 98.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/servicios/mostrar/3" for 127.0.0.1 at 2016-09-19 22:54:57 -0300
+Processing by ServiciosController#mostrar as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mServicio Load (0.1ms)[0m  [1mSELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered servicios/mostrar.html.erb within layouts/application (1.0ms)
+  Rendered partials/_sidenav.html.erb (2.2ms)
+  Rendered partials/_topnav.html.erb (6.8ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 127ms (Views: 126.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/servicios/mostrar/1" for 127.0.0.1 at 2016-09-19 22:55:00 -0300
+Processing by ServiciosController#mostrar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mServicio Load (0.2ms)[0m  SELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered servicios/mostrar.html.erb within layouts/application (0.5ms)
+  Rendered partials/_sidenav.html.erb (2.3ms)
+  Rendered partials/_topnav.html.erb (7.6ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 142ms (Views: 141.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/servicios/" for 127.0.0.1 at 2016-09-19 22:56:08 -0300
+Processing by ServiciosController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "servicios"[0m
+  [1m[35mServicio Load (0.3ms)[0m  SELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC
+  Rendered servicios/index.html.erb within layouts/application (4.3ms)
+  Rendered partials/_sidenav.html.erb (2.4ms)
+  Rendered partials/_topnav.html.erb (6.7ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 109ms (Views: 107.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/servicios/editar/1" for 127.0.0.1 at 2016-09-19 22:56:10 -0300
+Processing by ServiciosController#editar as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mServicio Load (0.3ms)[0m  [1mSELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered servicios/editar.html.erb within layouts/application (0.8ms)
+  Rendered partials/_sidenav.html.erb (1.9ms)
+  Rendered partials/_topnav.html.erb (6.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 100ms (Views: 98.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/servicios/mostrar/2" for 127.0.0.1 at 2016-09-19 22:56:15 -0300
+Processing by ServiciosController#mostrar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mServicio Load (0.2ms)[0m  SELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered servicios/mostrar.html.erb within layouts/application (0.6ms)
+  Rendered partials/_sidenav.html.erb (2.3ms)
+  Rendered partials/_topnav.html.erb (7.2ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 137ms (Views: 135.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/servicios/editar/2" for 127.0.0.1 at 2016-09-19 22:56:18 -0300
+Processing by ServiciosController#editar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mServicio Load (0.2ms)[0m  [1mSELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered servicios/editar.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidenav.html.erb (2.8ms)
+  Rendered partials/_topnav.html.erb (10.2ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 152ms (Views: 150.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/servicios/" for 127.0.0.1 at 2016-09-19 22:57:58 -0300
+Processing by ServiciosController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "servicios"
+  [1m[36mServicio Load (0.3ms)[0m  [1mSELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC[0m
+  Rendered servicios/index.html.erb within layouts/application (6.3ms)
+  Rendered partials/_sidenav.html.erb (4.2ms)
+  Rendered partials/_topnav.html.erb (8.8ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 142ms (Views: 140.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/servicios/editar/2" for 127.0.0.1 at 2016-09-19 22:57:59 -0300
+Processing by ServiciosController#editar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mServicio Load (0.2ms)[0m  SELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered servicios/editar.html.erb within layouts/application (2.5ms)
+  Rendered partials/_sidenav.html.erb (4.4ms)
+  Rendered partials/_topnav.html.erb (15.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 132ms (Views: 131.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/servicios/editar_servicio/2" for 127.0.0.1 at 2016-09-19 22:58:03 -0300
+Processing by ServiciosController#editar_servicio as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qPDLscohYY5m1dS0XKvoy1d4dKQyKmutXPk2rKHvfIs71veAx8KtkjB5G52CD1FFhYwu6idfLd1Bpsmz3t6EJg==", "servicio"=>{"nombre"=>"hola", "precio"=>"111111", "descripcion"=>"121212"}, "commit"=>"Editar Servicio", "id"=>"2"}
+  [1m[36mServicio Load (0.2ms)[0m  [1mSELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "servicios" SET "descripcion" = $1, "updated_at" = $2 WHERE "servicios"."id" = $3[0m  [["descripcion", "121212"], ["updated_at", "2016-09-20 01:58:03.181882"], ["id", 2]]
+  [1m[35m (66.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/servicios/mostrar/2
+Completed 302 Found in 74ms (ActiveRecord: 67.5ms)
+
+
+Started GET "/servicios/mostrar/2" for 127.0.0.1 at 2016-09-19 22:58:03 -0300
+Processing by ServiciosController#mostrar as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mServicio Load (0.3ms)[0m  [1mSELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered servicios/mostrar.html.erb within layouts/application (0.6ms)
+  Rendered partials/_sidenav.html.erb (2.0ms)
+  Rendered partials/_topnav.html.erb (6.4ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 140ms (Views: 138.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 22:58:05 -0300
+Processing by ServiciosController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "servicios"
+  [1m[36mServicio Load (0.3ms)[0m  [1mSELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC[0m
+  Rendered servicios/index.html.erb within layouts/application (3.6ms)
+  Rendered partials/_sidenav.html.erb (1.9ms)
+  Rendered partials/_topnav.html.erb (6.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 102ms (Views: 100.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 22:59:30 -0300
+Processing by ServiciosController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "servicios"
+  [1m[36mServicio Load (0.3ms)[0m  [1mSELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC[0m
+  Rendered servicios/index.html.erb within layouts/application (13.1ms)
+  Rendered partials/_sidenav.html.erb (2.2ms)
+  Rendered partials/_topnav.html.erb (7.5ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 146ms (Views: 135.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.self-4b8e38670c4f41ddc6bace1fb078928f1c84104e141da3b17f7b44d958f5186d.css?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.self-705d7592a526517fe86a873dd3aa15f58ce66a7953036fe087b44cd70521f0cc.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.pie.self-33ca88cc4a7371598cb8fa2d30eeaddcecb19184d16161873c7c1e632447c3b5.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.orderBars.self-1310e7cf40dfc527b1828bdfa8e62ba12341da3b0c7bc4883ec3976103c7e790.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.time.min.self-42e80da9d580f1cd692913e466a0a35720994cd42aa2bf940d419142bf70ae67.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/date.self-dd103d36715d4e9beae419cc0328daa08d388182e31fce53e6c95e04c826f014.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.spline.self-78f8d0e8dfaa7a73b069749d22fb3f92c7de0cf39198cdd3531184a89c8f44a3.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.stack.self-77107f0e9fec22d48d33184fec10aa3335cfb4469305a20d0885662e9c8716f7.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/curvedLines.self-29a3f7497ffd95027475ad2f947b8a6c57156690e858a8780923864a563532c0.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/gentelella/production/js/flot/jquery.flot.resize.self-2164419d35ef0c28690426670059965ff17c804b466f57a8cbcc25c479b256c9.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/gentelella/production/js/progressbar/bootstrap-progressbar.min.self-a9996721a19c173901023b21df854903c6a8e2b406cd93d1464a10327d8b52a5.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/gentelella/production/js/icheck/icheck.min.self-71402d4bdfd85b52b46ee005d31661013598d0d930d2f195227371538f814ab1.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/gentelella/production/js/moment/moment.min.self-47f3f0f0f331b237c5584a60bfc321301c0d9a5651dd70c635af1e17be68d5bb.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/gentelella/production/js/datepicker/daterangepicker.self-ed4efcc595b0d4da2fb398736b7afde3f16d1364d06cf46dad9c4e591d1ea394.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/gentelella/production/js/chartjs/chart.min.self-ba2063aab36611ff08faf64bffa6a26ec0e486b6d42a732e7ddd29e6190b4f04.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/gentelella/production/js/pace/pace.min.self-9bf6d667514a59744d5db2c9392aaf5595dec9c131a425ababa1cb8cddb814f2.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/gentelella/production/js/nprogress.self-ee0af190efcd10748e6f1bde91255ea0bf490342f26389814d76a217f5255ff4.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/flash.self-c7b94ce6f778ffa2d56272d0d981967ab27d8ac57a75802e72fcfab9b95d1000.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/application.self-515207d365987d57167fd2fe8faa8c949dbe96964f0f8653fee65028cf23c8e4.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/gentelella/production/js/custom.self-4f0ced23cee8da0b88915f10b145d6df88298f210a750017ccb1176aa7fbdd0f.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/assets/footermanifest.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for 127.0.0.1 at 2016-09-19 22:59:31 -0300
+
+
+Started GET "/servicios/eliminar/3" for 127.0.0.1 at 2016-09-19 22:59:32 -0300
+Processing by ServiciosController#eliminar as HTML
+  Parameters: {"id"=>"3"}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `servicio' for #<ServiciosController:0xb0e1f824>):
+  app/controllers/servicios_controller.rb:52:in `eliminar'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.2ms)
+
+
+Started GET "/servicios/eliminar/3" for 127.0.0.1 at 2016-09-19 22:59:32 -0300
+Processing by ServiciosController#eliminar as HTML
+  Parameters: {"id"=>"3"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `servicio' for #<ServiciosController:0xb1a722fc>):
+  app/controllers/servicios_controller.rb:52:in `eliminar'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (39.2ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 22:59:55 -0300
+Processing by ServiciosController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "servicios"
+  [1m[36mServicio Load (0.2ms)[0m  [1mSELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC[0m
+  Rendered servicios/index.html.erb within layouts/application (10.6ms)
+  Rendered partials/_sidenav.html.erb (2.0ms)
+  Rendered partials/_topnav.html.erb (7.5ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 122ms (Views: 113.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/servicios/eliminar/3" for 127.0.0.1 at 2016-09-19 22:59:59 -0300
+Processing by ServiciosController#eliminar as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mServicio Load (0.4ms)[0m  SELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1  [["id", 3]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms)
+
+NoMethodError (undefined method `nombre' for nil:NilClass):
+  app/controllers/servicios_controller.rb:53:in `eliminar'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.4ms)
+
+
+Started GET "/servicios/eliminar/3" for 127.0.0.1 at 2016-09-19 22:59:59 -0300
+Processing by ServiciosController#eliminar as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mServicio Load (0.2ms)[0m  [1mSELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1[0m  [["id", 3]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `nombre' for nil:NilClass):
+  app/controllers/servicios_controller.rb:53:in `eliminar'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (22.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (45.1ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 23:00:11 -0300
+Processing by ServiciosController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "servicios"
+  [1m[36mServicio Load (0.3ms)[0m  [1mSELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC[0m
+  Rendered servicios/index.html.erb within layouts/application (11.1ms)
+  Rendered partials/_sidenav.html.erb (2.0ms)
+  Rendered partials/_topnav.html.erb (6.2ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 122ms (Views: 114.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/servicios/eliminar/3" for 127.0.0.1 at 2016-09-19 23:00:15 -0300
+Processing by ServiciosController#eliminar as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mServicio Load (0.2ms)[0m  SELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered servicios/eliminar.html.erb within layouts/application (1.2ms)
+  Rendered partials/_sidenav.html.erb (1.9ms)
+  Rendered partials/_topnav.html.erb (5.3ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 86ms (Views: 84.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/servicios/eliminar_servicio/3" for 127.0.0.1 at 2016-09-19 23:00:17 -0300
+
+AbstractController::ActionNotFound (The action 'eliminar_servicio' could not be found for ServiciosController):
+  actionpack (4.2.4) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.0ms)
+
+
+Started GET "/servicios/" for 127.0.0.1 at 2016-09-19 23:00:25 -0300
+Processing by ServiciosController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "servicios"[0m
+  [1m[35mServicio Load (0.4ms)[0m  SELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC
+  Rendered servicios/index.html.erb within layouts/application (6.0ms)
+  Rendered partials/_sidenav.html.erb (1.7ms)
+  Rendered partials/_topnav.html.erb (5.5ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 96ms (Views: 93.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/servicios/" for 127.0.0.1 at 2016-09-19 23:00:43 -0300
+Processing by ServiciosController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "servicios"[0m
+  [1m[35mServicio Load (0.3ms)[0m  SELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC
+  Rendered servicios/index.html.erb within layouts/application (11.0ms)
+  Rendered partials/_sidenav.html.erb (2.3ms)
+  Rendered partials/_topnav.html.erb (8.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 119ms (Views: 112.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/servicios/eliminar/3" for 127.0.0.1 at 2016-09-19 23:00:45 -0300
+Processing by ServiciosController#eliminar as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mServicio Load (0.2ms)[0m  [1mSELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered servicios/eliminar.html.erb within layouts/application (0.7ms)
+  Rendered partials/_sidenav.html.erb (2.4ms)
+  Rendered partials/_topnav.html.erb (7.6ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 121ms (Views: 119.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/servicios/eliminar_servicio/3" for 127.0.0.1 at 2016-09-19 23:00:46 -0300
+Processing by ServiciosController#eliminar_servicio as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hU6yXEpm1qol9NhXd29VDqV4QudHIdYdZ6Mi6E6InKwWaI5tR4UatnNYF36py+yAd4wYqVJUkG16/N33MblkAQ==", "commit"=>"Elminar Servicio", "id"=>"3"}
+  [1m[35mServicio Load (0.2ms)[0m  SELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "admins_servicios" WHERE "admins_servicios"."servicio_id" = $1  [["servicio_id", 3]]
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "servicios" WHERE "servicios"."id" = $1[0m  [["id", 3]]
+  [1m[35m (34.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/servicios
+Completed 302 Found in 50ms (ActiveRecord: 35.5ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 23:00:46 -0300
+Processing by ServiciosController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "servicios"[0m
+  [1m[35mServicio Load (0.2ms)[0m  SELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC
+  Rendered servicios/index.html.erb within layouts/application (4.4ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (7.3ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 108ms (Views: 106.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 23:01:25 -0300
+Processing by ServiciosController#categorias as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "categoria"[0m
+  [1m[35mCategoria Load (0.4ms)[0m  SELECT "categoria".* FROM "categoria"  ORDER BY categoria.id ASC
+  Rendered servicios/categorias.html.erb within layouts/application (9.2ms)
+  Rendered partials/_sidenav.html.erb (3.2ms)
+  Rendered partials/_topnav.html.erb (8.4ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 117ms (Views: 111.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/servicios/crear/3" for 127.0.0.1 at 2016-09-19 23:01:26 -0300
+Processing by ServiciosController#crear as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategoria Load (0.1ms)[0m  [1mSELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered servicios/crear.html.erb within layouts/application (2.4ms)
+  Rendered partials/_sidenav.html.erb (3.2ms)
+  Rendered partials/_topnav.html.erb (8.4ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 130ms (Views: 117.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/servicios/crear_servicio/3" for 127.0.0.1 at 2016-09-19 23:01:40 -0300
+Processing by ServiciosController#crear_servicio as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"11fcaKogarmZvg11L5TsWIrKXyCehrvzlRt1/+crC3ZEceBZp8Ompc8SwlzxMFXWWD4Fbovz/YOIRIrgmBrz2w==", "servicio"=>{"nombre"=>"holoholo", "precio"=>"222222", "descripcion"=>"huehuehue"}, "commit"=>"Crear Plan", "id"=>"3"}
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCategoria Load (0.1ms)[0m  [1mSELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "servicios" ("nombre", "precio", "descripcion", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["nombre", "holoholo"], ["precio", 222222], ["descripcion", "huehuehue"], ["created_at", "2016-09-20 02:01:40.793201"], ["updated_at", "2016-09-20 02:01:40.793201"]]
+  [1m[35m (60.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "admins_servicios" ("admin_id", "servicio_id") VALUES ($1, $2)  [["admin_id", 1], ["servicio_id", 4]]
+  [1m[36m (30.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "servicios" SET "categoria_id" = $1, "updated_at" = $2 WHERE "servicios"."id" = $3[0m  [["categoria_id", 3], ["updated_at", "2016-09-20 02:01:40.905500"], ["id", 4]]
+  [1m[35m (71.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/servicios
+Completed 302 Found in 201ms (ActiveRecord: 166.9ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 23:01:40 -0300
+Processing by ServiciosController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "servicios"[0m
+  [1m[35mServicio Load (0.3ms)[0m  SELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC
+  Rendered servicios/index.html.erb within layouts/application (5.6ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (8.8ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 119ms (Views: 117.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-19 23:02:14 -0300
+Processing by ServiciosController#categorias as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "categoria"[0m
+  [1m[35mCategoria Load (0.2ms)[0m  SELECT "categoria".* FROM "categoria"  ORDER BY categoria.id ASC
+  Rendered servicios/categorias.html.erb within layouts/application (8.9ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (6.7ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 109ms (Views: 104.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/servicios/crear/2" for 127.0.0.1 at 2016-09-19 23:02:18 -0300
+Processing by ServiciosController#crear as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategoria Load (0.2ms)[0m  [1mSELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered servicios/crear.html.erb within layouts/application (1.2ms)
+  Rendered partials/_sidenav.html.erb (2.7ms)
+  Rendered partials/_topnav.html.erb (8.8ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 136ms (Views: 122.8ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/servicios/crear_servicio/2" for 127.0.0.1 at 2016-09-19 23:02:42 -0300
+Processing by ServiciosController#crear_servicio as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AXnQFxCyuAkivwCb70wlBjPR/x7fiKeyQjtkNkISdDWSX+wmHVF0FXQTz7Ix6JyI4SWlUMr94cJfZJspPSOMmA==", "servicio"=>{"nombre"=>"gottagofaster", "precio"=>"0101010101", "descripcion"=>"sanic"}, "commit"=>"Crear Plan", "id"=>"2"}
+  [1m[35mAdmin Load (0.1ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCategoria Load (0.2ms)[0m  [1mSELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "servicios" ("nombre", "precio", "descripcion", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["nombre", "gottagofaster"], ["precio", 101010101], ["descripcion", "sanic"], ["created_at", "2016-09-20 02:02:42.727165"], ["updated_at", "2016-09-20 02:02:42.727165"]]
+  [1m[35m (515.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "admins_servicios" ("admin_id", "servicio_id") VALUES ($1, $2)  [["admin_id", 1], ["servicio_id", 5]]
+  [1m[36m (275.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "servicios" SET "categoria_id" = $1, "updated_at" = $2 WHERE "servicios"."id" = $3[0m  [["categoria_id", 2], ["updated_at", "2016-09-20 02:02:43.535302"], ["id", 5]]
+  [1m[35m (22.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/servicios
+Completed 302 Found in 847ms (ActiveRecord: 817.5ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 23:02:43 -0300
+Processing by ServiciosController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "servicios"[0m
+  [1m[35mServicio Load (0.3ms)[0m  SELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC
+  Rendered servicios/index.html.erb within layouts/application (6.5ms)
+  Rendered partials/_sidenav.html.erb (1.7ms)
+  Rendered partials/_topnav.html.erb (6.4ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 109ms (Views: 107.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/servicios/editar/5" for 127.0.0.1 at 2016-09-19 23:02:48 -0300
+Processing by ServiciosController#editar as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mServicio Load (0.1ms)[0m  [1mSELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered servicios/editar.html.erb within layouts/application (0.9ms)
+  Rendered partials/_sidenav.html.erb (2.4ms)
+  Rendered partials/_topnav.html.erb (7.7ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 90ms (Views: 89.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/servicios/editar_servicio/5" for 127.0.0.1 at 2016-09-19 23:02:50 -0300
+Processing by ServiciosController#editar_servicio as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uCRXv/YLfLyEcJO5zosxRjRSjiQrPVNsseXFS3yteF0rAmuO++iwoNLcXJAQL4jI5qbUaj5IFRysujpUA5yA8A==", "servicio"=>{"nombre"=>"gottagofaster", "precio"=>"101010101", "descripcion"=>"sanicx"}, "commit"=>"Editar Servicio", "id"=>"5"}
+  [1m[35mServicio Load (0.2ms)[0m  SELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "servicios" SET "descripcion" = $1, "updated_at" = $2 WHERE "servicios"."id" = $3  [["descripcion", "sanicx"], ["updated_at", "2016-09-20 02:02:50.944263"], ["id", 5]]
+  [1m[36m (71.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/servicios/mostrar/5
+Completed 302 Found in 77ms (ActiveRecord: 71.8ms)
+
+
+Started GET "/servicios/mostrar/5" for 127.0.0.1 at 2016-09-19 23:02:51 -0300
+Processing by ServiciosController#mostrar as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mServicio Load (0.2ms)[0m  SELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered servicios/mostrar.html.erb within layouts/application (0.8ms)
+  Rendered partials/_sidenav.html.erb (3.7ms)
+  Rendered partials/_topnav.html.erb (11.1ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 138ms (Views: 137.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 23:02:53 -0300
+Processing by ServiciosController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "servicios"[0m
+  [1m[35mServicio Load (0.2ms)[0m  SELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC
+  Rendered servicios/index.html.erb within layouts/application (6.0ms)
+  Rendered partials/_sidenav.html.erb (3.2ms)
+  Rendered partials/_topnav.html.erb (10.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 109ms (Views: 108.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-19 23:03:52 -0300
+Processing by ServiciosController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "servicios"[0m
+  [1m[35mServicio Load (0.2ms)[0m  SELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC
+  Rendered servicios/index.html.erb within layouts/application (5.3ms)
+  Rendered partials/_sidenav.html.erb (4.2ms)
+  Rendered partials/_topnav.html.erb (6.4ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 122ms (Views: 121.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin_usuarios" for 127.0.0.1 at 2016-09-19 23:03:58 -0300
+Processing by AdminUsuariosController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "clientes"[0m
+  [1m[35mCliente Load (0.2ms)[0m  SELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC
+  Rendered admin_usuarios/index.html.erb within layouts/application (9.3ms)
+  Rendered partials/_sidenav.html.erb (2.8ms)
+  Rendered partials/_topnav.html.erb (6.2ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 110ms (Views: 104.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/categorias" for 127.0.0.1 at 2016-09-19 23:04:00 -0300
+Processing by CategoriasController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "categoria"[0m
+  [1m[35mCategoria Load (0.2ms)[0m  SELECT "categoria".* FROM "categoria"  ORDER BY categoria.id ASC
+  Rendered categorias/index.html.erb within layouts/application (3.8ms)
+  Rendered partials/_sidenav.html.erb (2.3ms)
+  Rendered partials/_topnav.html.erb (7.2ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 118ms (Views: 117.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin_usuarios" for 127.0.0.1 at 2016-09-19 23:04:04 -0300
+Processing by AdminUsuariosController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "clientes"[0m
+  [1m[35mCliente Load (0.3ms)[0m  SELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC
+  Rendered admin_usuarios/index.html.erb within layouts/application (4.7ms)
+  Rendered partials/_sidenav.html.erb (3.8ms)
+  Rendered partials/_topnav.html.erb (6.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 123ms (Views: 121.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/index2.html" for 127.0.0.1 at 2016-09-19 23:04:08 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index2.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (54.1ms)
+
+
+Started GET "/index2.html" for 127.0.0.1 at 2016-09-19 23:04:08 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index2.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (30.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (23.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (46.8ms)
+
+
+Started GET "/admin_usuarios" for 127.0.0.1 at 2016-09-19 23:04:09 -0300
+Processing by AdminUsuariosController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "clientes"[0m
+  [1m[35mCliente Load (0.2ms)[0m  SELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC
+  Rendered admin_usuarios/index.html.erb within layouts/application (4.2ms)
+  Rendered partials/_sidenav.html.erb (3.7ms)
+  Rendered partials/_topnav.html.erb (11.5ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 150ms (Views: 148.9ms | ActiveRecord: 0.4ms)

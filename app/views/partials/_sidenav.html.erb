@@ -32,11 +32,9 @@
           <ul class="nav side-menu">
             <li><a><i class="fa fa-home"></i> Facturaciones <span class="fa fa-chevron-down"></span></a>
               <ul class="nav child_menu" style="display: none">
-                <li><a href="index.html">Boletas emitidas</a>
+                <li><a href="index.html">Estado de Boletas</a>
                 </li>
-                <li><a href="index2.html">Boletas stand by</a>
-                </li>
-                <li><a href="index3.html">Historial</a>
+                <li><a href="index2.html">Emitir Boletas</a>
                 </li>
               </ul>
             </li>
@@ -54,10 +52,7 @@
             </li>
             <li><a><i class="fa fa-desktop"></i> Servicios <span class="fa fa-chevron-down"></span></a>
               <ul class="nav child_menu" style="display: none">
-                <li><a href="general_elements.html">Gestion</a>
-                </li>
-                <li><a href="media_gallery.html">Media Gallery</a>
-                </li>
+                <li><%= link_to("Gestion",:controller => 'servicios',:action => 'index')%>
               </ul>
             </li>
             <li><a><i class="fa fa-table"></i> Tickets <span class="fa fa-chevron-down"></span></a>
