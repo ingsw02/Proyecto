@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+  
+  get 'tickets_usuario/index'
+
+  get 'tickets_usuario/crear'
+
+  get 'tickets_usuario/editar'
+
+  get 'tickets_usuario/eliminar'
+
+  get 'tickets_usuario/mostrar'
+
+  get 'perfil_usuario/index'
+
+  get 'perfil_usuario/mostrar'
+
+  get 'perfil_usuario/editar'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
