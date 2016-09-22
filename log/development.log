@@ -24785,3 +24785,441 @@ Processing by BoletasUsuariosController#historial as HTML
   Rendered partials/_topnavuser.html.erb (8.1ms)
   Rendered partials/_footer.html.erb (0.0ms)
 Completed 200 OK in 139ms (Views: 137.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/usuario/logout" for 127.0.0.1 at 2016-09-22 19:45:51 -0300
+Processing by UsuarioController#logout as HTML
+Redirected to http://localhost:3000/usuario/login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/login" for 127.0.0.1 at 2016-09-22 19:45:51 -0300
+Processing by UsuarioController#login as HTML
+  Rendered usuario/login.html.erb within layouts/login (0.9ms)
+Completed 200 OK in 100ms (Views: 99.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/login" for 127.0.0.1 at 2016-09-22 19:46:03 -0300
+Processing by UsuarioController#login as HTML
+  Rendered usuario/login.html.erb within layouts/login (1.9ms)
+Completed 200 OK in 104ms (Views: 103.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuario/attempt_login" for 127.0.0.1 at 2016-09-22 19:46:07 -0300
+Processing by UsuarioController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tlZGyY08ezwn8UtzFb/QpJjEmFhdqNoXvMg0qnJFla2+Rgsl4mEwymLvqhgb7fyQQuoT4lPyfu4zqkuwOsPQ0A==", "rut"=>"12", "password"=>"[FILTERED]", "commit"=>"Ingresar"}
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."rut" = $1  ORDER BY "clientes"."id" ASC LIMIT 1[0m  [["rut", "12"]]
+Redirected to http://localhost:3000/usuario/login
+Completed 302 Found in 94ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/usuario/login" for 127.0.0.1 at 2016-09-22 19:46:07 -0300
+Processing by UsuarioController#login as HTML
+  Rendered usuario/login.html.erb within layouts/login (0.7ms)
+Completed 200 OK in 108ms (Views: 107.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuario/attempt_login" for 127.0.0.1 at 2016-09-22 19:46:12 -0300
+Processing by UsuarioController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f90r3UNkJqODpSF+cBIjajrnpCLl9UCoGx1oNxr3Mzl3zWYxLDltVca7wBV+QA9e4MkvmOuv5FGUfxctUnF2RA==", "rut"=>"12", "password"=>"[FILTERED]", "commit"=>"Ingresar"}
+  [1m[35mCliente Load (0.2ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."rut" = $1  ORDER BY "clientes"."id" ASC LIMIT 1  [["rut", "12"]]
+Redirected to http://localhost:3000/usuario/login
+Completed 302 Found in 96ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/usuario/login" for 127.0.0.1 at 2016-09-22 19:46:13 -0300
+Processing by UsuarioController#login as HTML
+  Rendered usuario/login.html.erb within layouts/login (0.7ms)
+Completed 200 OK in 101ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuario/attempt_login" for 127.0.0.1 at 2016-09-22 19:46:17 -0300
+Processing by UsuarioController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W0GcqVgQf9kEFi99yIR40jICPo0QDhSWwTnnOPfEMSJTUdFFN000L0EIzhbG1lTm6Cy1Nx5UsG9OW5giv0J0Xw==", "rut"=>"12", "password"=>"[FILTERED]", "commit"=>"Ingresar"}
+  [1m[36mCliente Load (0.3ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."rut" = $1  ORDER BY "clientes"."id" ASC LIMIT 1[0m  [["rut", "12"]]
+Redirected to http://localhost:3000/usuario
+Completed 302 Found in 96ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/usuario" for 127.0.0.1 at 2016-09-22 19:46:17 -0300
+Processing by UsuarioController#index as HTML
+  Rendered usuario/index.html.erb within layouts/usuario (0.0ms)
+  Rendered partials/_sidenavuser.html.erb (2.5ms)
+  Rendered partials/_topnavuser.html.erb (7.2ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 102ms (Views: 101.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario" for 127.0.0.1 at 2016-09-22 19:48:03 -0300
+Processing by UsuarioController#index as HTML
+  Rendered usuario/index.html.erb within layouts/usuario (0.0ms)
+  Rendered partials/_sidenavuser.html.erb (2.4ms)
+  Rendered partials/_topnavuser.html.erb (6.5ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 98ms (Views: 97.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario" for 127.0.0.1 at 2016-09-22 19:48:07 -0300
+Processing by UsuarioController#index as HTML
+  Rendered usuario/index.html.erb within layouts/usuario (0.1ms)
+  Rendered partials/_sidenavuser.html.erb (2.6ms)
+  Rendered partials/_topnavuser.html.erb (6.7ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 105ms (Views: 103.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin_usuarios" for 127.0.0.1 at 2016-09-22 19:49:46 -0300
+Processing by AdminUsuariosController#index as HTML
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-22 19:49:47 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (0.6ms)
+Completed 200 OK in 95ms (Views: 94.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/attempt_login" for 127.0.0.1 at 2016-09-22 19:49:51 -0300
+Processing by AdminController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ilSGWXdfr1024bBSDj9WAqz2xGsjT4xaJ+A8Mius59yCRMu1GALkq3P/UTkAbXo2dthP0S0VKKOogkMoYyqioQ==", "username"=>"nacho", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."usuario" = $1  ORDER BY "admins"."id" ASC LIMIT 1  [["usuario", "nacho"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 104ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-22 19:49:51 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (2.8ms)
+  Rendered partials/_topnav.html.erb (9.3ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 114ms (Views: 113.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario" for 127.0.0.1 at 2016-09-22 19:51:13 -0300
+Processing by UsuarioController#index as HTML
+  Rendered usuario/index.html.erb within layouts/usuario (0.1ms)
+  Rendered partials/_sidenavuser.html.erb (2.5ms)
+  Rendered partials/_topnavuser.html.erb (9.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 108ms (Views: 107.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin_usuarios" for 127.0.0.1 at 2016-09-22 19:51:17 -0300
+Processing by AdminUsuariosController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "clientes"[0m
+  [1m[35mCliente Load (0.4ms)[0m  SELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC
+  Rendered admin_usuarios/index.html.erb within layouts/application (11.5ms)
+  Rendered partials/_sidenav.html.erb (2.6ms)
+  Rendered partials/_topnav.html.erb (7.5ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 124ms (Views: 122.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/logout" for 127.0.0.1 at 2016-09-22 19:51:20 -0300
+Processing by AdminController#logout as HTML
+Redirected to http://localhost:3000/admin/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-22 19:51:20 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (0.7ms)
+Completed 200 OK in 108ms (Views: 107.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/login" for 127.0.0.1 at 2016-09-22 19:51:29 -0300
+Processing by UsuarioController#login as HTML
+  Rendered usuario/login.html.erb within layouts/login (1.2ms)
+Completed 200 OK in 91ms (Views: 90.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario" for 127.0.0.1 at 2016-09-22 19:51:33 -0300
+Processing by UsuarioController#index as HTML
+  Rendered usuario/index.html.erb within layouts/usuario (0.2ms)
+  Rendered partials/_sidenavuser.html.erb (3.1ms)
+  Rendered partials/_topnavuser.html.erb (7.7ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 112ms (Views: 110.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/logout" for 127.0.0.1 at 2016-09-22 19:51:35 -0300
+Processing by UsuarioController#logout as HTML
+Redirected to http://localhost:3000/usuario/login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/login" for 127.0.0.1 at 2016-09-22 19:51:35 -0300
+Processing by UsuarioController#login as HTML
+  Rendered usuario/login.html.erb within layouts/login (0.6ms)
+Completed 200 OK in 93ms (Views: 92.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/" for 127.0.0.1 at 2016-09-22 19:51:56 -0300
+Processing by UsuarioController#index as HTML
+Redirected to http://localhost:3000/usuario/login
+Filter chain halted as :confirm_logged_in_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/login" for 127.0.0.1 at 2016-09-22 19:51:56 -0300
+Processing by UsuarioController#login as HTML
+  Rendered usuario/login.html.erb within layouts/login (0.6ms)
+Completed 200 OK in 86ms (Views: 84.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuario/attempt_login" for 127.0.0.1 at 2016-09-22 19:52:00 -0300
+Processing by UsuarioController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/hGO4sVR2fQCG+jxJhAnoQTqa74rtgOkLDKFANIErV/2AcMOqgySAkcFCZooQguV3sTgBCXsp12jUPoamoLoIg==", "rut"=>"12", "password"=>"[FILTERED]", "commit"=>"Ingresar"}
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."rut" = $1  ORDER BY "clientes"."id" ASC LIMIT 1[0m  [["rut", "12"]]
+Redirected to http://localhost:3000/usuario
+Completed 302 Found in 96ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/usuario" for 127.0.0.1 at 2016-09-22 19:52:00 -0300
+Processing by UsuarioController#index as HTML
+  Rendered usuario/index.html.erb within layouts/usuario (0.0ms)
+  Rendered partials/_sidenavuser.html.erb (2.5ms)
+  Rendered partials/_topnavuser.html.erb (9.7ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 118ms (Views: 117.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/perfil_usuario" for 127.0.0.1 at 2016-09-22 19:52:05 -0300
+Processing by PerfilUsuarioController#index as HTML
+  [1m[35mCliente Load (0.1ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1  [["id", 12]]
+  Rendered perfil_usuario/index.html.erb within layouts/usuario (0.6ms)
+  Rendered partials/_sidenavuser.html.erb (2.4ms)
+  Rendered partials/_topnavuser.html.erb (8.3ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 129ms (Views: 128.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/perfil_usuario" for 127.0.0.1 at 2016-09-22 19:52:28 -0300
+Processing by PerfilUsuarioController#index as HTML
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", 12]]
+  Rendered perfil_usuario/index.html.erb within layouts/usuario (0.5ms)
+  Rendered partials/_sidenavuser.html.erb (2.4ms)
+  Rendered partials/_topnavuser.html.erb (10.7ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 118ms (Views: 117.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/perfil_usuario" for 127.0.0.1 at 2016-09-22 19:52:30 -0300
+Processing by PerfilUsuarioController#index as HTML
+  [1m[35mCliente Load (0.6ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1  [["id", 12]]
+  Rendered perfil_usuario/index.html.erb within layouts/usuario (1.1ms)
+  Rendered partials/_sidenavuser.html.erb (2.3ms)
+  Rendered partials/_topnavuser.html.erb (8.2ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 113ms (Views: 110.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/usuario/logout" for 127.0.0.1 at 2016-09-22 19:52:32 -0300
+Processing by UsuarioController#logout as HTML
+Redirected to http://localhost:3000/usuario/login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/login" for 127.0.0.1 at 2016-09-22 19:52:32 -0300
+Processing by UsuarioController#login as HTML
+  Rendered usuario/login.html.erb within layouts/login (1.2ms)
+Completed 200 OK in 127ms (Views: 125.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario" for 127.0.0.1 at 2016-09-22 19:52:36 -0300
+Processing by UsuarioController#index as HTML
+Redirected to http://localhost:3000/usuario/login
+Filter chain halted as :confirm_logged_in_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/login" for 127.0.0.1 at 2016-09-22 19:52:36 -0300
+Processing by UsuarioController#login as HTML
+  Rendered usuario/login.html.erb within layouts/login (1.2ms)
+Completed 200 OK in 101ms (Views: 100.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuario/attempt_login" for 127.0.0.1 at 2016-09-22 19:52:39 -0300
+Processing by UsuarioController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ceMIeLWybX6wPZ2f4tzuf/vy0LbbIyhNZhzGpn6hm2d580WU2u8miPUjfPTsjsJLIdxbDNV5jLTpfrm8NifeGg==", "rut"=>"12", "password"=>"[FILTERED]", "commit"=>"Ingresar"}
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."rut" = $1  ORDER BY "clientes"."id" ASC LIMIT 1[0m  [["rut", "12"]]
+Redirected to http://localhost:3000/usuario
+Completed 302 Found in 96ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/usuario" for 127.0.0.1 at 2016-09-22 19:52:39 -0300
+Processing by UsuarioController#index as HTML
+  Rendered usuario/index.html.erb within layouts/usuario (0.0ms)
+  Rendered partials/_sidenavuser.html.erb (2.7ms)
+  Rendered partials/_topnavuser.html.erb (9.4ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 123ms (Views: 122.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin_usuarios" for 127.0.0.1 at 2016-09-22 19:52:46 -0300
+Processing by AdminUsuariosController#index as HTML
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-22 19:52:46 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (0.8ms)
+Completed 200 OK in 91ms (Views: 90.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/attempt_login" for 127.0.0.1 at 2016-09-22 19:53:05 -0300
+Processing by AdminController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QG83R+9Q+t8yI5ZJwUYEPNJUbHEjTLnlVfOwczTNqAdIf3qrgA2xKXc9dyLPFCgICHrnyy0WHRzakc9pfEvteg==", "username"=>"nacho", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."usuario" = $1  ORDER BY "admins"."id" ASC LIMIT 1  [["usuario", "nacho"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 95ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-22 19:53:05 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.1ms)
+  Rendered partials/_sidenav.html.erb (2.5ms)
+  Rendered partials/_topnav.html.erb (9.2ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 112ms (Views: 110.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario" for 127.0.0.1 at 2016-09-22 19:53:17 -0300
+Processing by UsuarioController#index as HTML
+  Rendered usuario/index.html.erb within layouts/usuario (0.1ms)
+  Rendered partials/_sidenavuser.html.erb (2.8ms)
+  Rendered partials/_topnavuser.html.erb (7.6ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 111ms (Views: 109.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/logout" for 127.0.0.1 at 2016-09-22 19:54:52 -0300
+Processing by UsuarioController#logout as HTML
+Redirected to http://localhost:3000/usuario/login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/login" for 127.0.0.1 at 2016-09-22 19:54:52 -0300
+Processing by UsuarioController#login as HTML
+  Rendered usuario/login.html.erb within layouts/login (0.8ms)
+Completed 200 OK in 125ms (Views: 124.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin_usuarios" for 127.0.0.1 at 2016-09-22 19:54:59 -0300
+Processing by AdminUsuariosController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "clientes"[0m
+  [1m[35mCliente Load (0.6ms)[0m  SELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC
+  Rendered admin_usuarios/index.html.erb within layouts/application (18.2ms)
+  Rendered partials/_sidenav.html.erb (2.4ms)
+  Rendered partials/_topnav.html.erb (6.6ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 124ms (Views: 116.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/admin/logout" for 127.0.0.1 at 2016-09-22 19:55:01 -0300
+Processing by AdminController#logout as HTML
+Redirected to http://localhost:3000/admin/login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-22 19:55:01 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (0.6ms)
+Completed 200 OK in 84ms (Views: 83.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-22 19:55:05 -0300
+Processing by AdminController#index as HTML
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-22 19:55:05 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (0.8ms)
+Completed 200 OK in 84ms (Views: 84.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario" for 127.0.0.1 at 2016-09-22 19:55:08 -0300
+Processing by UsuarioController#index as HTML
+Redirected to http://localhost:3000/usuario/login
+Filter chain halted as :confirm_logged_in_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/login" for 127.0.0.1 at 2016-09-22 19:55:08 -0300
+Processing by UsuarioController#login as HTML
+  Rendered usuario/login.html.erb within layouts/login (0.9ms)
+Completed 200 OK in 97ms (Views: 96.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuario/attempt_login" for 127.0.0.1 at 2016-09-22 19:55:14 -0300
+Processing by UsuarioController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nUyM8PUJ/i/bsa0Uf5P24OCYghjzPzRW7Ll8NBcz5HSVXMEcmlS12Z6vTH9xwdrUOrYJov1lkK9j2wMuX7WhCQ==", "rut"=>"12", "password"=>"[FILTERED]", "commit"=>"Ingresar"}
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."rut" = $1  ORDER BY "clientes"."id" ASC LIMIT 1[0m  [["rut", "12"]]
+Redirected to http://localhost:3000/usuario
+Completed 302 Found in 101ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/usuario" for 127.0.0.1 at 2016-09-22 19:55:14 -0300
+Processing by UsuarioController#index as HTML
+  Rendered usuario/index.html.erb within layouts/usuario (0.0ms)
+  Rendered partials/_sidenavuser.html.erb (3.1ms)
+  Rendered partials/_topnavuser.html.erb (9.1ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 119ms (Views: 118.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin_usuarios" for 127.0.0.1 at 2016-09-22 19:55:19 -0300
+Processing by AdminUsuariosController#index as HTML
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-22 19:55:20 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (0.8ms)
+Completed 200 OK in 92ms (Views: 91.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/attempt_login" for 127.0.0.1 at 2016-09-22 19:55:25 -0300
+Processing by AdminController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/FU+BC42+NbZtd9pVfWMlpcWcMesW4JOFQMi/wwBqkb0RXPoQWuzIJyrPgJbp6CiTTj7faIBJreaYV3lRIfvOw==", "username"=>"nacho", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."usuario" = $1  ORDER BY "admins"."id" ASC LIMIT 1  [["usuario", "nacho"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 108ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-22 19:55:25 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidenav.html.erb (2.9ms)
+  Rendered partials/_topnav.html.erb (9.2ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 118ms (Views: 116.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario" for 127.0.0.1 at 2016-09-22 19:55:29 -0300
+Processing by UsuarioController#index as HTML
+Redirected to http://localhost:3000/usuario/login
+Filter chain halted as :confirm_logged_in_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/login" for 127.0.0.1 at 2016-09-22 19:55:29 -0300
+Processing by UsuarioController#login as HTML
+  Rendered usuario/login.html.erb within layouts/login (0.9ms)
+Completed 200 OK in 94ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/login" for 127.0.0.1 at 2016-09-22 19:56:38 -0300
+Processing by UsuarioController#login as HTML
+  Rendered usuario/login.html.erb within layouts/login (1.1ms)
+Completed 200 OK in 116ms (Views: 115.1ms | ActiveRecord: 0.0ms)
