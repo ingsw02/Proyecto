@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
   
+  get 'facturacion/index'
+
+  get 'facturacion/mostrar'
+
+  get 'facturacion/editar'
+
+  get 'facturacion/eliminar'
+
+  get 'facturacion/crear'
+
   get 'estado_boletas/index'
 
   get 'estado_boletas/mostrar'
