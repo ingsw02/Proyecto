@@ -13676,3 +13676,2447 @@ Started GET "/usuario/login" for 127.0.0.1 at 2016-09-20 02:05:28 -0300
 Processing by UsuarioController#login as HTML
   Rendered usuario/login.html.erb within layouts/login (0.8ms)
 Completed 200 OK in 119ms (Views: 118.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/login" for 127.0.0.1 at 2016-09-20 12:33:45 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (20.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsuarioController#login as HTML
+  Rendered usuario/login.html.erb within layouts/login (19.8ms)
+Completed 200 OK in 2303ms (Views: 2273.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuario/attempt_login" for 127.0.0.1 at 2016-09-20 12:33:58 -0300
+Processing by UsuarioController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"43eT/2CCdQ4IFnpjqybsHVHcw9rrL8c+l0qsUnpo5SNMjXFVqL+Y1iozIaDJwcpmbBvwThpnBD02zkMPA77Mig==", "rut"=>"12345", "password"=>"[FILTERED]", "commit"=>"Ingresar"}
+  [1m[35mCliente Load (34.9ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."rut" = $1  ORDER BY "clientes"."id" ASC LIMIT 1  [["rut", "12345"]]
+Redirected to http://localhost:3000/usuario
+Completed 302 Found in 491ms (ActiveRecord: 158.0ms)
+
+
+Started GET "/usuario" for 127.0.0.1 at 2016-09-20 12:33:59 -0300
+Processing by UsuarioController#index as HTML
+  Rendered usuario/index.html.erb within layouts/usuario (0.5ms)
+  Rendered partials/_sidenavuser.html.erb (3.7ms)
+  Rendered partials/_topnavuser.html.erb (12.8ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 302ms (Views: 301.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/perfil_usuario/index" for 127.0.0.1 at 2016-09-20 12:34:25 -0300
+Processing by PerfilUsuarioController#index as HTML
+  [1m[36mCliente Load (0.3ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  Rendered perfil_usuario/index.html.erb within layouts/usuario (1.4ms)
+  Rendered partials/_sidenavuser.html.erb (2.6ms)
+  Rendered partials/_topnavuser.html.erb (7.2ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 150ms (Views: 134.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/perfil_usuario/editar" for 127.0.0.1 at 2016-09-20 12:34:29 -0300
+Processing by PerfilUsuarioController#editar as HTML
+  [1m[35mCliente Load (0.2ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1  [["id", 10]]
+  Rendered perfil_usuario/editar.html.erb within layouts/usuario (75.8ms)
+  Rendered partials/_sidenavuser.html.erb (2.0ms)
+  Rendered partials/_topnavuser.html.erb (7.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 199ms (Views: 198.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/perfil_usuario/index" for 127.0.0.1 at 2016-09-20 12:34:32 -0300
+Processing by PerfilUsuarioController#index as HTML
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", 10]]
+  Rendered perfil_usuario/index.html.erb within layouts/usuario (0.5ms)
+  Rendered partials/_sidenavuser.html.erb (3.6ms)
+  Rendered partials/_topnavuser.html.erb (7.3ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 111ms (Views: 109.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tickets_usuario/index" for 127.0.0.1 at 2016-09-20 12:34:35 -0300
+Processing by TicketsUsuarioController#index as HTML
+  [1m[35m (31.4ms)[0m  SELECT COUNT(*) FROM "tickets" WHERE "tickets"."cliente_id" = $1 AND "tickets"."estado" = $2  [["cliente_id", 10], ["estado", "f"]]
+  [1m[36mTicket Load (0.3ms)[0m  [1mSELECT "tickets".* FROM "tickets" WHERE "tickets"."cliente_id" = $1 AND "tickets"."estado" = $2[0m  [["cliente_id", 10], ["estado", "f"]]
+  Rendered tickets_usuario/index.html.erb within layouts/usuario (42.3ms)
+  Rendered partials/_sidenavuser.html.erb (2.3ms)
+  Rendered partials/_topnavuser.html.erb (7.1ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 227ms (Views: 156.5ms | ActiveRecord: 47.4ms)
+
+
+Started GET "/tickets_usuario/historial" for 127.0.0.1 at 2016-09-20 12:34:40 -0300
+Processing by TicketsUsuarioController#historial as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "tickets" WHERE "tickets"."cliente_id" = $1 AND "tickets"."estado" = $2  [["cliente_id", 10], ["estado", "t"]]
+  [1m[36mTicket Load (0.2ms)[0m  [1mSELECT "tickets".* FROM "tickets" WHERE "tickets"."cliente_id" = $1 AND "tickets"."estado" = $2[0m  [["cliente_id", 10], ["estado", "t"]]
+  Rendered tickets_usuario/historial.html.erb within layouts/usuario (3.3ms)
+  Rendered partials/_sidenavuser.html.erb (2.0ms)
+  Rendered partials/_topnavuser.html.erb (8.2ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 123ms (Views: 121.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/usuario/logout" for 127.0.0.1 at 2016-09-20 12:34:44 -0300
+Processing by UsuarioController#logout as HTML
+Redirected to http://localhost:3000/usuario/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/usuario/login" for 127.0.0.1 at 2016-09-20 12:34:44 -0300
+Processing by UsuarioController#login as HTML
+  Rendered usuario/login.html.erb within layouts/login (1.4ms)
+Completed 200 OK in 104ms (Views: 103.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-20 12:34:55 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (1.2ms)
+Completed 200 OK in 103ms (Views: 102.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/attempt_login" for 127.0.0.1 at 2016-09-20 12:35:18 -0300
+Processing by AdminController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dPfPpdC2S2bqRmcMF0HmC0GuvfAMoeC3YvrrRRM9O2rbDS0PGIumvshjPM91psBwfGmOZP3pI7TDfgQYausSww==", "username"=>"nacho", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mAdmin Load (165.4ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."usuario" = $1  ORDER BY "admins"."id" ASC LIMIT 1  [["usuario", "nacho"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 309ms (ActiveRecord: 166.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-20 12:35:18 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.7ms)
+  Rendered partials/_sidenav.html.erb (3.0ms)
+  Rendered partials/_topnav.html.erb (7.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 165ms (Views: 164.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin_usuarios" for 127.0.0.1 at 2016-09-20 12:35:36 -0300
+Processing by AdminUsuariosController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "clientes"[0m
+  [1m[35mCliente Load (0.3ms)[0m  SELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC
+  Rendered admin_usuarios/index.html.erb within layouts/application (7.0ms)
+  Rendered partials/_sidenav.html.erb (2.9ms)
+  Rendered partials/_topnav.html.erb (8.5ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 156ms (Views: 154.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin_usuarios/crear" for 127.0.0.1 at 2016-09-20 12:35:38 -0300
+Processing by AdminUsuariosController#crear as HTML
+  Rendered admin_usuarios/crear.html.erb within layouts/application (2.4ms)
+  Rendered partials/_sidenav.html.erb (3.3ms)
+  Rendered partials/_topnav.html.erb (12.4ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 172ms (Views: 170.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin_usuarios/crear_cliente" for 127.0.0.1 at 2016-09-20 12:35:48 -0300
+Processing by AdminUsuariosController#crear_cliente as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EC1LecUxF2f3R1HcP3/PAJnMWf8rCdPZN+x2+1Kv8Ia/16nTDQz6v9ViCh9dmOl7pAtqa9pBENqWaJmmK3nZLw==", "cliente"=>{"rut"=>"basti", "nombre"=>"basti", "apellidos"=>"basti", "direccion"=>"basti", "correo"=>"basti", "password"=>"[FILTERED]"}, "commit"=>"Crear Cliente"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (116.5ms)[0m  INSERT INTO "clientes" ("rut", "nombre", "apellidos", "direccion", "correo", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["rut", "basti"], ["nombre", "basti"], ["apellidos", "basti"], ["direccion", "basti"], ["correo", "basti"], ["password_digest", "$2a$10$1LBfZu7dryCVg2mRO.7QaeXomnyx09xuOU8B0pROMEAX2XksHeOEG"], ["created_at", "2016-09-20 15:35:48.281430"], ["updated_at", "2016-09-20 15:35:48.281430"]]
+  [1m[36m (22.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/admin_usuarios
+Completed 302 Found in 233ms (ActiveRecord: 139.0ms)
+
+
+Started GET "/admin_usuarios" for 127.0.0.1 at 2016-09-20 12:35:48 -0300
+Processing by AdminUsuariosController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "clientes"
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC[0m
+  Rendered admin_usuarios/index.html.erb within layouts/application (8.2ms)
+  Rendered partials/_sidenav.html.erb (2.4ms)
+  Rendered partials/_topnav.html.erb (6.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 129ms (Views: 127.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin_usuarios/mostrar/11" for 127.0.0.1 at 2016-09-20 12:35:53 -0300
+Processing by AdminUsuariosController#mostrar as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mCliente Load (0.2ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1  [["id", 11]]
+  Rendered admin_usuarios/mostrar.html.erb within layouts/application (1.4ms)
+  Rendered partials/_sidenav.html.erb (2.2ms)
+  Rendered partials/_topnav.html.erb (6.4ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 132ms (Views: 131.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin_usuarios" for 127.0.0.1 at 2016-09-20 12:35:54 -0300
+Processing by AdminUsuariosController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "clientes"[0m
+  [1m[35mCliente Load (0.2ms)[0m  SELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC
+  Rendered admin_usuarios/index.html.erb within layouts/application (5.8ms)
+  Rendered partials/_sidenav.html.erb (2.2ms)
+  Rendered partials/_topnav.html.erb (8.8ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 125ms (Views: 124.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin_usuarios/editar/11" for 127.0.0.1 at 2016-09-20 12:35:56 -0300
+Processing by AdminUsuariosController#editar as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", 11]]
+  Rendered admin_usuarios/editar.html.erb within layouts/application (2.9ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (8.6ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 134ms (Views: 132.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin_usuarios" for 127.0.0.1 at 2016-09-20 12:35:58 -0300
+Processing by AdminUsuariosController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "clientes"
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC[0m
+  Rendered admin_usuarios/index.html.erb within layouts/application (6.1ms)
+  Rendered partials/_sidenav.html.erb (1.9ms)
+  Rendered partials/_topnav.html.erb (7.6ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 124ms (Views: 121.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin_usuarios/eliminar/11" for 127.0.0.1 at 2016-09-20 12:35:59 -0300
+Processing by AdminUsuariosController#eliminar as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mCliente Load (0.2ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1  [["id", 11]]
+  Rendered admin_usuarios/eliminar.html.erb within layouts/application (1.9ms)
+  Rendered partials/_sidenav.html.erb (2.6ms)
+  Rendered partials/_topnav.html.erb (14.9ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 141ms (Views: 139.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin_usuarios" for 127.0.0.1 at 2016-09-20 12:36:02 -0300
+Processing by AdminUsuariosController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "clientes"[0m
+  [1m[35mCliente Load (0.4ms)[0m  SELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC
+  Rendered admin_usuarios/index.html.erb within layouts/application (6.4ms)
+  Rendered partials/_sidenav.html.erb (2.4ms)
+  Rendered partials/_topnav.html.erb (9.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 127ms (Views: 125.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/categorias" for 127.0.0.1 at 2016-09-20 12:36:04 -0300
+Processing by CategoriasController#index as HTML
+  [1m[36m (23.0ms)[0m  [1mSELECT COUNT(*) FROM "categoria"[0m
+  [1m[35mCategoria Load (0.4ms)[0m  SELECT "categoria".* FROM "categoria"  ORDER BY categoria.id ASC
+  Rendered categorias/index.html.erb within layouts/application (50.3ms)
+  Rendered partials/_sidenav.html.erb (2.6ms)
+  Rendered partials/_topnav.html.erb (7.6ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 244ms (Views: 185.4ms | ActiveRecord: 39.3ms)
+
+
+Started GET "/categorias/crear" for 127.0.0.1 at 2016-09-20 12:36:06 -0300
+Processing by CategoriasController#crear as HTML
+  Rendered categorias/crear.html.erb within layouts/application (2.4ms)
+  Rendered partials/_sidenav.html.erb (2.9ms)
+  Rendered partials/_topnav.html.erb (8.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 131ms (Views: 130.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/categorias/crear_plan" for 127.0.0.1 at 2016-09-20 12:36:17 -0300
+Processing by CategoriasController#crear_plan as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pdyH2AHbKOQbG+yeeW1y9SwabCOG1bz0F1ZnN8C/EpYKJmVyyebFPDk+t10bilSOEd1ft3edf/e20ohquWk7Pw==", "categoria"=>{"nombre"=>"basti", "plan"=>"B", "descuento"=>"90000"}, "commit"=>"Crear Plan"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (117.7ms)[0m  INSERT INTO "categoria" ("nombre", "plan", "descuento", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["nombre", "basti"], ["plan", "B"], ["descuento", 90000], ["created_at", "2016-09-20 15:36:17.919767"], ["updated_at", "2016-09-20 15:36:17.919767"]]
+  [1m[36m (56.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/categorias
+Completed 302 Found in 179ms (ActiveRecord: 173.8ms)
+
+
+Started GET "/categorias" for 127.0.0.1 at 2016-09-20 12:36:18 -0300
+Processing by CategoriasController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "categoria"
+  [1m[36mCategoria Load (0.3ms)[0m  [1mSELECT "categoria".* FROM "categoria"  ORDER BY categoria.id ASC[0m
+  Rendered categorias/index.html.erb within layouts/application (7.0ms)
+  Rendered partials/_sidenav.html.erb (2.4ms)
+  Rendered partials/_topnav.html.erb (15.8ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 129ms (Views: 127.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-20 12:36:37 -0300
+Processing by ServiciosController#index as HTML
+  [1m[35m (17.7ms)[0m  SELECT COUNT(*) FROM "servicios"
+  [1m[36mServicio Load (0.4ms)[0m  [1mSELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC[0m
+  Rendered servicios/index.html.erb within layouts/application (29.5ms)
+  Rendered partials/_sidenav.html.erb (4.1ms)
+  Rendered partials/_topnav.html.erb (11.5ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 209ms (Views: 183.3ms | ActiveRecord: 19.2ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-20 12:36:40 -0300
+Processing by ServiciosController#categorias as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "categoria"
+  [1m[36mCategoria Load (0.3ms)[0m  [1mSELECT "categoria".* FROM "categoria"  ORDER BY categoria.id ASC[0m
+  Rendered servicios/categorias.html.erb within layouts/application (5.0ms)
+  Rendered partials/_sidenav.html.erb (2.5ms)
+  Rendered partials/_topnav.html.erb (7.4ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 157ms (Views: 155.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/servicios/crear/4" for 127.0.0.1 at 2016-09-20 12:36:43 -0300
+Processing by ServiciosController#crear as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mCategoria Load (0.3ms)[0m  SELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered servicios/crear.html.erb within layouts/application (2.6ms)
+  Rendered partials/_sidenav.html.erb (2.3ms)
+  Rendered partials/_topnav.html.erb (7.6ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 167ms (Views: 164.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/servicios/crear_servicio/4" for 127.0.0.1 at 2016-09-20 12:37:04 -0300
+Processing by ServiciosController#crear_servicio as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4KiVqyHhR39VUOatoJnvju8Cb61yZkKFOznKXzLsdnlPUncB6dyqp3d1vW7Cfsn10sVcOYMugYaavSUCSzpf0A==", "servicio"=>{"nombre"=>"Falacio", "precio"=>"20000", "descripcion"=>"falaceando"}, "commit"=>"Crear Plan", "id"=>"4"}
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategoria Load (0.2ms)[0m  SELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (9.5ms)[0m  INSERT INTO "servicios" ("nombre", "precio", "descripcion", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["nombre", "Falacio"], ["precio", 20000], ["descripcion", "falaceando"], ["created_at", "2016-09-20 15:37:04.680115"], ["updated_at", "2016-09-20 15:37:04.680115"]]
+  [1m[36m (101.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (36.9ms)[0m  [1mINSERT INTO "admins_servicios" ("admin_id", "servicio_id") VALUES ($1, $2)[0m  [["admin_id", 1], ["servicio_id", 6]]
+  [1m[35m (21.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "servicios" SET "categoria_id" = $1, "updated_at" = $2 WHERE "servicios"."id" = $3  [["categoria_id", 4], ["updated_at", "2016-09-20 15:37:05.030576"], ["id", 6]]
+  [1m[36m (26.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/servicios
+Completed 302 Found in 385ms (ActiveRecord: 198.1ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-20 12:37:05 -0300
+Processing by ServiciosController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "servicios"
+  [1m[36mServicio Load (0.3ms)[0m  [1mSELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC[0m
+  Rendered servicios/index.html.erb within layouts/application (5.0ms)
+  Rendered partials/_sidenav.html.erb (2.6ms)
+  Rendered partials/_topnav.html.erb (14.5ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 131ms (Views: 130.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/servicios/mostrar/6" for 127.0.0.1 at 2016-09-20 12:37:07 -0300
+Processing by ServiciosController#mostrar as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mServicio Load (0.2ms)[0m  SELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1  [["id", 6]]
+  Rendered servicios/mostrar.html.erb within layouts/application (1.4ms)
+  Rendered partials/_sidenav.html.erb (2.0ms)
+  Rendered partials/_topnav.html.erb (6.7ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 124ms (Views: 122.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-20 12:37:55 -0300
+Processing by ServiciosController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "servicios"[0m
+  [1m[35mServicio Load (0.4ms)[0m  SELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC
+  Rendered servicios/index.html.erb within layouts/application (5.0ms)
+  Rendered partials/_sidenav.html.erb (2.6ms)
+  Rendered partials/_topnav.html.erb (7.3ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 117ms (Views: 116.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/servicios/categorias" for 127.0.0.1 at 2016-09-20 12:37:58 -0300
+Processing by ServiciosController#categorias as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "categoria"[0m
+  [1m[35mCategoria Load (0.2ms)[0m  SELECT "categoria".* FROM "categoria"  ORDER BY categoria.id ASC
+  Rendered servicios/categorias.html.erb within layouts/application (3.1ms)
+  Rendered partials/_sidenav.html.erb (1.9ms)
+  Rendered partials/_topnav.html.erb (8.5ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 114ms (Views: 113.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/servicios/crear/4" for 127.0.0.1 at 2016-09-20 12:38:00 -0300
+Processing by ServiciosController#crear as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCategoria Load (0.2ms)[0m  [1mSELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered servicios/crear.html.erb within layouts/application (1.1ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (6.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 111ms (Views: 109.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/servicios/crear_servicio/4" for 127.0.0.1 at 2016-09-20 12:38:08 -0300
+Processing by ServiciosController#crear_servicio as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IAMcXYU+pZoi7s+XxCXy4OE1lB2bTDwjZRlkbYtmIjCP+f73TQNIQgDLlFSmwtSb3PKniWoE/yDEnYsw8rALmQ==", "servicio"=>{"nombre"=>"sasd", "precio"=>"sadasd", "descripcion"=>"asdasdas"}, "commit"=>"Crear Plan", "id"=>"4"}
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCategoria Load (0.2ms)[0m  [1mSELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "servicios" ("nombre", "precio", "descripcion", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["nombre", "sasd"], ["precio", 0], ["descripcion", "asdasdas"], ["created_at", "2016-09-20 15:38:08.119547"], ["updated_at", "2016-09-20 15:38:08.119547"]]
+  [1m[35m (30.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "admins_servicios" ("admin_id", "servicio_id") VALUES ($1, $2)  [["admin_id", 1], ["servicio_id", 7]]
+  [1m[36m (51.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "servicios" SET "categoria_id" = $1, "updated_at" = $2 WHERE "servicios"."id" = $3[0m  [["categoria_id", 4], ["updated_at", "2016-09-20 15:38:08.208463"], ["id", 7]]
+  [1m[35m (63.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/servicios
+Completed 302 Found in 158ms (ActiveRecord: 147.2ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-20 12:38:08 -0300
+Processing by ServiciosController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "servicios"[0m
+  [1m[35mServicio Load (0.2ms)[0m  SELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC
+  Rendered servicios/index.html.erb within layouts/application (4.8ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (6.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 110ms (Views: 109.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tables.html" for 127.0.0.1 at 2016-09-20 12:38:40 -0300
+
+ActionController::RoutingError (No route matches [GET] "/tables.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (72.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (93.0ms)
+
+
+Started GET "/tables.html" for 127.0.0.1 at 2016-09-20 12:38:40 -0300
+
+ActionController::RoutingError (No route matches [GET] "/tables.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.1ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2016-09-20 12:38:55 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (28.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (22.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (45.7ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2016-09-20 12:38:55 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (29.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (41.2ms)
+
+
+Started GET "/admin/logout" for 127.0.0.1 at 2016-09-20 12:39:04 -0300
+Processing by AdminController#logout as HTML
+Redirected to http://localhost:3000/admin/login
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-20 12:39:04 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (1.8ms)
+Completed 200 OK in 117ms (Views: 116.8ms | ActiveRecord: 0.0ms)
+  [1m[36mServicio Load (24.1ms)[0m  [1mSELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (43.1ms)[0m  [1mINSERT INTO "servicios" ("nombre", "precio", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nombre", "10mb"], ["precio", 20000], ["created_at", "2016-09-22 14:55:18.973247"], ["updated_at", "2016-09-22 14:55:18.973247"]]
+  [1m[35m (54.6ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (46.6ms)[0m  INSERT INTO "boleta" ("total", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["total", 10000], ["created_at", "2016-09-22 14:55:23.873326"], ["updated_at", "2016-09-22 14:55:23.873326"]]
+  [1m[36m (62.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mBoleta Load (0.2ms)[0m  SELECT  "boleta".* FROM "boleta" WHERE "boleta"."servicio_id" = $1 LIMIT 1  [["servicio_id", 8]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "boleta" SET "servicio_id" = $1, "updated_at" = $2 WHERE "boleta"."id" = $3  [["servicio_id", 8], ["updated_at", "2016-09-22 14:55:48.220604"], ["id", 3]]
+  [1m[36m (41.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mBoleta Load (1.3ms)[0m  SELECT "boleta".* FROM "boleta"  ORDER BY servicios_id ASC
+PG::UndefinedColumn: ERROR:  column "servicios_id" does not exist
+LINE 1: SELECT "boleta".* FROM "boleta"  ORDER BY servicios_id ASC
+                                                  ^
+: SELECT "boleta".* FROM "boleta"  ORDER BY servicios_id ASC
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-22 12:06:45 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (32.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AdminController#index as HTML
+Redirected to http://localhost:3000/admin/login
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 20ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-22 12:06:46 -0300
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (6.4ms)
+Completed 200 OK in 664ms (Views: 663.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/attempt_login" for 127.0.0.1 at 2016-09-22 12:07:00 -0300
+Processing by AdminController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yb+tcvqk8oK+Dxd6dVny4UH6iM1zHytiJ5QXqyH/Uc9pr+Celfm5dPsR9hF7C97Vm9QDd31Fj5uo9mixaXkUsg==", "username"=>"nacho", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mAdmin Load (70.8ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."usuario" = $1  ORDER BY "admins"."id" ASC LIMIT 1  [["usuario", "nacho"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 207ms (ActiveRecord: 96.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-22 12:07:00 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.4ms)
+  Rendered partials/_sidenav.html.erb (3.7ms)
+  Rendered partials/_topnav.html.erb (7.9ms)
+  Rendered partials/_footer.html.erb (0.4ms)
+Completed 200 OK in 131ms (Views: 130.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/servicios" for 127.0.0.1 at 2016-09-22 12:20:09 -0300
+Processing by ServiciosController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "servicios"[0m
+  [1m[35mServicio Load (0.3ms)[0m  SELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC
+  Rendered servicios/index.html.erb within layouts/application (20.6ms)
+  Rendered partials/_sidenav.html.erb (3.0ms)
+  Rendered partials/_topnav.html.erb (8.0ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 136ms (Views: 126.2ms | ActiveRecord: 1.9ms)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "boleta" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", "2016-09-22 15:35:03.117204"], ["updated_at", "2016-09-22 15:35:03.117204"]]
+  [1m[36m (14.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mCliente Load (15.8ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCliente Load (0.4ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCliente Load (0.3ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCliente Load (0.6ms)[0m  [1mSELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC[0m
+  [1m[35mServicio Load (0.4ms)[0m  SELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mCategoria Load (57.2ms)[0m  [1mSELECT "categoria".* FROM "categoria"  ORDER BY categoria.id ASC[0m
+  [1m[35mCategoria Load (0.3ms)[0m  SELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "servicios" SET "categoria_id" = $1, "updated_at" = $2 WHERE "servicios"."id" = $3  [["categoria_id", 1], ["updated_at", "2016-09-22 15:37:20.520954"], ["id", 8]]
+  [1m[36m (430.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mServicio Load (0.3ms)[0m  SELECT "servicios".* FROM "servicios" WHERE "servicios"."categoria_id" = $1  [["categoria_id", 1]]
+  [1m[36mCliente Load (0.4ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mServicio Load (0.7ms)[0m  SELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mCategoria Load (0.5ms)[0m  [1mSELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "boleta" ("total", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["total", 19990], ["created_at", "2016-09-22 15:41:15.555402"], ["updated_at", "2016-09-22 15:41:15.555402"]]
+  [1m[35m (18.9ms)[0m  COMMIT
+  [1m[36mBoleta Load (0.6ms)[0m  [1mSELECT "boleta".* FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (clientes.id = boleta.cliente_id)[0m
+  [1m[35mBoleta Load (0.9ms)[0m  SELECT "boleta".* FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (clientes.id = boleta.cliente_id)
+  [1m[36mBoleta Load (0.5ms)[0m  [1mSELECT "boleta".* FROM "boleta"  ORDER BY boleta.id ASC[0m
+  [1m[35mBoleta Load (0.6ms)[0m  SELECT  "boleta".* FROM "boleta" WHERE "boleta"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mCliente Load (0.3ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "boleta" SET "cliente_id" = $1, "updated_at" = $2 WHERE "boleta"."id" = $3[0m  [["cliente_id", 3], ["updated_at", "2016-09-22 16:29:12.819920"], ["id", 5]]
+  [1m[35m (18.4ms)[0m  COMMIT
+  [1m[36mBoleta Load (0.4ms)[0m  [1mSELECT "boleta".* FROM "boleta" WHERE "boleta"."cliente_id" = $1[0m  [["cliente_id", 3]]
+  [1m[35mBoleta Load (0.9ms)[0m  SELECT "boleta".* FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (clientes.id = boleta.cliente_id)
+  [1m[36mBoleta Load (0.9ms)[0m  [1mSELECT "boleta".* FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (clientes.id = cliente_id)[0m
+  [1m[35mBoleta Load (1.1ms)[0m  SELECT "boleta".* FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (clientes.id = cliente_id)
+  [1m[36mCliente Load (0.7ms)[0m  [1mSELECT "clientes".* FROM "clientes" INNER JOIN "boleta" ON "boleta"."cliente_id" = "clientes"."id" WHERE (boleta.cliente_id = id)[0m
+PG::AmbiguousColumn: ERROR:  column reference "id" is ambiguous
+LINE 1: ...cliente_id" = "clientes"."id" WHERE (boleta.cliente_id = id)
+                                                                    ^
+: SELECT "clientes".* FROM "clientes" INNER JOIN "boleta" ON "boleta"."cliente_id" = "clientes"."id" WHERE (boleta.cliente_id = id)
+  [1m[35mCliente Load (1.2ms)[0m  SELECT "clientes".* FROM "clientes" INNER JOIN "boleta" ON "boleta"."cliente_id" = "clientes"."id" WHERE (boletas.cliente_id = id)
+PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "boletas"
+LINE 1: ...ON "boleta"."cliente_id" = "clientes"."id" WHERE (boletas.cl...
+                                                             ^
+: SELECT "clientes".* FROM "clientes" INNER JOIN "boleta" ON "boleta"."cliente_id" = "clientes"."id" WHERE (boletas.cliente_id = id)
+  [1m[36mCliente Load (1.3ms)[0m  [1mSELECT "clientes".* FROM "clientes" INNER JOIN "boleta" ON "boleta"."cliente_id" = "clientes"."id" WHERE (boletas.cliente_id = id)[0m
+PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "boletas"
+LINE 1: ...ON "boleta"."cliente_id" = "clientes"."id" WHERE (boletas.cl...
+                                                             ^
+: SELECT "clientes".* FROM "clientes" INNER JOIN "boleta" ON "boleta"."cliente_id" = "clientes"."id" WHERE (boletas.cliente_id = id)
+  [1m[35mCliente Load (1.4ms)[0m  SELECT "clientes".* FROM "clientes" INNER JOIN "boleta" ON "boleta"."cliente_id" = "clientes"."id" WHERE (boletas.cliente_id = id)
+PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "boletas"
+LINE 1: ...ON "boleta"."cliente_id" = "clientes"."id" WHERE (boletas.cl...
+                                                             ^
+: SELECT "clientes".* FROM "clientes" INNER JOIN "boleta" ON "boleta"."cliente_id" = "clientes"."id" WHERE (boletas.cliente_id = id)
+  [1m[36mCliente Load (0.6ms)[0m  [1mSELECT "clientes".* FROM "clientes" INNER JOIN "boleta" ON "boleta"."cliente_id" = "clientes"."id" WHERE (boleta.cliente_id = id)[0m
+PG::AmbiguousColumn: ERROR:  column reference "id" is ambiguous
+LINE 1: ...cliente_id" = "clientes"."id" WHERE (boleta.cliente_id = id)
+                                                                    ^
+: SELECT "clientes".* FROM "clientes" INNER JOIN "boleta" ON "boleta"."cliente_id" = "clientes"."id" WHERE (boleta.cliente_id = id)
+  [1m[36mBoleta Load (1.5ms)[0m  [1mSELECT "boleta".* FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  [1m[35mCliente Load (1.2ms)[0m  SELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC
+  [1m[36mBoleta Load (0.8ms)[0m  [1mSELECT "boleta".* FROM "boleta"  ORDER BY boleta.id ASC[0m
+  [1m[35mCliente Load (1.0ms)[0m  SELECT "clientes".* FROM "clientes" INNER JOIN "boleta" ON "boleta"."cliente_id" = "clientes"."id"
+  [1m[36mBoleta Load (0.5ms)[0m  [1mSELECT "boleta".* FROM "boleta"[0m
+  [1m[35mCliente Load (0.7ms)[0m  SELECT "clientes".* FROM "clientes"
+  [1m[36mBoleta Load (0.5ms)[0m  [1mSELECT "boleta".* FROM "boleta" WHERE "boleta"."cliente_id" IN (6, 3, 8, 9, 10, 11)[0m
+  [1m[35mCliente Load (1.2ms)[0m  SELECT "clientes".* FROM "clientes" WHERE (id = boleta.id)
+PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "boleta"
+LINE 1: SELECT "clientes".* FROM "clientes" WHERE (id = boleta.id)
+                                                        ^
+: SELECT "clientes".* FROM "clientes" WHERE (id = boleta.id)
+  [1m[36mBoleta Load (1.0ms)[0m  [1mSELECT id, clientes.id,clientes.rut, cliente.nombre FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (cliente_id = clientes.id)[0m
+PG::AmbiguousColumn: ERROR:  column reference "id" is ambiguous
+LINE 1: SELECT id, clientes.id,clientes.rut, cliente.nombre FROM "bo...
+               ^
+: SELECT id, clientes.id,clientes.rut, cliente.nombre FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (cliente_id = clientes.id)
+  [1m[35mBoleta Load (1.2ms)[0m  SELECT boleta.id, clientes.id,clientes.rut, cliente.nombre FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (cliente_id = clientes.id)
+PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "cliente"
+LINE 1: SELECT boleta.id, clientes.id,clientes.rut, cliente.nombre F...
+                                                    ^
+: SELECT boleta.id, clientes.id,clientes.rut, cliente.nombre FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (cliente_id = clientes.id)
+  [1m[36mBoleta Load (1.1ms)[0m  [1mSELECT boleta.id, clientes.id,clientes.rut, clientes.nombre FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (cliente_id = clientes.id)[0m
+  [1m[35mBoleta Load (1.1ms)[0m  SELECT boleta.id, clientes.id,clientes.rut, clientes.nombre FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  [1m[36mBoleta Load (0.8ms)[0m  [1mSELECT boleta.id as b_id, clientes.id,clientes.rut, clientes.nombre FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  [1m[35mBoleta Load (0.6ms)[0m  SELECT boleta.id as b_id, clientes.id,clientes.rut, clientes.nombre FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  [1m[36mBoleta Load (1.1ms)[0m  [1mSELECT boleta.id as b_id, clientes.id,clientes.rut, clientes.nombre FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"  ORDER BY boleta.id ASC[0m
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2016-09-22 14:21:56 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AdminController#login as HTML
+  Rendered admin/login.html.erb within layouts/login (2.9ms)
+Completed 200 OK in 508ms (Views: 497.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/attempt_login" for 127.0.0.1 at 2016-09-22 14:22:06 -0300
+Processing by AdminController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VbvxItgVf/UgaWibz+TChsSATHS+K0amGQdj3c60MuVdq7zOt0g0A2V3ifDBtu6yHq7HzrBx4l+WZRzHhjJ3mA==", "username"=>"nacho", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mAdmin Load (1.1ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."usuario" = $1  ORDER BY "admins"."id" ASC LIMIT 1  [["usuario", "nacho"]]
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 125ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-22 14:22:07 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.4ms)
+  Rendered partials/_sidenav.html.erb (3.0ms)
+  Rendered partials/_topnav.html.erb (7.1ms)
+  Rendered partials/_footer.html.erb (0.5ms)
+Completed 200 OK in 119ms (Views: 118.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2016-09-22 14:22:09 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (22.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (60.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (69.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (105.9ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2016-09-22 14:22:10 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/eseeme/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (25.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (43.8ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2016-09-22 14:22:58 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidenav.html.erb (3.0ms)
+  Rendered partials/_topnav.html.erb (6.3ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 96ms (Views: 95.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boletas" for 127.0.0.1 at 2016-09-22 14:23:00 -0300
+Processing by BoletasController#index as HTML
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  [1m[35mBoleta Load (0.5ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  Rendered boletas/index.html.erb within layouts/application (23.3ms)
+  Rendered partials/_sidenav.html.erb (2.8ms)
+  Rendered partials/_topnav.html.erb (6.7ms)
+  Rendered partials/_footer.html.erb (0.3ms)
+Completed 200 OK in 151ms (Views: 144.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/boletas" for 127.0.0.1 at 2016-09-22 14:30:29 -0300
+Processing by BoletasController#index as HTML
+  Rendered boletas/index.html.erb within layouts/application (14.9ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (uninitialized constant Boleta::Servicios):
+    14:         <td><%= submit_tag("Buscar") %></td>
+    15:       </tr>
+    16:       <% end %>
+    17:       <div><%= pluralize(@boletas.size, 'boleta')%> encontradas.</div>
+    18:       <table class="listing">
+    19:         <tr class="header">
+    20:           <th>Nro de Boleta</th>
+  app/views/boletas/index.html.erb:17:in `_app_views_boletas_index_html_erb__248603992__630983688'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.7ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2016-09-22 14:30:49 -0300
+Processing by AdminController#index as HTML
+  Rendered admin/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/_sidenav.html.erb (2.8ms)
+  Rendered partials/_topnav.html.erb (6.4ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 470ms (Views: 469.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/boletas" for 127.0.0.1 at 2016-09-22 14:30:52 -0300
+Processing by BoletasController#index as HTML
+  Rendered boletas/index.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (uninitialized constant Boleta::Servicios):
+    14:         <td><%= submit_tag("Buscar") %></td>
+    15:       </tr>
+    16:       <% end %>
+    17:       <div><%= pluralize(@boletas.size, 'boleta')%> encontradas.</div>
+    18:       <table class="listing">
+    19:         <tr class="header">
+    20:           <th>Nro de Boleta</th>
+  app/views/boletas/index.html.erb:17:in `_app_views_boletas_index_html_erb__248603992__636896988'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.9ms)
+
+
+Started GET "/boletas" for 127.0.0.1 at 2016-09-22 14:30:52 -0300
+Processing by BoletasController#index as HTML
+  Rendered boletas/index.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (uninitialized constant Boleta::Servicios):
+    14:         <td><%= submit_tag("Buscar") %></td>
+    15:       </tr>
+    16:       <% end %>
+    17:       <div><%= pluralize(@boletas.size, 'boleta')%> encontradas.</div>
+    18:       <table class="listing">
+    19:         <tr class="header">
+    20:           <th>Nro de Boleta</th>
+  app/views/boletas/index.html.erb:17:in `_app_views_boletas_index_html_erb__248603992__630983688'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.2ms)
+  [1m[36mBoleta Load (0.9ms)[0m  [1mSELECT  "boleta".* FROM "boleta" WHERE "boleta"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mBoleta Load (0.8ms)[0m  SELECT  "boleta".* FROM "boleta" WHERE "boleta"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mServicio Load (0.7ms)[0m  [1mSELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mBoleta Load (0.5ms)[0m  SELECT  "boleta".* FROM "boleta" WHERE "boleta"."servicio_id" = $1 LIMIT 1  [["servicio_id", 8]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "boleta" SET "servicio_id" = $1, "updated_at" = $2 WHERE "boleta"."id" = $3  [["servicio_id", nil], ["updated_at", "2016-09-22 17:38:24.576045"], ["id", 3]]
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "boleta" SET "servicio_id" = $1, "updated_at" = $2 WHERE "boleta"."id" = $3[0m  [["servicio_id", 8], ["updated_at", "2016-09-22 17:38:24.578831"], ["id", 5]]
+  [1m[35m (13.3ms)[0m  COMMIT
+
+
+Started GET "/boletas" for 127.0.0.1 at 2016-09-22 14:39:48 -0300
+Processing by BoletasController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  [1m[35mBoleta Load (0.5ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  Rendered boletas/index.html.erb within layouts/application (16.9ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (6.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 123ms (Views: 117.1ms | ActiveRecord: 3.4ms)
+  [1m[36mEmpresa Load (20.6ms)[0m  [1mSELECT  "empresas".* FROM "empresas" WHERE "empresas"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (8.4ms)[0m  [1mINSERT INTO "empresas" ("nombre", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["nombre", "speed wire"], ["created_at", "2016-09-22 17:59:41.479108"], ["updated_at", "2016-09-22 17:59:41.479108"]]
+  [1m[35m (23.0ms)[0m  COMMIT
+  [1m[36mBoleta Load (0.7ms)[0m  [1mSELECT  "boleta".* FROM "boleta" WHERE "boleta"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mBoleta Load (0.5ms)[0m  SELECT  "boleta".* FROM "boleta" WHERE "boleta"."empresa_id" = $1 LIMIT 1  [["empresa_id", 3]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "boleta" SET "empresa_id" = $1, "updated_at" = $2 WHERE "boleta"."id" = $3  [["empresa_id", 3], ["updated_at", "2016-09-22 18:00:15.722740"], ["id", 5]]
+  [1m[36m (10.7ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/boletas" for 127.0.0.1 at 2016-09-22 15:00:34 -0300
+Processing by BoletasController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  [1m[35mBoleta Load (0.3ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  Rendered boletas/index.html.erb within layouts/application (13.6ms)
+  Rendered partials/_sidenav.html.erb (2.0ms)
+  Rendered partials/_topnav.html.erb (7.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 135ms (Views: 130.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/boletas/clientes" for 127.0.0.1 at 2016-09-22 15:00:37 -0300
+Processing by BoletasController#clientes as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "clientes"[0m
+  [1m[35mCliente Load (0.5ms)[0m  SELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC
+  Rendered boletas/clientes.html.erb within layouts/application (10.4ms)
+  Rendered partials/_sidenav.html.erb (2.2ms)
+  Rendered partials/_topnav.html.erb (7.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 119ms (Views: 117.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/boletas/servicios?cliente_id=11" for 127.0.0.1 at 2016-09-22 15:00:41 -0300
+Processing by BoletasController#servicios as HTML
+  Parameters: {"cliente_id"=>"11"}
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Cliente with 'id'=cliente_id):
+  app/controllers/boletas_controller.rb:70:in `servicios'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (40.9ms)
+
+
+Started GET "/boletas/servicios?cliente_id=11" for 127.0.0.1 at 2016-09-22 15:00:41 -0300
+Processing by BoletasController#servicios as HTML
+  Parameters: {"cliente_id"=>"11"}
+  [1m[35mCliente Load (0.2ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Cliente with 'id'=cliente_id):
+  app/controllers/boletas_controller.rb:70:in `servicios'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (22.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (47.5ms)
+
+
+Started GET "/boletas/" for 127.0.0.1 at 2016-09-22 15:02:36 -0300
+Processing by BoletasController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  [1m[35mBoleta Load (0.2ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  Rendered boletas/index.html.erb within layouts/application (14.1ms)
+  Rendered partials/_sidenav.html.erb (3.2ms)
+  Rendered partials/_topnav.html.erb (21.5ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 165ms (Views: 159.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/boletas/clientes" for 127.0.0.1 at 2016-09-22 15:02:37 -0300
+Processing by BoletasController#clientes as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "clientes"[0m
+  [1m[35mCliente Load (0.3ms)[0m  SELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC
+  Rendered boletas/clientes.html.erb within layouts/application (9.8ms)
+  Rendered partials/_sidenav.html.erb (2.3ms)
+  Rendered partials/_topnav.html.erb (6.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 103ms (Views: 100.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/boletas/servicios/11" for 127.0.0.1 at 2016-09-22 15:02:39 -0300
+Processing by BoletasController#servicios as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mCliente Load (0.3ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Cliente with 'id'=id):
+  app/controllers/boletas_controller.rb:70:in `servicios'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (22.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (44.3ms)
+
+
+Started GET "/boletas/servicios/11" for 127.0.0.1 at 2016-09-22 15:02:40 -0300
+Processing by BoletasController#servicios as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mCliente Load (0.3ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Cliente with 'id'=id):
+  app/controllers/boletas_controller.rb:70:in `servicios'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (44.8ms)
+  [1m[35mCliente Load (0.7ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1  [["id", 11]]
+
+
+Started GET "/boletas/" for 127.0.0.1 at 2016-09-22 15:04:16 -0300
+Processing by BoletasController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  [1m[35mBoleta Load (0.4ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  Rendered boletas/index.html.erb within layouts/application (16.7ms)
+  Rendered partials/_sidenav.html.erb (2.2ms)
+  Rendered partials/_topnav.html.erb (7.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 113ms (Views: 106.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/boletas/clientes" for 127.0.0.1 at 2016-09-22 15:04:18 -0300
+Processing by BoletasController#clientes as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "clientes"[0m
+  [1m[35mCliente Load (0.3ms)[0m  SELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC
+  Rendered boletas/clientes.html.erb within layouts/application (10.6ms)
+  Rendered partials/_sidenav.html.erb (2.3ms)
+  Rendered partials/_topnav.html.erb (5.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 123ms (Views: 120.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/boletas/servicios?cliente_id=9" for 127.0.0.1 at 2016-09-22 15:04:19 -0300
+Processing by BoletasController#servicios as HTML
+  Parameters: {"cliente_id"=>"9"}
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Cliente with 'id'=cliente_id):
+  app/controllers/boletas_controller.rb:70:in `servicios'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.0ms)
+
+
+Started GET "/boletas/servicios?cliente_id=9" for 127.0.0.1 at 2016-09-22 15:04:19 -0300
+Processing by BoletasController#servicios as HTML
+  Parameters: {"cliente_id"=>"9"}
+  [1m[35mCliente Load (0.2ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Cliente with 'id'=cliente_id):
+  app/controllers/boletas_controller.rb:70:in `servicios'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.7ms)
+
+
+Started GET "/boletas/clientes" for 127.0.0.1 at 2016-09-22 15:04:28 -0300
+Processing by BoletasController#clientes as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "clientes"[0m
+  [1m[35mCliente Load (0.2ms)[0m  SELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC
+  Rendered boletas/clientes.html.erb within layouts/application (3.6ms)
+  Rendered partials/_sidenav.html.erb (2.3ms)
+  Rendered partials/_topnav.html.erb (6.6ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 100ms (Views: 99.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boletas/servicios?cliente_id=8" for 127.0.0.1 at 2016-09-22 15:04:35 -0300
+Processing by BoletasController#servicios as HTML
+  Parameters: {"cliente_id"=>"8"}
+  [1m[36mCliente Load (0.3ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Cliente with 'id'=cliente_id):
+  app/controllers/boletas_controller.rb:70:in `servicios'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (33.2ms)
+
+
+Started GET "/boletas/servicios?cliente_id=8" for 127.0.0.1 at 2016-09-22 15:04:36 -0300
+Processing by BoletasController#servicios as HTML
+  Parameters: {"cliente_id"=>"8"}
+  [1m[35mCliente Load (0.2ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Cliente with 'id'=cliente_id):
+  app/controllers/boletas_controller.rb:70:in `servicios'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.0ms)
+
+
+Started GET "/boletas/" for 127.0.0.1 at 2016-09-22 15:05:14 -0300
+Processing by BoletasController#index as HTML
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  [1m[35mBoleta Load (0.7ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  Rendered boletas/index.html.erb within layouts/application (7.2ms)
+  Rendered partials/_sidenav.html.erb (3.2ms)
+  Rendered partials/_topnav.html.erb (10.3ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 123ms (Views: 120.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/boletas/clientes" for 127.0.0.1 at 2016-09-22 15:05:17 -0300
+Processing by BoletasController#clientes as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "clientes"[0m
+  [1m[35mCliente Load (0.2ms)[0m  SELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC
+  Rendered boletas/clientes.html.erb within layouts/application (3.0ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (6.7ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 107ms (Views: 105.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/boletas/servicios?cliente_id=3" for 127.0.0.1 at 2016-09-22 15:05:26 -0300
+Processing by BoletasController#servicios as HTML
+  Parameters: {"cliente_id"=>"3"}
+  [1m[36mCliente Load (0.1ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Cliente with 'id'=cliente_id):
+  app/controllers/boletas_controller.rb:70:in `servicios'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.5ms)
+
+
+Started GET "/boletas/servicios?cliente_id=3" for 127.0.0.1 at 2016-09-22 15:05:26 -0300
+Processing by BoletasController#servicios as HTML
+  Parameters: {"cliente_id"=>"3"}
+  [1m[35mCliente Load (0.2ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Cliente with 'id'=cliente_id):
+  app/controllers/boletas_controller.rb:70:in `servicios'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.1ms)
+
+
+Started GET "/boletas/" for 127.0.0.1 at 2016-09-22 15:06:35 -0300
+Processing by BoletasController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  [1m[35mBoleta Load (0.5ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  Rendered boletas/index.html.erb within layouts/application (14.5ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (6.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 102ms (Views: 96.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/boletas/clientes" for 127.0.0.1 at 2016-09-22 15:06:38 -0300
+Processing by BoletasController#clientes as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "clientes"[0m
+  [1m[35mCliente Load (0.3ms)[0m  SELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC
+  Rendered boletas/clientes.html.erb within layouts/application (8.9ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (6.7ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 106ms (Views: 103.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/boletas/servicios?cliente_id=11" for 127.0.0.1 at 2016-09-22 15:06:39 -0300
+Processing by BoletasController#servicios as HTML
+  Parameters: {"cliente_id"=>"11"}
+  [1m[36mCliente Load (0.4ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", 11]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "servicios"
+  [1m[36mServicio Load (0.2ms)[0m  [1mSELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC[0m
+  Rendered boletas/servicios.html.erb within layouts/application (10.4ms)
+  Rendered partials/_sidenav.html.erb (2.7ms)
+  Rendered partials/_topnav.html.erb (7.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 166ms (Views: 153.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/boletas/crear?cliente_id=11&servicio_id=7" for 127.0.0.1 at 2016-09-22 15:06:42 -0300
+Processing by BoletasController#crear as HTML
+  Parameters: {"cliente_id"=>"11", "servicio_id"=>"7"}
+  [1m[35mServicio Load (0.3ms)[0m  SELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", 11]]
+  Rendered boletas/crear.html.erb within layouts/application (2.0ms)
+  Rendered partials/_sidenav.html.erb (3.5ms)
+  Rendered partials/_topnav.html.erb (10.3ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 180ms (Views: 177.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/boletas/crear?cliente_id=11&servicio_id=7" for 127.0.0.1 at 2016-09-22 15:07:35 -0300
+Processing by BoletasController#crear as HTML
+  Parameters: {"cliente_id"=>"11", "servicio_id"=>"7"}
+  [1m[35mServicio Load (0.2ms)[0m  SELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCliente Load (0.1ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", 11]]
+  Rendered boletas/crear.html.erb within layouts/application (1.3ms)
+  Rendered partials/_sidenav.html.erb (2.3ms)
+  Rendered partials/_topnav.html.erb (7.8ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 99ms (Views: 97.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/boletas/crear_boleta?cliente_id=11&servicio_id=7" for 127.0.0.1 at 2016-09-22 15:07:47 -0300
+Processing by BoletasController#crear_boleta as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zLdiUSbZPAD6S+QdjaFwp4X44yFkXWrU+iq/21HyFmzEpy+9SYR39r9VBXaD81yTX9Zom2oHzi11SMDBGXRTEQ==", "commit"=>"Crear Boleta", "cliente_id"=>"11", "servicio_id"=>"7"}
+  [1m[35mCliente Load (0.3ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1  [["id", 11]]
+  [1m[36mServicio Load (0.4ms)[0m  [1mSELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1[0m  [["id", 7]]
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.7ms)
+
+NoMethodError (undefined method `categorias_id' for #<Servicio:0xb25dc64c>):
+  app/controllers/boletas_controller.rb:17:in `crear_boleta'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.3ms)
+  [1m[36mServicio Load (0.8ms)[0m  [1mSELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1[0m  [["id", 8]]
+
+
+Started GET "/boletas/" for 127.0.0.1 at 2016-09-22 15:09:14 -0300
+Processing by BoletasController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  [1m[36mBoleta Load (0.4ms)[0m  [1mSELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  Rendered boletas/index.html.erb within layouts/application (15.5ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (6.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 113ms (Views: 106.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/boletas/clientes" for 127.0.0.1 at 2016-09-22 15:09:16 -0300
+Processing by BoletasController#clientes as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "clientes"
+  [1m[36mCliente Load (0.3ms)[0m  [1mSELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC[0m
+  Rendered boletas/clientes.html.erb within layouts/application (9.9ms)
+  Rendered partials/_sidenav.html.erb (1.8ms)
+  Rendered partials/_topnav.html.erb (5.3ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 96ms (Views: 93.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/boletas/servicios?cliente_id=11" for 127.0.0.1 at 2016-09-22 15:09:20 -0300
+Processing by BoletasController#servicios as HTML
+  Parameters: {"cliente_id"=>"11"}
+  [1m[35mCliente Load (0.3ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1  [["id", 11]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "servicios"[0m
+  [1m[35mServicio Load (0.2ms)[0m  SELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC
+  Rendered boletas/servicios.html.erb within layouts/application (9.5ms)
+  Rendered partials/_sidenav.html.erb (2.4ms)
+  Rendered partials/_topnav.html.erb (8.8ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 129ms (Views: 121.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/boletas/crear?cliente_id=11&servicio_id=8" for 127.0.0.1 at 2016-09-22 15:09:21 -0300
+Processing by BoletasController#crear as HTML
+  Parameters: {"cliente_id"=>"11", "servicio_id"=>"8"}
+  [1m[36mServicio Load (0.3ms)[0m  [1mSELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mCliente Load (0.2ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1  [["id", 11]]
+  Rendered boletas/crear.html.erb within layouts/application (2.1ms)
+  Rendered partials/_sidenav.html.erb (2.6ms)
+  Rendered partials/_topnav.html.erb (8.7ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 168ms (Views: 165.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/boletas/crear_boleta?cliente_id=11&servicio_id=8" for 127.0.0.1 at 2016-09-22 15:09:26 -0300
+Processing by BoletasController#crear_boleta as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7+T4ALrt9I3rp5wfJUrC5mEC1w70l/JaDYMQtR8opN/n9LXs1bC/e665fXQrGO7SuyxctPrNVqOC4W+vV67hog==", "commit"=>"Crear Boleta", "cliente_id"=>"11", "servicio_id"=>"8"}
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", 11]]
+  [1m[35mServicio Load (0.2ms)[0m  SELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mCategoria Load (0.4ms)[0m  [1mSELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mEmpresa Load (0.3ms)[0m  SELECT  "empresas".* FROM "empresas" WHERE "empresas"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 21ms (ActiveRecord: 3.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Empresa with 'id'=1):
+  app/controllers/boletas_controller.rb:18:in `crear_boleta'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (41.3ms)
+
+
+Started GET "/boletas" for 127.0.0.1 at 2016-09-22 15:09:46 -0300
+Processing by BoletasController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  [1m[35mBoleta Load (0.4ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  Rendered boletas/index.html.erb within layouts/application (14.0ms)
+  Rendered partials/_sidenav.html.erb (2.6ms)
+  Rendered partials/_topnav.html.erb (6.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 111ms (Views: 105.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/boletas/clientes" for 127.0.0.1 at 2016-09-22 15:09:48 -0300
+Processing by BoletasController#clientes as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "clientes"[0m
+  [1m[35mCliente Load (0.2ms)[0m  SELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC
+  Rendered boletas/clientes.html.erb within layouts/application (9.5ms)
+  Rendered partials/_sidenav.html.erb (11.8ms)
+  Rendered partials/_topnav.html.erb (6.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 109ms (Views: 107.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/boletas/servicios?cliente_id=11" for 127.0.0.1 at 2016-09-22 15:09:50 -0300
+Processing by BoletasController#servicios as HTML
+  Parameters: {"cliente_id"=>"11"}
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", 11]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "servicios"
+  [1m[36mServicio Load (0.2ms)[0m  [1mSELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC[0m
+  Rendered boletas/servicios.html.erb within layouts/application (8.0ms)
+  Rendered partials/_sidenav.html.erb (3.7ms)
+  Rendered partials/_topnav.html.erb (8.0ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 123ms (Views: 115.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/boletas/crear?cliente_id=11&servicio_id=8" for 127.0.0.1 at 2016-09-22 15:09:51 -0300
+Processing by BoletasController#crear as HTML
+  Parameters: {"cliente_id"=>"11", "servicio_id"=>"8"}
+  [1m[35mServicio Load (0.4ms)[0m  SELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", 11]]
+  Rendered boletas/crear.html.erb within layouts/application (0.9ms)
+  Rendered partials/_sidenav.html.erb (2.2ms)
+  Rendered partials/_topnav.html.erb (9.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 110ms (Views: 107.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/boletas/crear_boleta?cliente_id=11&servicio_id=8" for 127.0.0.1 at 2016-09-22 15:09:52 -0300
+Processing by BoletasController#crear_boleta as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"38HDQmUuT7L5rmzZfcaYM8Y3qw9fyfT7xxsTlnwFnK/X0Y6uCnMERLywjbJzlLQHHBkgtVGTUAJIeWyMNIPZ0g==", "commit"=>"Crear Boleta", "cliente_id"=>"11", "servicio_id"=>"8"}
+  [1m[35mCliente Load (0.3ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1  [["id", 11]]
+  [1m[36mServicio Load (0.2ms)[0m  [1mSELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mCategoria Load (0.3ms)[0m  SELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mEmpresa Load (0.3ms)[0m  [1mSELECT  "empresas".* FROM "empresas" WHERE "empresas"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "boleta" ("total", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["total", 19990], ["created_at", "2016-09-22 18:09:52.755261"], ["updated_at", "2016-09-22 18:09:52.755261"]]
+  [1m[35m (31.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "boleta" SET "cliente_id" = $1, "updated_at" = $2 WHERE "boleta"."id" = $3  [["cliente_id", 11], ["updated_at", "2016-09-22 18:09:52.803103"], ["id", 6]]
+  [1m[36m (5.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mBoleta Load (0.2ms)[0m  SELECT  "boleta".* FROM "boleta" WHERE "boleta"."servicio_id" = $1 LIMIT 1  [["servicio_id", 8]]
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 41.3ms)
+
+NoMethodError (undefined method `<<' for #<Boleta:0xb1fe354c>):
+  app/controllers/boletas_controller.rb:25:in `crear_boleta'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (40.9ms)
+
+
+Started GET "/boletas" for 127.0.0.1 at 2016-09-22 15:10:12 -0300
+Processing by BoletasController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  [1m[35mBoleta Load (0.4ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  Rendered boletas/index.html.erb within layouts/application (18.4ms)
+  Rendered partials/_sidenav.html.erb (1.8ms)
+  Rendered partials/_topnav.html.erb (5.5ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 123ms (Views: 116.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/boletas/clientes" for 127.0.0.1 at 2016-09-22 15:10:17 -0300
+Processing by BoletasController#clientes as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "clientes"[0m
+  [1m[35mCliente Load (0.6ms)[0m  SELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC
+  Rendered boletas/clientes.html.erb within layouts/application (19.9ms)
+  Rendered partials/_sidenav.html.erb (2.2ms)
+  Rendered partials/_topnav.html.erb (7.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 126ms (Views: 122.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/boletas/servicios?cliente_id=11" for 127.0.0.1 at 2016-09-22 15:10:18 -0300
+Processing by BoletasController#servicios as HTML
+  Parameters: {"cliente_id"=>"11"}
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", 11]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "servicios"
+  [1m[36mServicio Load (0.4ms)[0m  [1mSELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC[0m
+  Rendered boletas/servicios.html.erb within layouts/application (10.3ms)
+  Rendered partials/_sidenav.html.erb (2.8ms)
+  Rendered partials/_topnav.html.erb (8.2ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 131ms (Views: 122.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/boletas/crear?cliente_id=11&servicio_id=8" for 127.0.0.1 at 2016-09-22 15:10:20 -0300
+Processing by BoletasController#crear as HTML
+  Parameters: {"cliente_id"=>"11", "servicio_id"=>"8"}
+  [1m[35mServicio Load (0.2ms)[0m  SELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", 11]]
+  Rendered boletas/crear.html.erb within layouts/application (0.8ms)
+  Rendered partials/_sidenav.html.erb (3.0ms)
+  Rendered partials/_topnav.html.erb (8.2ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 115ms (Views: 112.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/boletas/crear_boleta?cliente_id=11&servicio_id=8" for 127.0.0.1 at 2016-09-22 15:10:21 -0300
+Processing by BoletasController#crear_boleta as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SpQxiFo215czyD61MLBFSklRM46UnpBSKlCLeIxRgLRChHxkNWucYXbW394+4ml+k3+4NJrENKulMvRixNfFyQ==", "commit"=>"Crear Boleta", "cliente_id"=>"11", "servicio_id"=>"8"}
+  [1m[35mCliente Load (0.3ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1  [["id", 11]]
+  [1m[36mServicio Load (0.2ms)[0m  [1mSELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mCategoria Load (0.5ms)[0m  SELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mEmpresa Load (0.3ms)[0m  [1mSELECT  "empresas".* FROM "empresas" WHERE "empresas"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "boleta" ("total", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["total", 19990], ["created_at", "2016-09-22 18:10:21.540696"], ["updated_at", "2016-09-22 18:10:21.540696"]]
+  [1m[35m (14.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "boleta" SET "cliente_id" = $1, "updated_at" = $2 WHERE "boleta"."id" = $3  [["cliente_id", 11], ["updated_at", "2016-09-22 18:10:21.560120"], ["id", 7]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mBoleta Load (0.3ms)[0m  SELECT  "boleta".* FROM "boleta" WHERE "boleta"."empresa_id" = $1 LIMIT 1  [["empresa_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "boleta" SET "empresa_id" = $1, "updated_at" = $2 WHERE "boleta"."id" = $3  [["empresa_id", nil], ["updated_at", "2016-09-22 18:10:21.573507"], ["id", 5]]
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "boleta" SET "empresa_id" = $1, "updated_at" = $2 WHERE "boleta"."id" = $3[0m  [["empresa_id", 3], ["updated_at", "2016-09-22 18:10:21.575730"], ["id", 7]]
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36mBoleta Load (0.3ms)[0m  [1mSELECT  "boleta".* FROM "boleta" WHERE "boleta"."servicio_id" = $1 LIMIT 1[0m  [["servicio_id", 8]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "boleta" SET "servicio_id" = $1, "updated_at" = $2 WHERE "boleta"."id" = $3[0m  [["servicio_id", nil], ["updated_at", "2016-09-22 18:10:21.583618"], ["id", 5]]
+  [1m[35mSQL (0.3ms)[0m  UPDATE "boleta" SET "servicio_id" = $1, "updated_at" = $2 WHERE "boleta"."id" = $3  [["servicio_id", 8], ["updated_at", "2016-09-22 18:10:21.585392"], ["id", 7]]
+  [1m[36m (3.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/boletas
+Completed 302 Found in 76ms (ActiveRecord: 32.0ms)
+
+
+Started GET "/boletas" for 127.0.0.1 at 2016-09-22 15:10:21 -0300
+Processing by BoletasController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  [1m[36mBoleta Load (0.4ms)[0m  [1mSELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  Rendered boletas/index.html.erb within layouts/application (7.5ms)
+  Rendered partials/_sidenav.html.erb (2.3ms)
+  Rendered partials/_topnav.html.erb (6.4ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 121ms (Views: 119.3ms | ActiveRecord: 1.0ms)
+  [1m[35mBoleta Load (1.3ms)[0m  SELECT boleta.id as b_id, clientes.id,clientes.rut, clientes.nombre FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  [1m[36mBoleta Load (1.4ms)[0m  [1mSELECT boleta.id as b_id, clientes.id,clientes.rut, clientes.nombre FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id = 3)[0m
+PG::AmbiguousColumn: ERROR:  column reference "id" is ambiguous
+LINE 1: ...s" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id = 3)
+                                                                ^
+: SELECT boleta.id as b_id, clientes.id,clientes.rut, clientes.nombre FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id = 3)
+  [1m[35mBoleta Load (1.1ms)[0m  SELECT boleta.id as b_id, clientes.id,clientes.rut, clientes.nombre FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (boleta.id = 3)
+  [1m[36mBoleta Load (1.0ms)[0m  [1mSELECT boleta.id as b_id, clientes.id,clientes.rut, clientes.nombre FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (boleta.id = 11)[0m
+  [1m[35mBoleta Load (1.0ms)[0m  SELECT boleta.id as b_id, clientes.id,clientes.rut, clientes.nombre FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (boleta.id = 8)
+  [1m[36mBoleta Load (1.0ms)[0m  [1mSELECT "boleta".* FROM "boleta"  ORDER BY boleta.id ASC[0m
+  [1m[35mBoleta Load (1.0ms)[0m  SELECT boleta.id as b_id, clientes.id,clientes.rut, clientes.nombre FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (boleta.id = 5)
+
+
+Started GET "/boletas" for 127.0.0.1 at 2016-09-22 15:22:14 -0300
+Processing by BoletasController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  [1m[36mBoleta Load (0.4ms)[0m  [1mSELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  Rendered boletas/index.html.erb within layouts/application (17.1ms)
+  Rendered partials/_sidenav.html.erb (2.2ms)
+  Rendered partials/_topnav.html.erb (6.4ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 113ms (Views: 107.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/boletas/mostrar/5" for 127.0.0.1 at 2016-09-22 15:22:15 -0300
+Processing by BoletasController#mostrar as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mBoleta Load (0.2ms)[0m  SELECT  "boleta".* FROM "boleta" WHERE "boleta"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered boletas/mostrar.html.erb within layouts/application (0.3ms)
+  Rendered partials/_sidenav.html.erb (2.4ms)
+  Rendered partials/_topnav.html.erb (7.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 100ms (Views: 98.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boletas/" for 127.0.0.1 at 2016-09-22 15:25:39 -0300
+Processing by BoletasController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  [1m[35mBoleta Load (0.4ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  Rendered boletas/index.html.erb within layouts/application (6.4ms)
+  Rendered partials/_sidenav.html.erb (2.8ms)
+  Rendered partials/_topnav.html.erb (6.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 114ms (Views: 112.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/boletas/mostrar/6" for 127.0.0.1 at 2016-09-22 15:25:42 -0300
+Processing by BoletasController#mostrar as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoleta Load (0.4ms)[0m  [1mSELECT  "boleta".* FROM "boleta" WHERE "boleta"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mBoleta Load (1.5ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =6)
+PG::AmbiguousColumn: ERROR:  column reference "id" is ambiguous
+LINE 1: ...es" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =6)
+                                                                 ^
+: SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =6)
+  Rendered boletas/mostrar.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.0ms)
+
+ActionView::Template::Error (undefined method `b_id' for #<Boleta::ActiveRecord_Relation:0xb42ca380>):
+     6: <table summary="Detalle del plan">
+     7:   <tr>
+     8:     <th>Nro de Boleta</th>
+     9:     <td><%= @detalle.b_id %></td>
+    10:   </tr>
+    11:   <tr>
+    12:     <th>Nro de Cliente</th>
+  app/views/boletas/mostrar.html.erb:9:in `_app_views_boletas_mostrar_html_erb__15623505__636073478'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (33.1ms)
+
+
+Started GET "/boletas/mostrar/6" for 127.0.0.1 at 2016-09-22 15:25:42 -0300
+Processing by BoletasController#mostrar as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoleta Load (0.2ms)[0m  [1mSELECT  "boleta".* FROM "boleta" WHERE "boleta"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mBoleta Load (29.6ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =6)
+PG::AmbiguousColumn: ERROR:  column reference "id" is ambiguous
+LINE 1: ...es" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =6)
+                                                                 ^
+: SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =6)
+  Rendered boletas/mostrar.html.erb within layouts/application (32.9ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 29.8ms)
+
+ActionView::Template::Error (undefined method `b_id' for #<Boleta::ActiveRecord_Relation:0xb1acf308>):
+     6: <table summary="Detalle del plan">
+     7:   <tr>
+     8:     <th>Nro de Boleta</th>
+     9:     <td><%= @detalle.b_id %></td>
+    10:   </tr>
+    11:   <tr>
+    12:     <th>Nro de Cliente</th>
+  app/views/boletas/mostrar.html.erb:9:in `_app_views_boletas_mostrar_html_erb__15623505__657034678'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.3ms)
+
+
+Started GET "/boletas/mostrar/6" for 127.0.0.1 at 2016-09-22 15:26:44 -0300
+Processing by BoletasController#mostrar as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBoleta Load (0.2ms)[0m  [1mSELECT  "boleta".* FROM "boleta" WHERE "boleta"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mBoleta Load (1.1ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =6)
+PG::AmbiguousColumn: ERROR:  column reference "id" is ambiguous
+LINE 1: ...es" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =6)
+                                                                 ^
+: SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =6)
+  Rendered boletas/mostrar.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.4ms)
+
+ActionView::Template::Error (undefined method `id' for #<Boleta::ActiveRecord_Relation:0xb1b089dc>):
+    10:   </tr>
+    11:   <tr>
+    12:     <th>Nro de Cliente</th>
+    13:     <td><%= @detalle.id %></td>
+    14:   </tr>
+    15:   <tr>
+    16:     <th>Nombre</th>
+  app/views/boletas/mostrar.html.erb:13:in `_app_views_boletas_mostrar_html_erb__15623505__654901948'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.1ms)
+
+
+Started GET "/boletas/" for 127.0.0.1 at 2016-09-22 15:27:46 -0300
+Processing by BoletasController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  [1m[35mBoleta Load (0.3ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  Rendered boletas/index.html.erb within layouts/application (15.5ms)
+  Rendered partials/_sidenav.html.erb (2.0ms)
+  Rendered partials/_topnav.html.erb (6.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 104ms (Views: 98.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/boletas/mostrar/7" for 127.0.0.1 at 2016-09-22 15:27:49 -0300
+Processing by BoletasController#mostrar as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBoleta Load (0.9ms)[0m  [1mSELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =7)[0m
+PG::AmbiguousColumn: ERROR:  column reference "id" is ambiguous
+LINE 1: ...es" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =7)
+                                                                 ^
+: SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =7)
+  Rendered boletas/mostrar.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (undefined method `b_id' for #<Boleta::ActiveRecord_Relation:0xb420c8f8>):
+     6: <table summary="Detalle del plan">
+     7:   <tr>
+     8:     <th>Nro de Boleta</th>
+     9:     <td><%= @detalle.b_id %></td>
+    10:   </tr>
+    11:   <tr>
+    12:     <th>Nro de Cliente</th>
+  app/views/boletas/mostrar.html.erb:9:in `_app_views_boletas_mostrar_html_erb__15623505__634970728'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.1ms)
+
+
+Started GET "/boletas/mostrar/7" for 127.0.0.1 at 2016-09-22 15:27:49 -0300
+Processing by BoletasController#mostrar as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mBoleta Load (1.4ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =7)
+PG::AmbiguousColumn: ERROR:  column reference "id" is ambiguous
+LINE 1: ...es" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =7)
+                                                                 ^
+: SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =7)
+  Rendered boletas/mostrar.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.4ms)
+
+ActionView::Template::Error (undefined method `b_id' for #<Boleta::ActiveRecord_Relation:0xb2763dd0>):
+     6: <table summary="Detalle del plan">
+     7:   <tr>
+     8:     <th>Nro de Boleta</th>
+     9:     <td><%= @detalle.b_id %></td>
+    10:   </tr>
+    11:   <tr>
+    12:     <th>Nro de Cliente</th>
+  app/views/boletas/mostrar.html.erb:9:in `_app_views_boletas_mostrar_html_erb__15623505__650438468'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.6ms)
+
+
+Started GET "/boletas" for 127.0.0.1 at 2016-09-22 15:29:06 -0300
+Processing by BoletasController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  [1m[35mBoleta Load (0.4ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  Rendered boletas/index.html.erb within layouts/application (4.7ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (6.4ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 93ms (Views: 91.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boletas/mostrar/5" for 127.0.0.1 at 2016-09-22 15:29:10 -0300
+Processing by BoletasController#mostrar as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBoleta Load (1.4ms)[0m  [1mSELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =5)[0m
+PG::AmbiguousColumn: ERROR:  column reference "id" is ambiguous
+LINE 1: ...es" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =5)
+                                                                 ^
+: SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =5)
+  Rendered boletas/mostrar.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.4ms)
+
+ActionView::Template::Error (undefined method `b_id' for #<Boleta::ActiveRecord_Relation:0xb23ed750>):
+     6: <table summary="Detalle del plan">
+     7:   <tr>
+     8:     <th>Nro de Boleta</th>
+     9:     <td><%= @detalle.b_id %></td>
+    10:   </tr>
+    11:   <tr>
+    12:     <th>Nro de Cliente</th>
+  app/views/boletas/mostrar.html.erb:9:in `_app_views_boletas_mostrar_html_erb__15623505__634970728'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.9ms)
+
+
+Started GET "/boletas/mostrar/5" for 127.0.0.1 at 2016-09-22 15:29:10 -0300
+Processing by BoletasController#mostrar as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mBoleta Load (0.9ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =5)
+PG::AmbiguousColumn: ERROR:  column reference "id" is ambiguous
+LINE 1: ...es" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =5)
+                                                                 ^
+: SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =5)
+  Rendered boletas/mostrar.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (undefined method `b_id' for #<Boleta::ActiveRecord_Relation:0xb50b597c>):
+     6: <table summary="Detalle del plan">
+     7:   <tr>
+     8:     <th>Nro de Boleta</th>
+     9:     <td><%= @detalle.b_id %></td>
+    10:   </tr>
+    11:   <tr>
+    12:     <th>Nro de Cliente</th>
+  app/views/boletas/mostrar.html.erb:9:in `_app_views_boletas_mostrar_html_erb__15623505__650438468'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.4ms)
+
+
+Started GET "/boletas/clientes" for 127.0.0.1 at 2016-09-22 15:29:19 -0300
+Processing by BoletasController#clientes as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "clientes"[0m
+  [1m[35mCliente Load (0.2ms)[0m  SELECT "clientes".* FROM "clientes"  ORDER BY clientes.id ASC
+  Rendered boletas/clientes.html.erb within layouts/application (7.5ms)
+  Rendered partials/_sidenav.html.erb (2.0ms)
+  Rendered partials/_topnav.html.erb (6.2ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 94ms (Views: 92.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/boletas/servicios?cliente_id=11" for 127.0.0.1 at 2016-09-22 15:29:21 -0300
+Processing by BoletasController#servicios as HTML
+  Parameters: {"cliente_id"=>"11"}
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", 11]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "servicios"
+  [1m[36mServicio Load (0.2ms)[0m  [1mSELECT "servicios".* FROM "servicios"  ORDER BY servicios.id ASC[0m
+  Rendered boletas/servicios.html.erb within layouts/application (8.1ms)
+  Rendered partials/_sidenav.html.erb (2.0ms)
+  Rendered partials/_topnav.html.erb (6.0ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 109ms (Views: 99.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/boletas/crear?cliente_id=11&servicio_id=4" for 127.0.0.1 at 2016-09-22 15:29:24 -0300
+Processing by BoletasController#crear as HTML
+  Parameters: {"cliente_id"=>"11", "servicio_id"=>"4"}
+  [1m[35mServicio Load (0.6ms)[0m  SELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1[0m  [["id", 11]]
+  Rendered boletas/crear.html.erb within layouts/application (0.8ms)
+  Rendered partials/_sidenav.html.erb (2.3ms)
+  Rendered partials/_topnav.html.erb (8.9ms)
+  Rendered partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 109ms (Views: 106.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/boletas/crear_boleta?cliente_id=11&servicio_id=4" for 127.0.0.1 at 2016-09-22 15:29:31 -0300
+Processing by BoletasController#crear_boleta as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x1GlGKI2oCEg1yPdAJq931olTV64QpcCS8UTO2Ej/i7PQej0zWvr12XJwrYOyJHrgAvG5LYYM/vEp2whKaW7Uw==", "commit"=>"Crear Boleta", "cliente_id"=>"11", "servicio_id"=>"4"}
+  [1m[35mCliente Load (0.3ms)[0m  SELECT  "clientes".* FROM "clientes" WHERE "clientes"."id" = $1 LIMIT 1  [["id", 11]]
+  [1m[36mServicio Load (0.2ms)[0m  [1mSELECT  "servicios".* FROM "servicios" WHERE "servicios"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCategoria Load (0.3ms)[0m  SELECT  "categoria".* FROM "categoria" WHERE "categoria"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mEmpresa Load (0.3ms)[0m  [1mSELECT  "empresas".* FROM "empresas" WHERE "empresas"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "boleta" ("total", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["total", 202322], ["created_at", "2016-09-22 18:29:31.462794"], ["updated_at", "2016-09-22 18:29:31.462794"]]
+  [1m[35m (776.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "boleta" SET "cliente_id" = $1, "updated_at" = $2 WHERE "boleta"."id" = $3  [["cliente_id", 11], ["updated_at", "2016-09-22 18:29:32.243917"], ["id", 8]]
+  [1m[36m (14.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mBoleta Load (0.3ms)[0m  SELECT  "boleta".* FROM "boleta" WHERE "boleta"."empresa_id" = $1 LIMIT 1  [["empresa_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "boleta" SET "empresa_id" = $1, "updated_at" = $2 WHERE "boleta"."id" = $3  [["empresa_id", nil], ["updated_at", "2016-09-22 18:29:32.264885"], ["id", 7]]
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "boleta" SET "empresa_id" = $1, "updated_at" = $2 WHERE "boleta"."id" = $3[0m  [["empresa_id", 3], ["updated_at", "2016-09-22 18:29:32.266984"], ["id", 8]]
+  [1m[35m (2.7ms)[0m  COMMIT
+  [1m[36mBoleta Load (0.3ms)[0m  [1mSELECT  "boleta".* FROM "boleta" WHERE "boleta"."servicio_id" = $1 LIMIT 1[0m  [["servicio_id", 4]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "boleta" SET "servicio_id" = $1, "updated_at" = $2 WHERE "boleta"."id" = $3[0m  [["servicio_id", 4], ["updated_at", "2016-09-22 18:29:32.275416"], ["id", 8]]
+  [1m[35m (5.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/boletas
+Completed 302 Found in 844ms (ActiveRecord: 804.8ms)
+
+
+Started GET "/boletas" for 127.0.0.1 at 2016-09-22 15:29:32 -0300
+Processing by BoletasController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  [1m[35mBoleta Load (0.3ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  Rendered boletas/index.html.erb within layouts/application (19.0ms)
+  Rendered partials/_sidenav.html.erb (3.7ms)
+  Rendered partials/_topnav.html.erb (7.4ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 126ms (Views: 124.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/boletas/mostrar/8" for 127.0.0.1 at 2016-09-22 15:29:37 -0300
+Processing by BoletasController#mostrar as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoleta Load (1.3ms)[0m  [1mSELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =8)[0m
+PG::AmbiguousColumn: ERROR:  column reference "id" is ambiguous
+LINE 1: ...es" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =8)
+                                                                 ^
+: SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =8)
+  Rendered boletas/mostrar.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.3ms)
+
+ActionView::Template::Error (undefined method `b_id' for #<Boleta::ActiveRecord_Relation:0xb1eae258>):
+     6: <table summary="Detalle del plan">
+     7:   <tr>
+     8:     <th>Nro de Boleta</th>
+     9:     <td><%= @detalle.b_id %></td>
+    10:   </tr>
+    11:   <tr>
+    12:     <th>Nro de Cliente</th>
+  app/views/boletas/mostrar.html.erb:9:in `_app_views_boletas_mostrar_html_erb__15623505__634970728'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.1ms)
+
+
+Started GET "/boletas/mostrar/8" for 127.0.0.1 at 2016-09-22 15:29:37 -0300
+Processing by BoletasController#mostrar as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mBoleta Load (1.0ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =8)
+PG::AmbiguousColumn: ERROR:  column reference "id" is ambiguous
+LINE 1: ...es" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =8)
+                                                                 ^
+: SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id =8)
+  Rendered boletas/mostrar.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `b_id' for #<Boleta::ActiveRecord_Relation:0xb3512364>):
+     6: <table summary="Detalle del plan">
+     7:   <tr>
+     8:     <th>Nro de Boleta</th>
+     9:     <td><%= @detalle.b_id %></td>
+    10:   </tr>
+    11:   <tr>
+    12:     <th>Nro de Cliente</th>
+  app/views/boletas/mostrar.html.erb:9:in `_app_views_boletas_mostrar_html_erb__15623505__650438468'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.7ms)
+
+
+Started GET "/boletas/mostrar/8" for 127.0.0.1 at 2016-09-22 15:30:06 -0300
+Processing by BoletasController#mostrar as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoleta Load (0.8ms)[0m  [1mSELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id = 8)[0m
+PG::AmbiguousColumn: ERROR:  column reference "id" is ambiguous
+LINE 1: ...s" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id = 8)
+                                                                ^
+: SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id = 8)
+  Rendered boletas/mostrar.html.erb within layouts/application (11.3ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 2.7ms)
+
+ActionView::Template::Error (undefined method `b_id' for #<Boleta::ActiveRecord_Relation:0xb4cdf76c>):
+     6: <table summary="Detalle del plan">
+     7:   <tr>
+     8:     <th>Nro de Boleta</th>
+     9:     <td><%= @detalle.b_id %></td>
+    10:   </tr>
+    11:   <tr>
+    12:     <th>Nro de Cliente</th>
+  app/views/boletas/mostrar.html.erb:9:in `_app_views_boletas_mostrar_html_erb__15623505__650438468'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.6ms)
+
+
+Started GET "/boletas" for 127.0.0.1 at 2016-09-22 15:31:27 -0300
+Processing by BoletasController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  [1m[36mBoleta Load (0.6ms)[0m  [1mSELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  Rendered boletas/index.html.erb within layouts/application (14.0ms)
+  Rendered partials/_sidenav.html.erb (2.0ms)
+  Rendered partials/_topnav.html.erb (6.2ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 110ms (Views: 107.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/boletas/eliminar/8" for 127.0.0.1 at 2016-09-22 15:31:30 -0300
+Processing by BoletasController#eliminar as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mBoleta Load (0.3ms)[0m  SELECT  "boleta".* FROM "boleta" WHERE "boleta"."id" = $1 LIMIT 1  [["id", 8]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `nombre' for #<Boleta:0xb1bba2a4>):
+  app/controllers/boletas_controller.rb:56:in `eliminar'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (33.9ms)
+
+
+Started GET "/boletas/eliminar/8" for 127.0.0.1 at 2016-09-22 15:31:30 -0300
+Processing by BoletasController#eliminar as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoleta Load (0.3ms)[0m  [1mSELECT  "boleta".* FROM "boleta" WHERE "boleta"."id" = $1 LIMIT 1[0m  [["id", 8]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `nombre' for #<Boleta:0xb13f95b0>):
+  app/controllers/boletas_controller.rb:56:in `eliminar'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (34.7ms)
+
+
+Started GET "/boletas/" for 127.0.0.1 at 2016-09-22 15:32:03 -0300
+Processing by BoletasController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  [1m[36mBoleta Load (0.4ms)[0m  [1mSELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  Rendered boletas/index.html.erb within layouts/application (17.3ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (6.2ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 122ms (Views: 115.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/boletas/eliminar/8" for 127.0.0.1 at 2016-09-22 15:32:04 -0300
+Processing by BoletasController#eliminar as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mBoleta Load (0.2ms)[0m  SELECT  "boleta".* FROM "boleta" WHERE "boleta"."id" = $1 LIMIT 1  [["id", 8]]
+  Rendered boletas/eliminar.html.erb within layouts/application (1.2ms)
+  Rendered partials/_sidenav.html.erb (2.3ms)
+  Rendered partials/_topnav.html.erb (6.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 96ms (Views: 94.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/boletas" for 127.0.0.1 at 2016-09-22 15:32:51 -0300
+Processing by BoletasController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  [1m[35mBoleta Load (0.3ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  Rendered boletas/index.html.erb within layouts/application (16.4ms)
+  Rendered partials/_sidenav.html.erb (2.1ms)
+  Rendered partials/_topnav.html.erb (7.1ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 114ms (Views: 108.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/boletas/eliminar/8" for 127.0.0.1 at 2016-09-22 15:32:53 -0300
+Processing by BoletasController#eliminar as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoleta Load (0.1ms)[0m  [1mSELECT  "boleta".* FROM "boleta" WHERE "boleta"."id" = $1 LIMIT 1[0m  [["id", 8]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms)
+
+TypeError (no implicit conversion of Fixnum into String):
+  app/controllers/boletas_controller.rb:56:in `+'
+  app/controllers/boletas_controller.rb:56:in `eliminar'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (40.5ms)
+
+
+Started GET "/boletas/eliminar/8" for 127.0.0.1 at 2016-09-22 15:32:53 -0300
+Processing by BoletasController#eliminar as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mBoleta Load (0.3ms)[0m  SELECT  "boleta".* FROM "boleta" WHERE "boleta"."id" = $1 LIMIT 1  [["id", 8]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+
+TypeError (no implicit conversion of Fixnum into String):
+  app/controllers/boletas_controller.rb:56:in `+'
+  app/controllers/boletas_controller.rb:56:in `eliminar'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (15.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (42.6ms)
+
+
+Started GET "/boletas/eliminar/8" for 127.0.0.1 at 2016-09-22 15:33:17 -0300
+Processing by BoletasController#eliminar as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mBoleta Load (0.2ms)[0m  [1mSELECT  "boleta".* FROM "boleta" WHERE "boleta"."id" = $1 LIMIT 1[0m  [["id", 8]]
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.9ms)
+
+NoMethodError (undefined method `str' for #<BoletasController:0xb220da70>):
+  app/controllers/boletas_controller.rb:56:in `eliminar'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (35.8ms)
+
+
+Started GET "/boletas/eliminar/8" for 127.0.0.1 at 2016-09-22 15:33:53 -0300
+Processing by BoletasController#eliminar as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mBoleta Load (0.2ms)[0m  SELECT  "boleta".* FROM "boleta" WHERE "boleta"."id" = $1 LIMIT 1  [["id", 8]]
+  Rendered boletas/eliminar.html.erb within layouts/application (1.9ms)
+  Rendered partials/_sidenav.html.erb (2.2ms)
+  Rendered partials/_topnav.html.erb (6.5ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 117ms (Views: 106.7ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/boletas/eliminar_boleta/8" for 127.0.0.1 at 2016-09-22 15:33:56 -0300
+Processing by BoletasController#eliminar_boleta as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W9HTPRB/uyBBcZbn3f0m6f7ktlrZy4KrCwCKC54aJP9TwZ7RfyLw1gRvd4zTrwrdJMo94NeRJlKEYvUR1pxhgg==", "commit"=>"Elminar Boleta", "id"=>"8"}
+  [1m[36mBoleta Load (0.2ms)[0m  [1mSELECT  "boleta".* FROM "boleta" WHERE "boleta"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "boleta" WHERE "boleta"."id" = $1[0m  [["id", 8]]
+  [1m[35m (13.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/boletas
+Completed 302 Found in 17ms (ActiveRecord: 14.1ms)
+
+
+Started GET "/boletas" for 127.0.0.1 at 2016-09-22 15:33:56 -0300
+Processing by BoletasController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  [1m[35mBoleta Load (0.3ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  Rendered boletas/index.html.erb within layouts/application (9.7ms)
+  Rendered partials/_sidenav.html.erb (2.3ms)
+  Rendered partials/_topnav.html.erb (6.9ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 101ms (Views: 99.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/boletas/mostrar/7" for 127.0.0.1 at 2016-09-22 15:34:00 -0300
+Processing by BoletasController#mostrar as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mBoleta Load (1.1ms)[0m  [1mSELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id = 7)[0m
+PG::AmbiguousColumn: ERROR:  column reference "id" is ambiguous
+LINE 1: ...s" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id = 7)
+                                                                ^
+: SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id = 7)
+  Rendered boletas/mostrar.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (undefined method `b_id' for #<Boleta::ActiveRecord_Relation:0xb4241ddc>):
+     6: <table summary="Detalle del plan">
+     7:   <tr>
+     8:     <th>Nro de Boleta</th>
+     9:     <td><%= @detalle.b_id %></td>
+    10:   </tr>
+    11:   <tr>
+    12:     <th>Nro de Cliente</th>
+  app/views/boletas/mostrar.html.erb:9:in `_app_views_boletas_mostrar_html_erb__15623505__634970728'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.0ms)
+
+
+Started GET "/boletas/mostrar/7" for 127.0.0.1 at 2016-09-22 15:34:00 -0300
+Processing by BoletasController#mostrar as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mBoleta Load (1.3ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id = 7)
+PG::AmbiguousColumn: ERROR:  column reference "id" is ambiguous
+LINE 1: ...s" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id = 7)
+                                                                ^
+: SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total, boleta.created_at FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id" WHERE (id = 7)
+  Rendered boletas/mostrar.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.3ms)
+
+ActionView::Template::Error (undefined method `b_id' for #<Boleta::ActiveRecord_Relation:0xb4058dcc>):
+     6: <table summary="Detalle del plan">
+     7:   <tr>
+     8:     <th>Nro de Boleta</th>
+     9:     <td><%= @detalle.b_id %></td>
+    10:   </tr>
+    11:   <tr>
+    12:     <th>Nro de Cliente</th>
+  app/views/boletas/mostrar.html.erb:9:in `_app_views_boletas_mostrar_html_erb__15623505__650438468'
+
+
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.7ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/eseeme/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (39.6ms)
+
+
+Started GET "/boletas" for 127.0.0.1 at 2016-09-22 15:34:41 -0300
+Processing by BoletasController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"[0m
+  [1m[35mBoleta Load (0.4ms)[0m  SELECT boleta.id as b_id, clientes.id, clientes.rut, clientes.nombre, boleta.total FROM "boleta" INNER JOIN "clientes" ON "clientes"."id" = "boleta"."cliente_id"
+  Rendered boletas/index.html.erb within layouts/application (6.1ms)
+  Rendered partials/_sidenav.html.erb (2.0ms)
+  Rendered partials/_topnav.html.erb (6.3ms)
+  Rendered partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 103ms (Views: 101.4ms | ActiveRecord: 0.9ms)

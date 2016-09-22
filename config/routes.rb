@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
   
+  get 'estado_boletas/index'
+
+  get 'estado_boletas/mostrar'
+
+  get 'estado_boletas/crear'
+
+  get 'estado_boletas/eliminar'
+
+  get 'estado_boletas/editar'
+
   get 'tickets_usuario/index'
 
   get 'tickets_usuario/crear'
