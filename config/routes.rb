@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
   
 
+  get 'tickets_admin/index'
+
+  get 'tickets_admin/mostrar'
+
+  get 'tickets_admin/responder'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
