@@ -1,19 +1,12 @@
 Rails.application.routes.draw do
-  
-
-  get 'tickets_admin/index'
-
-  get 'tickets_admin/mostrar'
-
-  get 'tickets_admin/responder'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'plainpage#index'
+   root 'home#index'
 
-   get 'admin', :to => "admin#index"
+   
    match ':controller(/:action(/:id))', :via => [:get, :post]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

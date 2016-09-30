@@ -26,3 +26,464 @@ Processing by PlainpageController#index as HTML
   Rendered partials/_footer.html.erb (0.3ms)
 Completed 200 OK in 303ms (Views: 302.6ms | ActiveRecord: 0.0ms)
   [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (19.7ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "facturaciones" DISABLE TRIGGER ALL;ALTER TABLE "tickets" DISABLE TRIGGER ALL;ALTER TABLE "clientes" DISABLE TRIGGER ALL;ALTER TABLE "servicios" DISABLE TRIGGER ALL;ALTER TABLE "empresas" DISABLE TRIGGER ALL;ALTER TABLE "boleta" DISABLE TRIGGER ALL;ALTER TABLE "categoria" DISABLE TRIGGER ALL;ALTER TABLE "admins_servicios" DISABLE TRIGGER ALL;ALTER TABLE "admins" DISABLE TRIGGER ALL
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "categoria"
+  [1m[36mFixture Insert (0.9ms)[0m  [1mINSERT INTO "categoria" () VALUES ()[0m
+PG::SyntaxError: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "categoria" () VALUES ()
+                                 ^
+: INSERT INTO "categoria" () VALUES ()
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "facturaciones" ENABLE TRIGGER ALL;ALTER TABLE "tickets" ENABLE TRIGGER ALL;ALTER TABLE "clientes" ENABLE TRIGGER ALL;ALTER TABLE "servicios" ENABLE TRIGGER ALL;ALTER TABLE "empresas" ENABLE TRIGGER ALL;ALTER TABLE "boleta" ENABLE TRIGGER ALL;ALTER TABLE "categoria" ENABLE TRIGGER ALL;ALTER TABLE "admins_servicios" ENABLE TRIGGER ALL;ALTER TABLE "admins" ENABLE TRIGGER ALL[0m
